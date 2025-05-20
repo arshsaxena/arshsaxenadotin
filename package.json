@@ -1,29 +1,40 @@
 {
-  "name": "arshsaxenadotin",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next export"
-  },
-  "dependencies": {
-    "@fontsource/geist-sans": "^5.2.5",
-    "autoprefixer": "^10.4.20",
-    "lucide-react": "^0.511.0",
-    "next": "15.3.0",
-    "next-themes": "^0.4.6",
-    "postcss": "^8.4.47",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-gradient-animation": "^1.0.7",
-    "tailwindcss": "^3.4.13"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.0"
-  }
+	"name": "arshsaxenadotin",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"export": "next export",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"@fontsource/geist-sans": "^5.2.5",
+		"@radix-ui/react-label": "^2.1.7",
+		"@tabler/icons-react": "^3.33.0",
+		"autoprefixer": "^10.4.20",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"lucide-react": "^0.511.0",
+		"motion": "^12.12.1",
+		"next": "15.3.0",
+		"next-themes": "^0.4.6",
+		"postcss": "^8.4.47",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-gradient-animation": "^1.0.7",
+		"tailwind-merge": "^3.3.0",
+		"tailwindcss": "^3.4.13",
+		"tailwindcss-animate": "^1.0.7",
+		"typed.js": "^2.1.0"
+	},
+	"devDependencies": {
+		"@eslint/eslintrc": "^3",
+		"eslint": "^9",
+		"eslint-config-next": "15.3.0",
+		"prettier": "^3.5.3",
+		"prettier-plugin-tailwindcss": "^0.6.11"
+	}
 }

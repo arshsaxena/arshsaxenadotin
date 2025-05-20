@@ -1,23 +1,111 @@
 .
-├── README.md
+├── components.json
 ├── eslint.config.mjs
 ├── file_structure.txt
 ├── jsconfig.json
-├── next.config.mjs
+├── next.config.js
 ├── package-lock.json
 ├── package.json
-├── postcss.config.mjs
+├── postcss.config.js
+├── prettier.config.cjs
 ├── public
-│   ├── file.svg
-│   ├── globe.svg
-│   ├── next.svg
-│   ├── vercel.svg
-│   └── window.svg
-└── src
-    └── app
-        ├── favicon.ico
-        ├── globals.css
-        ├── layout.js
-        └── page.js
+│   ├── arsh-favicon-apple.png
+│   ├── arsh-favicon.png
+│   ├── emojis
+│   │   ├── books.webp
+│   │   ├── boy-using-laptop.webp
+│   │   ├── camera.webp
+│   │   ├── heart.webp
+│   │   ├── india1.webp
+│   │   ├── india2.webp
+│   │   ├── laptop.webp
+│   │   ├── movie-camera.webp
+│   │   ├── pen.webp
+│   │   ├── shoes.webp
+│   │   └── writing.webp
+│   ├── images
+│   │   ├── img1.webp
+│   │   ├── img2.webp
+│   │   ├── img3.webp
+│   │   ├── img4.webp
+│   │   ├── img5.webp
+│   │   ├── img6.webp
+│   │   └── img7.webp
+│   ├── made-by-arsh
+│   │   ├── icons
+│   │   │   ├── aconverter-app-icon.webp
+│   │   │   ├── aeducational-app-icon.webp
+│   │   │   ├── arshsaxena-app-icon.webp
+│   │   │   ├── colors-icon.webp
+│   │   │   ├── qr-icon.webp
+│   │   │   ├── solarsystem-icon.webp
+│   │   │   └── weather-icon.webp
+│   │   ├── python-projects
+│   │   │   ├── ping-pong.png
+│   │   │   ├── snake.png
+│   │   │   ├── space-invaders.png
+│   │   │   ├── sudoku.png
+│   │   │   ├── truck-vs-car.png
+│   │   │   └── typing-speed-calculator.png
+│   │   └── screenshots
+│   │       ├── aconverter-desktop.png
+│   │       ├── aconverter-mobile.png
+│   │       ├── aeducational-desktop.png
+│   │       ├── aeducational-mobile.png
+│   │       ├── colors-desktop.png
+│   │       ├── colors-mobile.png
+│   │       ├── qr-desktop.png
+│   │       ├── qr-mobile.png
+│   │       ├── solarsystem.png
+│   │       ├── weather-desktop.png
+│   │       └── weather-mobile.png
+│   └── social
+│       ├── apple-music.webp
+│       ├── github.webp
+│       ├── instagram.webp
+│       ├── linkedin.webp
+│       └── x.webp
+├── README.md
+├── src
+│   ├── app
+│   │   ├── about
+│   │   │   └── page.js
+│   │   ├── connect
+│   │   │   └── page.js
+│   │   ├── layout.js
+│   │   ├── made-by-arsh
+│   │   │   └── page.js
+│   │   ├── not-found.js
+│   │   └── page.js
+│   ├── components
+│   │   ├── Common
+│   │   │   ├── AnimateBackground.js
+│   │   │   └── PageTransitionWrapper.jsx
+│   │   ├── Connect
+│   │   │   ├── Form.jsx
+│   │   │   ├── FormInputs.jsx
+│   │   │   └── FormLabels.jsx
+│   │   ├── Home
+│   │   │   ├── AnimatesImgs.jsx
+│   │   │   ├── MadeByArshSection.js
+│   │   │   └── Typed.js
+│   │   ├── Layout
+│   │   │   ├── Footer
+│   │   │   │   ├── Footer.js
+│   │   │   │   ├── MadebyArshLinks.js
+│   │   │   │   ├── SocialLinks.js
+│   │   │   │   └── TopButton.js
+│   │   │   └── Navbar
+│   │   │       ├── Navbar.js
+│   │   │       └── NavbarLinks.js
+│   │   └── Theme
+│   │       ├── SetMetaThemeColor.js
+│   │       └── ThemeToggle.js
+│   ├── lib
+│   │   └── utils.js
+│   └── styles
+│       └── global.css
+├── tailwind.config.js
+└── vercel.json
 
-4 directories, 17 files
+24 directories, 85 files

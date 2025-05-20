@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+	output: 'export',
 };
 
 // next.config.js
 module.exports = {
-  images: {
-    unoptimized: true,
-  },
+	images: {
+		unoptimized: true,
+	},
 };

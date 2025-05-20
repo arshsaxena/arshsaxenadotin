@@ -1,31 +1,34 @@
-import { Inter } from "next/font/google";
-import "./globals.css"; // Ensure this is imported
-import ThemeToggle from '@/components/ThemeToggle';
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import { GradientBackground } from "react-gradient-animation";
-import AnimatedBackground from "@/components/AnimateBackground";
+import { Inter } from 'next/font/google';
+import '@/styles/global.css';
 
-const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
+import AnimatedBackground from '@/components/Common/AnimateBackground';
+import Navbar from '@/components/Layout/Navbar/Navbar';
+import Footer from '@/components/Layout/Footer/Footer';
+import SetMetaThemeColor from '@/components/Theme/SetMetaThemeColor';
+import PageWrapper from '@/components/Common/PageTransitionWrapper';
 
 export const metadata = {
     icons: {
         icon: '/arsh-favicon.png',
         shortcut: '/arsh-favicon.png',
-        apple: '/arsh-square.png',
+        apple: '/arsh-favicon-apple.png',
     },
 };
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
-            {/* <body className={`${inter.variable} font-sans antialiased`}> */}
-            <body className={`font-sans antialiased`}>
+            <body className={`overflow-x-hidden font-sans antialiased`}>
                 <AnimatedBackground />
-                <div className="container max-w-[980px] m-auto">
-                    {/* Theme Toggle Component */}
+                <div className="container m-auto max-w-[980px]">
+                    <SetMetaThemeColor />
                     <Navbar />
-                    {children}
+                    
+                    {/* Page Transition Wrapper */}
+                    {/* <PageWrapper> */}
+                        {children}
+                    {/* </PageWrapper> */}
+
                     <Footer />
                 </div>
             </body>
