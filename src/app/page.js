@@ -24,15 +24,15 @@ export default function Home() {
 	return (
 		<>
 			<div className="m-auto max-w-[980px]">
-				<div className="text-md mx-5 mt-10 rounded-t-[25px] border-[1px] border-b-0 border-[var(--border-default)] bg-[var(--surface)] p-5 pt-10 md:p-0 md:text-[16px] md:dark:border-[var(--border-default)]">
+				<div className="text-md mx-5 mt-10 rounded-t-[25px] border-[1px] border-[var(--border-default)] bg-[var(--surface)] p-5 pt-10 md:p-0 md:text-[16px] md:dark:border-[var(--border-default)]">
 					<AnimatedImgs imgs={imgs} />
 				</div>
-				<div className="text-md mx-5 mb-10 rounded-b-[25px] border-[1px] border-t-0 border-[var(--border-default)] bg-[var(--surface)] p-5 md:pt-3 md:text-[16px] md:dark:border-[var(--border-default)]">
-					<div className="mx-auto flex max-w-sm flex-col justify-between md:max-w-4xl md:flex-row">
+				<div className="text-md mx-5 mb-10 rounded-b-[25px] border-[1px] border-t-0 border-[var(--border-default)] bg-[var(--surface)] p-5 md:text-[16px] md:dark:border-[var(--border-default)]">
+					<div className="mx-auto flex  flex-col justify-between md:max-w-4xl md:flex-row">
 						<div className="text-md flex items-center font-normal md:text-xl">
 							Ping me anywhere!
 						</div>
-						<div className="mt-7 flex flex-wrap items-center gap-4 md:mt-0">
+						<div className="mt-5 flex flex-wrap items-center gap-4 md:mt-0">
 							{[
 								{
 									alt: 'LinkedIn',

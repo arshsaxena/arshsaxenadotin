@@ -1,11 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	output: 'export',
+    output: 'export',
 };
 
 // next.config.js
 module.exports = {
-	images: {
-		unoptimized: true,
-	},
+    images: {
+        unoptimized: true,
+    },
+    webpack(config) {
+        config.module.rules.push({
+            test: /\.svg$/,
+            use: ["@svgr/webpack"],
+        });
+        return config;
+    },
 };

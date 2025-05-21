@@ -38,10 +38,7 @@ const ProfileText = memo(({ onPrev, onNext }) => {
 			<div className="mt-10 flex w-fit flex-wrap justify-start gap-3">
 				{[
 					{ alt: 'books', icon: '/emojis/books.webp' },
-					{
-						alt: 'boy-using-laptop',
-						icon: '/emojis/boy-using-laptop.webp',
-					},
+					{ alt: 'boy-using-laptop', icon: '/emojis/boy-using-laptop.webp' },
 					{ alt: 'camera', icon: '/emojis/camera.webp' },
 					{ alt: 'laptop', icon: '/emojis/laptop.webp' },
 					{ alt: 'movie-camera', icon: '/emojis/movie-camera.webp' },
