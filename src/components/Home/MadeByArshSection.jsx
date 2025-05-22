@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronRight, ExternalLink } from 'lucide-react';
+import { ChevronRight, ArrowUpRight } from 'lucide-react';
 
-const iconMap = { ChevronRight, ExternalLink };
+const iconMap = { ChevronRight, ArrowUpRight };
 
-export default function AppsSection() {
+export default function MadeByArshSection() {
 	const items = [
 		{
 			href: '/app',
@@ -24,7 +24,7 @@ export default function AppsSection() {
 			icon: '/made-by-arsh/icons/aeducational-app-icon.webp',
 			alt: 'aEducational',
 			buttonLabel: 'Check Out',
-			buttonIcon: 'ExternalLink',
+			buttonIcon: 'ArrowUpRight',
 			containerCss:
 				'py-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
@@ -35,7 +35,7 @@ export default function AppsSection() {
 			icon: '/made-by-arsh/icons/aconverter-app-icon.webp',
 			alt: 'aConverter',
 			buttonLabel: 'Check Out',
-			buttonIcon: 'ExternalLink',
+			buttonIcon: 'ArrowUpRight',
 			containerCss:
 				'py-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
@@ -47,7 +47,7 @@ export default function AppsSection() {
 			alt: 'Solar System',
 			css: 'p-[2px]',
 			buttonLabel: 'Check Out',
-			buttonIcon: 'ExternalLink',
+			buttonIcon: 'ArrowUpRight',
 			containerCss:
 				'py-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
@@ -59,7 +59,7 @@ export default function AppsSection() {
 			alt: 'Colors',
 			css: 'p-[2px]',
 			buttonLabel: 'Check Out',
-			buttonIcon: 'ExternalLink',
+			buttonIcon: 'ArrowUpRight',
 			containerCss:
 				'py-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
@@ -70,7 +70,7 @@ export default function AppsSection() {
 			icon: '/made-by-arsh/icons/qr-icon.webp',
 			alt: 'QR Code Generator',
 			buttonLabel: 'Check Out',
-			buttonIcon: 'ExternalLink',
+			buttonIcon: 'ArrowUpRight',
 			containerCss:
 				'py-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
@@ -82,13 +82,13 @@ export default function AppsSection() {
 			alt: 'Weather',
 			css: 'p-[0.5px]',
 			buttonLabel: 'Check Out',
-			buttonIcon: 'ExternalLink',
+			buttonIcon: 'ArrowUpRight',
 			containerCss: 'pt-5',
 		},
 	];
 
 	return (
-		<div className="text-md mx-5 mb-10 rounded-[25px] border-[1px] border-[var(--border-default)] bg-[var(--surface)] p-5 md:text-[16px] md:dark:border-[var(--border-default)]">
+		<>
 			<div className="mx-auto flex flex-col justify-between">
 				{items.map((item, i) => {
 					const ButtonIcon = iconMap[item.buttonIcon];
@@ -117,14 +117,14 @@ export default function AppsSection() {
 										href={item.href}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="flex items-center rounded-full bg-[var(--main)] px-3 text-center text-[#f5f5f7] hover:bg-[var(--accent)]"
+										className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 text-center text-[#f5f5f7] hover:bg-[var(--accent)]"
 									>
 										<span className="text-sm md:text-[15px]">
 											{item.buttonLabel}
 										</span>
 										{ButtonIcon && (
 											<ButtonIcon
-												className={`ml-2 w-[13px] ${item.buttonCss}`}
+												className={`ml-1 w-[15px] ${item.buttonCss}`}
 											/>
 										)}
 									</Link>
@@ -134,6 +134,6 @@ export default function AppsSection() {
 					);
 				})}
 			</div>
-		</div>
+		</>
 	);
 }

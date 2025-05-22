@@ -1,9 +1,14 @@
 'use client';
 import React, { useRef, useState } from 'react';
 
+import Image from 'next/image';
+import Link from 'next/link';
+
 import { Label } from '@/components/Connect/FormLabels';
 import { Input } from '@/components/Connect/FormInputs';
 import { cn } from '@/lib/utils';
+
+import { SendHorizontal } from 'lucide-react';
 
 export default function SignupFormDemo() {
 	const formRef = useRef(null);
@@ -112,19 +117,49 @@ export default function SignupFormDemo() {
 						</LabelInputContainer>
 					))}
 
-					<div className="mt-5 flex flex-col gap-4 sm:flex-row">
+					<div className="mt-5 flex flex-col gap-4 space-y-2 sm:flex-row sm:justify-between sm:space-y-0">
 						<button
 							type="submit"
-							className="group/btn relative w-full rounded-[10px] border-[1px] border-[var(--accent)] bg-[var(--main)] py-2 font-medium text-white hover:bg-[var(--accent)]"
+							className="group/btn relative h-[40px] w-full rounded-[10px] border-[1px] border-[var(--accent)] bg-[var(--main)] px-5 py-2 font-medium text-white hover:cursor-pointer hover:bg-[var(--accent)] sm:w-fit"
 						>
-							Submit
+							<div className="flex items-center justify-center">
+								<div>Send</div>
+								<SendHorizontal className="mb-[1.5px] ml-[0.5px] h-[14px]" />
+							</div>
 						</button>
+						<div className="flex w-fit flex-wrap justify-between gap-4">
+							{[
+								{
+									alt: 'LinkedIn',
+									icon: '/social/linkedin.webp',
+									href: 'https://linkedin.com/in/arshsaxena',
+								},
+								{
+									alt: 'Instagram',
+									icon: '/social/instagram.webp',
+									href: 'https://instagram.com/arsh.saxena02',
+								},
+								{
+									alt: 'X',
+									icon: '/social/x.webp',
+									href: 'https://x.com/arshsaxena02',
+								},
+							].map((item, i) => (
+								<Link key={i} href={item.href}>
+									<Image
+										src={item.icon}
+										width={0}
+										height={0}
+										alt={item.alt}
+										className="h-[40px] w-[40px] rounded-[9px]"
+									/>
+								</Link>
+							))}
+						</div>
 					</div>
 				</form>
 			) : (
-				<p className="mt-8">
-					Received — thank you!
-				</p>
+				<p className="mt-8">Received — thank you!</p>
 			)}
 
 			{/* Hidden iframe for Google Forms */}

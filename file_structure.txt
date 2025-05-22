@@ -9,6 +9,11 @@
 ├── postcss.config.js
 ├── prettier.config.cjs
 ├── public
+│   ├── about
+│   │   └── timeline
+│   │       ├── centralacademy.webp
+│   │       ├── vitc1.webp
+│   │       └── vitc2.webp
 │   ├── arsh-favicon-apple.png
 │   ├── arsh-favicon.png
 │   ├── emojis
@@ -21,6 +26,7 @@
 │   │   ├── laptop.webp
 │   │   ├── movie-camera.webp
 │   │   ├── pen.webp
+│   │   ├── pin.webp
 │   │   ├── shoes.webp
 │   │   └── writing.webp
 │   ├── images
@@ -41,12 +47,12 @@
 │   │   │   ├── solarsystem-icon.webp
 │   │   │   └── weather-icon.webp
 │   │   ├── python-projects
-│   │   │   ├── ping-pong.png
-│   │   │   ├── snake.png
-│   │   │   ├── space-invaders.png
-│   │   │   ├── sudoku.png
-│   │   │   ├── truck-vs-car.png
-│   │   │   └── typing-speed-calculator.png
+│   │   │   ├── ping-pong.webp
+│   │   │   ├── snake.webp
+│   │   │   ├── space-invaders.webp
+│   │   │   ├── sudoku.webp
+│   │   │   ├── truck-vs-car.webp
+│   │   │   └── typing-speed-calculator.webp
 │   │   └── screenshots
 │   │       ├── aconverter-desktop.png
 │   │       ├── aconverter-mobile.png
@@ -77,17 +83,42 @@
 │   │   │   └── page.js
 │   │   ├── not-found.js
 │   │   └── page.js
+│   ├── assets
+│   │   └── about
+│   │       └── skills
+│   │           ├── bootstrap.svg
+│   │           ├── cpp.svg
+│   │           ├── css.svg
+│   │           ├── flask.svg
+│   │           ├── git.svg
+│   │           ├── html.svg
+│   │           ├── java.svg
+│   │           ├── java2.svg
+│   │           ├── javascript.svg
+│   │           ├── jquery.svg
+│   │           ├── markdown.svg
+│   │           ├── mysql.svg
+│   │           ├── nextjs.svg
+│   │           ├── php.svg
+│   │           ├── python.svg
+│   │           ├── react.svg
+│   │           └── tailwindcss.svg
 │   ├── components
+│   │   ├── About
+│   │   │   ├── SkillsTableSection.jsx
+│   │   │   ├── TextSection.jsx
+│   │   │   └── TimelineSection.jsx
 │   │   ├── Common
-│   │   │   ├── AnimateBackground.js
+│   │   │   ├── AnimateBackground.jsx
 │   │   │   └── PageTransitionWrapper.jsx
 │   │   ├── Connect
 │   │   │   ├── Form.jsx
 │   │   │   ├── FormInputs.jsx
 │   │   │   └── FormLabels.jsx
 │   │   ├── Home
-│   │   │   ├── AnimatesImgs.jsx
-│   │   │   ├── MadeByArshSection.js
+│   │   │   ├── AnimatesImgsSection.jsx
+│   │   │   ├── MadeByArshSection.jsx
+│   │   │   ├── SocialsSection.jsx
 │   │   │   └── Typed.js
 │   │   ├── Layout
 │   │   │   ├── Footer
@@ -98,9 +129,13 @@
 │   │   │   └── Navbar
 │   │   │       ├── Navbar.js
 │   │   │       └── NavbarLinks.js
+│   │   ├── MadeByArsh
+│   │   │   └── PythonProjectsSection.jsx
 │   │   └── Theme
 │   │       ├── SetMetaThemeColor.js
 │   │       └── ThemeToggle.js
+│   ├── hooks
+│   │   └── useOutsideClick.jsx
 │   ├── lib
 │   │   └── utils.js
 │   └── styles
@@ -108,4 +143,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-24 directories, 85 files
+32 directories, 112 files

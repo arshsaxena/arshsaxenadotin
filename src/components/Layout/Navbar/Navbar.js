@@ -35,7 +35,7 @@ export default function Navbar() {
 					</button>
 
 					{/* Desktop links */}
-					<div className="hidden md:flex md:pr-2">
+					<div className="hidden md:flex md:pr-3">
 						<NavbarLink
 							href="/about"
 							icon={UserRound}

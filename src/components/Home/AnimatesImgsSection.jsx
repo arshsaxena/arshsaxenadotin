@@ -38,7 +38,10 @@ const ProfileText = memo(({ onPrev, onNext }) => {
 			<div className="mt-10 flex w-fit flex-wrap justify-start gap-3">
 				{[
 					{ alt: 'books', icon: '/emojis/books.webp' },
-					{ alt: 'boy-using-laptop', icon: '/emojis/boy-using-laptop.webp' },
+					{
+						alt: 'boy-using-laptop',
+						icon: '/emojis/boy-using-laptop.webp',
+					},
 					{ alt: 'camera', icon: '/emojis/camera.webp' },
 					{ alt: 'laptop', icon: '/emojis/laptop.webp' },
 					{ alt: 'movie-camera', icon: '/emojis/movie-camera.webp' },
@@ -57,13 +60,13 @@ const ProfileText = memo(({ onPrev, onNext }) => {
 			<div className="mt-12 hidden gap-5 md:mt-10 md:flex">
 				<button
 					onClick={onPrev}
-					className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[var(--main)] p-[0.5px] text-[#f5f5f7] hover:bg-[var(--accent)]"
+					className="group/button flex h-7 w-7 items-center justify-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] p-[0.5px] text-[#f5f5f7] hover:bg-[var(--accent)]"
 				>
 					<ChevronLeft className="h-5 w-5 text-[#f5f5f7]" />
 				</button>
 				<button
 					onClick={onNext}
-					className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[var(--main)] p-[0.5px] text-[#f5f5f7] hover:bg-[var(--accent)]"
+					className="group/button flex h-7 w-7 items-center justify-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] p-[0.5px] text-[#f5f5f7] hover:bg-[var(--accent)]"
 				>
 					<ChevronRight className="h-5 w-5 text-[#f5f5f7]" />
 				</button>
@@ -71,7 +74,18 @@ const ProfileText = memo(({ onPrev, onNext }) => {
 		</div>
 	);
 });
-export const AnimatedImgs = ({ imgs, autoplay = false }) => {
+
+const AnimatedImgsSection = ({ autoplay = false }) => {
+	const imgs = [
+		{ src: '/images/img1.webp' },
+		{ src: '/images/img2.webp' },
+		{ src: '/images/img3.webp' },
+		{ src: '/images/img4.webp' },
+		{ src: '/images/img5.webp' },
+		{ src: '/images/img6.webp' },
+		{ src: '/images/img7.webp' },
+	];
+
 	const [active, setActive] = useState(0);
 	const [rotations, setRotations] = useState([]);
 
@@ -154,13 +168,13 @@ export const AnimatedImgs = ({ imgs, autoplay = false }) => {
 					<div className="flex gap-4 pt-12 md:hidden">
 						<button
 							onClick={handlePrev}
-							className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[var(--main)] p-[0.5px] text-[#f5f5f7]"
+							className="group/button flex h-7 w-7 items-center justify-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] p-[0.5px] text-[#f5f5f7] hover:bg-[var(-accent)]"
 						>
 							<ChevronLeft className="h-5 w-5 text-[#f5f5f7]" />
 						</button>
 						<button
 							onClick={handleNext}
-							className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[var(--main)] p-[0.5px] text-[#f5f5f7]"
+							className="group/button flex h-7 w-7 items-center justify-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] p-[0.5px] text-[#f5f5f7] hover:bg-[var(-accent)]"
 						>
 							<ChevronRight className="h-5 w-5 text-[#f5f5f7]" />
 						</button>
@@ -173,3 +187,5 @@ export const AnimatedImgs = ({ imgs, autoplay = false }) => {
 		</div>
 	);
 };
+
+export default AnimatedImgsSection;
