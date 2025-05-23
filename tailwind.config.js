@@ -13,7 +13,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ['var(--font-geist)', ...defaultTheme.fontFamily.sans],
-				inter: ['var(--font-inter)', 'sans-serif'],
+				mono: ['var(--font-geist-mono)'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

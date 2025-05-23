@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 
 import { ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 
-export const Carousel = ({ initialScroll = 0 }) => {
+export const PythonProjects = ({ initialScroll = 0 }) => {
 	const cardData = [
 		{
 			title: 'Sudoku with Solver',
@@ -98,8 +98,16 @@ export const Carousel = ({ initialScroll = 0 }) => {
 
 	return (
 		<div className="relative w-full py-5">
-			<div className="px-5 pb-5 text-2xl font-black md:text-4xl">
-				Python Projects
+			<div className="px-5 text-3xl font-black">Python Projects</div>
+			<div className="p-5 pb-7 text-[var(--foreground)]">
+				<div className="text-xs italic md:text-sm">
+					To run any of the Python projects, just download them, open
+					your Terminal or Command Prompt in the project folder, type{' '}
+					<span className="whitespace-nowrap rounded-full bg-[var(--accent)] px-[5px] py-[0px] font-mono not-italic md:px-[10px]">
+						python3 [file name].py
+					</span>
+					, and hit ENTER.
+				</div>
 			</div>
 			<div
 				className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth pb-5 [scrollbar-width:none]"
@@ -144,14 +152,14 @@ export const Carousel = ({ initialScroll = 0 }) => {
 					onClick={scrollLeft}
 					disabled={!canScrollLeft}
 				>
-					<ChevronLeft className="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--main)] p-[0.5px] text-[#f5f5f7] hover:bg-[var(--accent)]" />
+					<ChevronLeft className="h-7 w-7 text-[#f5f5f7]" />
 				</button>
 				<button
 					className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] hover:bg-[var(--accent)] disabled:opacity-50"
 					onClick={scrollRight}
 					disabled={!canScrollRight}
 				>
-					<ChevronRight className="flex h-7 w-7 items-center justify-center rounded-full bg-[var(--main)] p-[0.5px] text-[#f5f5f7] hover:bg-[var(--accent)]" />
+					<ChevronRight className="h-7 w-7 text-[#f5f5f7]" />
 				</button>
 			</div>
 		</div>

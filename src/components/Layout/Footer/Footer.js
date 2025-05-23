@@ -5,7 +5,9 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { socialLinksBase } from '@/components/data/socialLinksBase';
 import SocialLink from './SocialLinks';
+import { webProjectsBase } from '@/components/data/webProjectsBase';
 import MadebyArshLink from './MadebyArshLinks';
 
 import ThemeToggle from '@/components/Theme/ThemeToggle';
@@ -82,33 +84,27 @@ export default function Footer() {
 							<div className="flex flex-col space-y-2 text-[var(--muted)]">
 								{[
 									{
-										href: 'https://education.arshsaxena.in/',
-										label: 'aEducational',
+										...webProjectsBase.aeducational,
 										target: '_blank',
 									},
 									{
-										href: 'https://converter.arshsaxena.in/',
-										label: 'aConverter',
+										...webProjectsBase.aconverter,
 										target: '_blank',
 									},
 									{
-										href: 'https://solarsystem.arshsaxena.in/',
-										label: 'Solar System',
+										...webProjectsBase.solarsystem,
 										target: '_blank',
 									},
 									{
-										href: 'https://colors.arshsaxena.in/',
-										label: 'Colors',
+										...webProjectsBase.colors,
 										target: '_blank',
 									},
 									{
-										href: 'https://qr.arshsaxena.in/',
-										label: 'QR Code Generator',
+										...webProjectsBase.qr,
 										target: '_blank',
 									},
 									{
-										href: 'https://weather.arshsaxena.in/',
-										label: 'Weather',
+										...webProjectsBase.weather,
 										target: '_blank',
 									},
 									{
@@ -132,46 +128,17 @@ export default function Footer() {
 								Social
 							</h3>
 							<div className="flex flex-col space-y-2 text-[var(--muted)]">
-								{[
-									{
-										href: 'https://linkedin.com/in/arshsaxena',
-										label: 'LinkedIn',
-										icon: '/social/linkedin.webp',
-										alt: 'LinkedIn',
-									},
-									{
-										href: 'https://github.com/arshsaxena',
-										label: 'GitHub',
-										icon: '/social/github.webp',
-										alt: 'GitHub',
-									},
-									{
-										href: 'https://instagram.com/arsh.saxena02',
-										label: 'Instagram',
-										icon: '/social/instagram.webp',
-										alt: 'Instagram',
-									},
-									{
-										href: 'https://x.com/arshsaxena02',
-										label: 'X',
-										icon: '/social/x.webp',
-										alt: 'X',
-									},
-									{
-										href: 'https://music.apple.com/in/playlist/arshs-favourites/pl.u-yZyVWPrCd3zXWGe',
-										label: 'Apple Music',
-										icon: '/social/apple-music.webp',
-										alt: 'Apple Music',
-									},
-								].map((item, i) => (
-									<SocialLink
-										key={i}
-										href={item.href}
-										src={item.icon}
-										alt={item.alt}
-										label={item.label}
-									/>
-								))}
+								{Object.values(socialLinksBase).map(
+									(item, i) => (
+										<SocialLink
+											key={i}
+											href={item.href}
+											src={item.icon}
+											alt={item.label}
+											label={item.label}
+										/>
+									),
+								)}
 								{/* <SocialLink href="https://linkedin.com/in/arshsaxena" src="/linkedin.webp" alt="LinkedIn" label="LinkedIn" />
                                 <SocialLink href="https://github.com/arshsaxena" src="/github.webp" alt="GitHub" label="GitHub" />
                                 <SocialLink href="https://instagram.com/arsh.saxena02" src="/instagram.webp" alt="Instagram" label="Instagram" />

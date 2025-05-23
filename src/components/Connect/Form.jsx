@@ -8,6 +8,8 @@ import { Label } from '@/components/Connect/FormLabels';
 import { Input } from '@/components/Connect/FormInputs';
 import { cn } from '@/lib/utils';
 
+import { socialLinksBase } from '@/components/data/socialLinksBase';
+
 import { SendHorizontal } from 'lucide-react';
 
 export default function SignupFormDemo() {
@@ -129,28 +131,16 @@ export default function SignupFormDemo() {
 						</button>
 						<div className="flex w-fit flex-wrap justify-between gap-4">
 							{[
-								{
-									alt: 'LinkedIn',
-									icon: '/social/linkedin.webp',
-									href: 'https://linkedin.com/in/arshsaxena',
-								},
-								{
-									alt: 'Instagram',
-									icon: '/social/instagram.webp',
-									href: 'https://instagram.com/arsh.saxena02',
-								},
-								{
-									alt: 'X',
-									icon: '/social/x.webp',
-									href: 'https://x.com/arshsaxena02',
-								},
+								socialLinksBase.linkedin,
+								socialLinksBase.instagram,
+								socialLinksBase.x,
 							].map((item, i) => (
 								<Link key={i} href={item.href}>
 									<Image
 										src={item.icon}
 										width={0}
 										height={0}
-										alt={item.alt}
+										alt={item.label}
 										className="h-[40px] w-[40px] rounded-[9px]"
 									/>
 								</Link>
@@ -159,7 +149,7 @@ export default function SignupFormDemo() {
 					</div>
 				</form>
 			) : (
-				<p className="mt-8">Received — thank you!</p>
+				<p className="mt-8">Received, thank you!</p>
 			)}
 
 			{/* Hidden iframe for Google Forms */}

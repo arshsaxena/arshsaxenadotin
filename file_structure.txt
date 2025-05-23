@@ -16,6 +16,10 @@
 │   │       └── vitc2.webp
 │   ├── arsh-favicon-apple.png
 │   ├── arsh-favicon.png
+│   ├── download
+│   │   ├── Apple-Style-Navigation-Bar-by-Arsh.zip
+│   │   ├── Modern-Footer-by-Arsh.zip
+│   │   └── Simple-Old-School-by-Arsh.zip
 │   ├── emojis
 │   │   ├── books.webp
 │   │   ├── boy-using-laptop.webp
@@ -38,14 +42,6 @@
 │   │   ├── img6.webp
 │   │   └── img7.webp
 │   ├── made-by-arsh
-│   │   ├── icons
-│   │   │   ├── aconverter-app-icon.webp
-│   │   │   ├── aeducational-app-icon.webp
-│   │   │   ├── arshsaxena-app-icon.webp
-│   │   │   ├── colors-icon.webp
-│   │   │   ├── qr-icon.webp
-│   │   │   ├── solarsystem-icon.webp
-│   │   │   └── weather-icon.webp
 │   │   ├── python-projects
 │   │   │   ├── ping-pong.webp
 │   │   │   ├── snake.webp
@@ -53,18 +49,36 @@
 │   │   │   ├── sudoku.webp
 │   │   │   ├── truck-vs-car.webp
 │   │   │   └── typing-speed-calculator.webp
-│   │   └── screenshots
-│   │       ├── aconverter-desktop.png
-│   │       ├── aconverter-mobile.png
-│   │       ├── aeducational-desktop.png
-│   │       ├── aeducational-mobile.png
-│   │       ├── colors-desktop.png
-│   │       ├── colors-mobile.png
-│   │       ├── qr-desktop.png
-│   │       ├── qr-mobile.png
-│   │       ├── solarsystem.png
-│   │       ├── weather-desktop.png
-│   │       └── weather-mobile.png
+│   │   ├── web-projects
+│   │   │   ├── aconverter-desktop.webp
+│   │   │   ├── aconverter-mobile.webp
+│   │   │   ├── aeducational-desktop.webp
+│   │   │   ├── aeducational-mobile.webp
+│   │   │   ├── colors-desktop.webp
+│   │   │   ├── colors-mobile.webp
+│   │   │   ├── icons
+│   │   │   │   ├── aconverter-app-icon.webp
+│   │   │   │   ├── aeducational-app-icon.webp
+│   │   │   │   ├── arshsaxena-app-icon.webp
+│   │   │   │   ├── colors-icon.webp
+│   │   │   │   ├── qr-icon.webp
+│   │   │   │   ├── solarsystem-icon.webp
+│   │   │   │   └── weather-icon.webp
+│   │   │   ├── qr-desktop.webp
+│   │   │   ├── qr-mobile.webp
+│   │   │   ├── solarsystem.webp
+│   │   │   ├── weather-desktop.webp
+│   │   │   └── weather-mobile.webp
+│   │   └── web-templates
+│   │       ├── apple-style-navigation-bar
+│   │       │   └── template-screenshot.png
+│   │       ├── modern-footer
+│   │       │   └── template-screenshot.png
+│   │       └── simple-old-school
+│   │           ├── template-screenshot-1.png
+│   │           ├── template-screenshot-2.png
+│   │           ├── template-screenshot-3.png
+│   │           └── template-screenshot-4.png
 │   └── social
 │       ├── apple-music.webp
 │       ├── github.webp
@@ -80,7 +94,11 @@
 │   │   │   └── page.js
 │   │   ├── layout.js
 │   │   ├── made-by-arsh
-│   │   │   └── page.js
+│   │   │   ├── page.js
+│   │   │   └── templates
+│   │   │       └── [slug]
+│   │   │           ├── page.js
+│   │   │           └── TemplateContent.js
 │   │   ├── not-found.js
 │   │   └── page.js
 │   ├── assets
@@ -115,6 +133,10 @@
 │   │   │   ├── Form.jsx
 │   │   │   ├── FormInputs.jsx
 │   │   │   └── FormLabels.jsx
+│   │   ├── data
+│   │   │   ├── socialLinksBase.js
+│   │   │   ├── webProjectsBase.js
+│   │   │   └── webTemplatesBase.js
 │   │   ├── Home
 │   │   │   ├── AnimatesImgsSection.jsx
 │   │   │   ├── MadeByArshSection.jsx
@@ -130,10 +152,13 @@
 │   │   │       ├── Navbar.js
 │   │   │       └── NavbarLinks.js
 │   │   ├── MadeByArsh
-│   │   │   └── PythonProjectsSection.jsx
-│   │   └── Theme
-│   │       ├── SetMetaThemeColor.js
-│   │       └── ThemeToggle.js
+│   │   │   ├── PythonProjectsSection.jsx
+│   │   │   ├── WebProjectsSection.jsx
+│   │   │   └── WebTemplatesSection.jsx
+│   │   ├── Theme
+│   │   │   ├── SetMetaThemeColor.js
+│   │   │   └── ThemeToggle.js
+│   │   └── ui
 │   ├── hooks
 │   │   └── useOutsideClick.jsx
 │   ├── lib
@@ -143,4 +168,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-32 directories, 112 files
+41 directories, 128 files

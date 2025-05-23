@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { socialLinksBase } from '@/components/data/socialLinksBase';
+
 export default function SocialsSection() {
 	return (
 		<>
@@ -10,33 +12,17 @@ export default function SocialsSection() {
 				</div>
 				<div className="mt-5 flex flex-wrap items-center gap-4 md:mt-0">
 					{[
-						{
-							alt: 'LinkedIn',
-							icon: '/social/linkedin.webp',
-							href: 'https://linkedin.com/in/arshsaxena',
-						},
-						{
-							alt: 'GitHub',
-							icon: '/social/github.webp',
-							href: 'https://github.com/arshsaxena',
-						},
-						{
-							alt: 'Instagram',
-							icon: '/social/instagram.webp',
-							href: 'https://instagram.com/arsh.saxena02',
-						},
-						{
-							alt: 'X',
-							icon: '/social/x.webp',
-							href: 'https://x.com/arshsaxena02',
-						},
+						socialLinksBase.linkedin,
+						socialLinksBase.github,
+						socialLinksBase.instagram,
+						socialLinksBase.x,
 					].map((item, i) => (
 						<Link key={i} href={item.href}>
 							<Image
 								src={item.icon}
 								width={40}
 								height={40}
-								alt={item.alt}
+								alt={item.label}
 								className="rounded-[9px]"
 							/>
 						</Link>

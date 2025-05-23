@@ -1,6 +1,9 @@
 import { Inter } from 'next/font/google';
 import '@/styles/global.css';
 
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
+
 import AnimatedBackground from '@/components/Common/AnimateBackground';
 import Navbar from '@/components/Layout/Navbar/Navbar';
 import Footer from '@/components/Layout/Footer/Footer';
@@ -17,7 +20,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html
+			lang="en"
+			className={GeistSans.classname}
+			suppressHydrationWarning
+		>
 			<body className={`overflow-x-hidden font-sans antialiased`}>
 				<AnimatedBackground />
 				<div className="container m-auto max-w-[980px]">

@@ -2,13 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Text from '@/components/About/TextSection';
-import SkillsTable from '@/components/About/SkillsTableSection';
-import Timeline from '@/components/About/TimelineSection';
-
-export const metadata = {
-	title: 'About | Arsh Saxena',
-};
+import { socialLinksBase } from '@/components/data/socialLinksBase';
 
 export default function TextSection() {
 	return (
@@ -30,19 +24,34 @@ export default function TextSection() {
 				</div>
 				<div className="flex w-fit flex-wrap justify-start gap-2">
 					{[
-						{ alt: 'books', icon: '/emojis/books.webp' },
+						{
+							alt: 'books',
+							icon: '/emojis/books.webp',
+						},
 						{
 							alt: 'boy-using-laptop',
 							icon: '/emojis/boy-using-laptop.webp',
 						},
-						{ alt: 'camera', icon: '/emojis/camera.webp' },
-						{ alt: 'laptop', icon: '/emojis/laptop.webp' },
+						{
+							alt: 'camera',
+							icon: '/emojis/camera.webp',
+						},
+						{
+							alt: 'laptop',
+							icon: '/emojis/laptop.webp',
+						},
 						{
 							alt: 'movie-camera',
 							icon: '/emojis/movie-camera.webp',
 						},
-						{ alt: 'pen', icon: '/emojis/writing.webp' },
-						{ alt: 'shoes', icon: '/emojis/shoes.webp' },
+						{
+							alt: 'pen',
+							icon: '/emojis/writing.webp',
+						},
+						{
+							alt: 'shoes',
+							icon: '/emojis/shoes.webp',
+						},
 					].map((item, i) => (
 						<Image
 							key={i}
@@ -75,33 +84,17 @@ export default function TextSection() {
 				</div>
 				<div className="flex flex-wrap items-center gap-4">
 					{[
-						{
-							alt: 'LinkedIn',
-							icon: '/social/linkedin.webp',
-							href: 'https://linkedin.com/in/arshsaxena',
-						},
-						{
-							alt: 'GitHub',
-							icon: '/social/github.webp',
-							href: 'https://github.com/arshsaxena',
-						},
-						{
-							alt: 'Instagram',
-							icon: '/social/instagram.webp',
-							href: 'https://instagram.com/arsh.saxena02',
-						},
-						{
-							alt: 'X',
-							icon: '/social/x.webp',
-							href: 'https://x.com/arshsaxena02',
-						},
+						socialLinksBase.linkedin,
+						socialLinksBase.github,
+						socialLinksBase.instagram,
+						socialLinksBase.x,
 					].map((item, i) => (
 						<Link key={i} href={item.href}>
 							<Image
 								src={item.icon}
 								width={40}
 								height={40}
-								alt={item.alt}
+								alt={item.label}
 								className="rounded-[9px]"
 							/>
 						</Link>
