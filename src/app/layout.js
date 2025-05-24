@@ -4,6 +4,7 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/next';
 
 import AnimatedBackground from '@/components/Common/AnimateBackground';
 import Navbar from '@/components/Layout/Navbar/Navbar';
@@ -80,6 +81,7 @@ export default function RootLayout({ children }) {
 					<Navbar />
 					{children}
 					<SpeedInsights />
+					<Analytics />
 					<Footer />
 				</div>
 			</body>
