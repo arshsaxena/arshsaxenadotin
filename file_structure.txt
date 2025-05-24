@@ -2,7 +2,10 @@
 ├── components.json
 ├── eslint.config.mjs
 ├── file_structure.txt
+├── gh-readme
+│   └── screenshot.png
 ├── jsconfig.json
+├── next-sitemap.config.js
 ├── next.config.js
 ├── package-lock.json
 ├── package.json
@@ -100,6 +103,9 @@
 │   │           ├── template-screenshot-2.webp
 │   │           ├── template-screenshot-3.webp
 │   │           └── template-screenshot-4.webp
+│   ├── robots.txt
+│   ├── sitemap-0.xml
+│   ├── sitemap.xml
 │   └── social
 │       ├── apple-music.webp
 │       ├── github.webp
@@ -156,10 +162,6 @@
 │   │   │   ├── Form.jsx
 │   │   │   ├── FormInputs.jsx
 │   │   │   └── FormLabels.jsx
-│   │   ├── data
-│   │   │   ├── socialLinksBase.js
-│   │   │   ├── webProjectsBase.js
-│   │   │   └── webTemplatesBase.js
 │   │   ├── Home
 │   │   │   ├── AnimatesImgsSection.jsx
 │   │   │   ├── MadeByArshSection.jsx
@@ -179,6 +181,10 @@
 │   │   │   ├── WebMiniProjectsSection.jsx
 │   │   │   ├── WebProjectsSection.jsx
 │   │   │   └── WebTemplatesSection.jsx
+│   │   ├── staticData
+│   │   │   ├── socialLinksBase.js
+│   │   │   ├── webProjectsBase.js
+│   │   │   └── webTemplatesBase.js
 │   │   └── Theme
 │   │       ├── SetMetaThemeColor.js
 │   │       └── ThemeToggle.js
@@ -191,4 +197,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-48 directories, 144 files
+49 directories, 149 files
