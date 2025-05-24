@@ -47,7 +47,7 @@ export const metadata = {
     twitter: {
     card: 'summary_large_image',
     title: 'Arsh Saxena',
-    description: 'EHi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
+    description: 'Hi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
     images: ['https://raw.githubusercontent.com/arshsaxena/arshsaxenadotin/refs/heads/main/gh-readme/screenshot.png'],
     creator: '@arshsaxena02',
   },
