@@ -6,7 +6,7 @@ export const webProjectsBase = {
 		desc2: 'Get letters, essays, notices, speeches, debates, and paragraphs - all written by me. Perfect for students and learners.',
 		href: 'https://education.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/aeducational-app-icon.webp',
-		img: '/made-by-arsh/web-projects/aeducational-desktop.webp',
+		img: '/made-by-arsh/web-projects/imgs/aeducational-desktop.webp',
 	},
 	aconverter: {
 		label: 'aConverter',
@@ -15,7 +15,7 @@ export const webProjectsBase = {
 		desc2: 'Easily switch between units of length, mass, temperature, and speed. More categories coming soon!',
 		href: 'https://converter.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/aconverter-app-icon.webp',
-		img: '/made-by-arsh/web-projects/aconverter-desktop.webp',
+		img: '/made-by-arsh/web-projects/imgs/aconverter-desktop.webp',
 	},
 	solarsystem: {
 		label: 'Solar System',
@@ -24,7 +24,7 @@ export const webProjectsBase = {
 		desc2: 'Yes, even Pluto is here.',
 		href: 'https://solarsystem.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/solarsystem-icon.webp',
-		img: '/made-by-arsh/web-projects/solarsystem.webp',
+		img: '/made-by-arsh/web-projects/imgs/solarsystem.webp',
 	},
 	colors: {
 		label: 'Colors',
@@ -33,7 +33,7 @@ export const webProjectsBase = {
 		desc2: 'Get HEX, RGB, and RGBA values in a click. Also supports custom input.',
 		href: 'https://colors.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/colors-icon.webp',
-		img: '/made-by-arsh/web-projects/colors-desktop.webp',
+		img: '/made-by-arsh/web-projects/imgs/colors-desktop.webp',
 	},
 	qr: {
 		label: 'QR Code Generator',
@@ -42,7 +42,7 @@ export const webProjectsBase = {
 		desc2: 'Convert text, websites, phone numbers, emails, and more into QR codes. Download and share like any image.',
 		href: 'https://qr.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/qr-icon.webp',
-		img: '/made-by-arsh/web-projects/qr-desktop.webp',
+		img: '/made-by-arsh/web-projects/imgs/qr-desktop.webp',
 	},
 	weather: {
 		label: 'Weather',
@@ -51,6 +51,6 @@ export const webProjectsBase = {
 		desc2: 'Check current temperature, feels-like, highs, lows, pressure, humidity, wind, clouds, and more - for any location.',
 		href: 'https://weather.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/weather-icon.webp',
-		img: '/made-by-arsh/web-projects/weather-desktop.webp',
+		img: '/made-by-arsh/web-projects/imgs/weather-desktop.webp',
 	},
 };

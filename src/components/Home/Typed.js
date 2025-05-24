@@ -23,7 +23,6 @@ export default function TypedName({ strings = ['Default Text'] }) {
 		return () => typed.destroy();
 	}, [strings, mounted]);
 
-	// Avoid SSR hydration mismatch by skipping render until mounted
 	if (!mounted) return null;
 
 	return <span ref={el}></span>;

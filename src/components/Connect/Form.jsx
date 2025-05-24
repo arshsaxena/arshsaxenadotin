@@ -8,7 +8,7 @@ import { Label } from '@/components/Connect/FormLabels';
 import { Input } from '@/components/Connect/FormInputs';
 import { cn } from '@/lib/utils';
 
-import { socialLinksBase } from '@/components/data/socialLinksBase';
+import { socialLinksBase } from '@/components/staticData/socialLinksBase';
 
 import { SendHorizontal } from 'lucide-react';
 
@@ -81,7 +81,6 @@ export default function SignupFormDemo() {
 					target="hidden_iframe"
 					onSubmit={handleSubmit}
 				>
-					{/* Hidden "Website" field */}
 					<input
 						type="hidden"
 						name="entry.2054206786"
@@ -89,7 +88,6 @@ export default function SignupFormDemo() {
 						value="Arsh Saxena"
 					/>
 
-					{/* First & Last Name in Row */}
 					<div className="mb-4 flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0">
 						{formFields.slice(0, 2).map((field) => (
 							<LabelInputContainer key={field.id}>
@@ -105,7 +103,6 @@ export default function SignupFormDemo() {
 						))}
 					</div>
 
-					{/* Rest of the fields */}
 					{formFields.slice(2).map((field) => (
 						<LabelInputContainer className="mb-4" key={field.id}>
 							<Label htmlFor={field.id}>{field.label}</Label>
@@ -152,7 +149,6 @@ export default function SignupFormDemo() {
 				<p className="mt-8">Received, thank you!</p>
 			)}
 
-			{/* Hidden iframe for Google Forms */}
 			<iframe
 				name="hidden_iframe"
 				ref={iframeRef}

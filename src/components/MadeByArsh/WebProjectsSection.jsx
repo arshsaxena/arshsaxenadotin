@@ -4,8 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { webProjectsBase } from '@/components/data/webProjectsBase';
-// import { BentoGrid, BentoGridItem } from "@/components/MadeByArsh/WebProjectsSectionContainerLayout";
+import { webProjectsBase } from '@/components/staticData/webProjectsBase';
 
 import { ArrowUpRight } from 'lucide-react';
 
@@ -28,16 +27,20 @@ const items = [
 	},
 	{
 		...webProjectsBase.qr,
-		css: 'md:rounded-bl-[25px] border-[1px] border-[var(--border-default)] border-b-0 md:border-b-[1px] md:border-r-0',
+		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-b-[1px] md:border-r-0',
 	},
 	{
 		...webProjectsBase.weather,
-		css: 'rounded-b-[25px] md:rounded-bl-[0px] border-[1px] border-[var(--border-default)]',
+		css: 'border-[1px] border-[var(--border-default)]',
 	},
 ];
 
 export const BentoGrid = ({ children }) => {
-	return <div className="grid md:grid-cols-2">{children}</div>;
+	return (
+		<>
+			<div className="grid md:grid-cols-2">{children}</div>
+		</>
+	);
 };
 
 export const BentoGridItem = ({ label, desc1, desc2, href, img, css }) => {
@@ -81,7 +84,7 @@ export const BentoGridItem = ({ label, desc1, desc2, href, img, css }) => {
 export function WebProjects() {
 	return (
 		<>
-			<div className="rounded-[25px] bg-[var(--surface)]">
+			<div>
 				<div className="rounded-t-[25px] border-[1px] border-b-0 border-[var(--border-default)] p-5 text-3xl font-black">
 					Web Projects
 				</div>

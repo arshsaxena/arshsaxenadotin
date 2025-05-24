@@ -1,23 +1,22 @@
-// templateData.js
 export const rawTemplateData = [
 	{
 		slug: 'simple-old-school',
 		name: 'Simple Old School',
 		screenshots: [
 			{
-				src: '/made-by-arsh/web-templates/simple-old-school/template-screenshot-1.png',
+				src: '/made-by-arsh/web-templates/simple-old-school/template-screenshot-1.webp',
 				caption: 'Home',
 			},
 			{
-				src: '/made-by-arsh/web-templates/simple-old-school/template-screenshot-2.png',
+				src: '/made-by-arsh/web-templates/simple-old-school/template-screenshot-2.webp',
 				caption: 'Gallery',
 			},
 			{
-				src: '/made-by-arsh/web-templates/simple-old-school/template-screenshot-3.png',
+				src: '/made-by-arsh/web-templates/simple-old-school/template-screenshot-3.webp',
 				caption: 'GitHub',
 			},
 			{
-				src: '/made-by-arsh/web-templates/simple-old-school/template-screenshot-4.png',
+				src: '/made-by-arsh/web-templates/simple-old-school/template-screenshot-4.webp',
 				caption: 'Error 404',
 			},
 		],
@@ -41,7 +40,7 @@ export const rawTemplateData = [
 		name: 'Apple Style Navigation Bar',
 		screenshots: [
 			{
-				src: '/made-by-arsh/web-templates/apple-style-navigation-bar/template-screenshot.png',
+				src: '/made-by-arsh/web-templates/apple-style-navigation-bar/template-screenshot.webp',
 				caption: 'Apple Style Navigation Bar',
 			},
 		],
@@ -62,7 +61,7 @@ export const rawTemplateData = [
 		name: 'Modern Footer',
 		screenshots: [
 			{
-				src: '/made-by-arsh/web-templates/modern-footer/template-screenshot.png',
+				src: '/made-by-arsh/web-templates/modern-footer/template-screenshot.webp',
 				caption: 'Modern Footer',
 			},
 		],
@@ -82,5 +81,5 @@ export const rawTemplateData = [
 
 export const templateData = rawTemplateData.map((item) => ({
 	...item,
-	href: `/made-by-arsh/templates/${item.slug}`, // ✅ safe
+	href: `/made-by-arsh/templates/${item.slug}`,
 }));

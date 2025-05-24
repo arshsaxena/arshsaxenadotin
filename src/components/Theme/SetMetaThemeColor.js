@@ -20,17 +20,14 @@ export default function SetThemeColor() {
 			}
 		};
 
-		// Run once on mount
 		updateThemeColor();
 
-		// Watch for changes in <html class="">
 		const observer = new MutationObserver(updateThemeColor);
 		observer.observe(document.documentElement, {
 			attributes: true,
 			attributeFilter: ['class'],
 		});
 
-		// Cleanup
 		return () => observer.disconnect();
 	}, []);
 

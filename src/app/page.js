@@ -4,6 +4,10 @@ import MadeByArshSection from '@/components/Home/MadeByArshSection';
 
 export const metadata = {
 	title: 'Arsh Saxena',
+	description:
+		'Hi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
+	authors: [{ name: 'Arsh Saxena', url: 'https://www.arshsaxena.in' }],
+	creator: 'Arsh Saxena',
 };
 
 export default function Home() {

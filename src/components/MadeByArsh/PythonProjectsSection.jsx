@@ -50,14 +50,14 @@ export const PythonProjects = ({ initialScroll = 0 }) => {
 			category: 'Game',
 			src: '/made-by-arsh/python-projects/snake.webp',
 			desc: 'Classic.',
-			href: 'https://github.com/arshsaxena/PythonGamesAndProjects/tree/main/Truck%20VS%20Car',
+			href: 'https://github.com/arshsaxena/PythonGamesAndProjects/tree/main/Snake',
 		},
 	];
 	const items = cardData.map((card, index) => (
 		<Card
 			key={card.title}
 			index={index}
-			layout={false} // or true if you use layout animations
+			layout={false}
 			card={{
 				...card,
 				desc: <p>{card.desc}</p>,

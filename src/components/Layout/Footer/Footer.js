@@ -5,9 +5,9 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { socialLinksBase } from '@/components/data/socialLinksBase';
+import { socialLinksBase } from '@/components/staticData/socialLinksBase';
 import SocialLink from './SocialLinks';
-import { webProjectsBase } from '@/components/data/webProjectsBase';
+import { webProjectsBase } from '@/components/staticData/webProjectsBase';
 import MadebyArshLink from './MadebyArshLinks';
 
 import ThemeToggle from '@/components/Theme/ThemeToggle';
@@ -45,9 +45,9 @@ export default function Footer() {
 			setYear(year);
 		};
 
-		showTime(); // Initial call
-		const interval = setInterval(showTime, 1000); // Update every second
-		return () => clearInterval(interval); // Cleanup
+		showTime(); 
+		const interval = setInterval(showTime, 1000); 
+		return () => clearInterval(interval);
 	}, []);
 
 	return (
@@ -76,10 +76,10 @@ export default function Footer() {
 							</div>
 						</div>
 
-						{/* Column 2 - Made By Arsh */}
+						{/* Column 2 - Made by Arsh */}
 						<div>
 							<h3 className="text-md mb-3 font-semibold">
-								Made By Arsh
+								Made by Arsh
 							</h3>
 							<div className="flex flex-col space-y-2 text-[var(--muted)]">
 								{[
@@ -139,21 +139,9 @@ export default function Footer() {
 										/>
 									),
 								)}
-								{/* <SocialLink href="https://linkedin.com/in/arshsaxena" src="/linkedin.webp" alt="LinkedIn" label="LinkedIn" />
-                                <SocialLink href="https://github.com/arshsaxena" src="/github.webp" alt="GitHub" label="GitHub" />
-                                <SocialLink href="https://instagram.com/arsh.saxena02" src="/instagram.webp" alt="Instagram" label="Instagram" />
-                                <SocialLink href="https://x.com/arshsaxena02" src="/x.webp" alt="X" label="X" />
-                                <SocialLink href="https://music.apple.com/in/playlist/arshs-favourites/pl.u-yZyVWPrCd3zXWGe" src="/apple-music.webp" alt="Apple Music" label="Apple Music" /> */}
 							</div>
 						</div>
 					</div>
-					{/* <div className='space-y-5 mt-10'>
-                        <ThemeToggle />
-                        <div className='flex flex-col md:flex-row justify-between space-y-5 md:space-y-0 pb-3 md:pb-5 border-b-[1px] border-b-[var(--border-default)]'>
-                            <div>{timeString}</div>
-                            <div>Copyright © {year} Arsh Saxena.</div>
-                        </div>
-                    </div> */}
 					<div className="mt-10 space-y-5">
 						<div className="flex flex-col justify-between space-y-5 border-b-[1px] border-b-[var(--border-default)] pb-3 md:flex-row md:space-y-0 md:pb-5">
 							<div>{timeString}</div>
@@ -178,9 +166,6 @@ export default function Footer() {
 							</div>
 						</div>
 					</div>
-					{/* <div className='pt-5 md:flex align-middle justify-center'>
-                        <span className='font-black'>Made with ❤️ in India</span>
-                    </div> */}
 				</div>
 			</div>
 		</>

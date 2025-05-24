@@ -1,10 +1,10 @@
-import { templateData } from '@/components/data/webTemplatesBase';
+import { templateData } from '@/components/staticData/webTemplatesBase';
 import TemplateContent from './TemplateContent';
 
 export function generateMetadata({ params }) {
 	const template = templateData.find((t) => t.slug === params.slug);
 	return {
-		title: `${template.name} | Made by Arsh | Arsh Saxena`
+		title: `${template.name} | Made by Arsh | Arsh Saxena`,
 	};
 }
 

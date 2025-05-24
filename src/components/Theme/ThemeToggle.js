@@ -3,12 +3,12 @@
 import { useEffect, useState } from 'react';
 
 export default function ThemeToggle() {
-	const [isMounted, setIsMounted] = useState(false); // ✅ prevents hydration mismatch
+	const [isMounted, setIsMounted] = useState(false); 
 	const [isDark, setIsDark] = useState(false);
 	const [currentTheme, setCurrentTheme] = useState('system');
 
 	useEffect(() => {
-		setIsMounted(true); // ✅ only render after mounting
+		setIsMounted(true); 
 
 		const storedTheme = localStorage.getItem('theme');
 		const systemPrefersDark = window.matchMedia(

@@ -50,12 +50,6 @@
 │   │   │   ├── truck-vs-car.webp
 │   │   │   └── typing-speed-calculator.webp
 │   │   ├── web-projects
-│   │   │   ├── aconverter-desktop.webp
-│   │   │   ├── aconverter-mobile.webp
-│   │   │   ├── aeducational-desktop.webp
-│   │   │   ├── aeducational-mobile.webp
-│   │   │   ├── colors-desktop.webp
-│   │   │   ├── colors-mobile.webp
 │   │   │   ├── icons
 │   │   │   │   ├── aconverter-app-icon.webp
 │   │   │   │   ├── aeducational-app-icon.webp
@@ -64,21 +58,48 @@
 │   │   │   │   ├── qr-icon.webp
 │   │   │   │   ├── solarsystem-icon.webp
 │   │   │   │   └── weather-icon.webp
-│   │   │   ├── qr-desktop.webp
-│   │   │   ├── qr-mobile.webp
-│   │   │   ├── solarsystem.webp
-│   │   │   ├── weather-desktop.webp
-│   │   │   └── weather-mobile.webp
+│   │   │   ├── imgs
+│   │   │   │   ├── aconverter-desktop.webp
+│   │   │   │   ├── aconverter-mobile.webp
+│   │   │   │   ├── aeducational-desktop.webp
+│   │   │   │   ├── aeducational-mobile.webp
+│   │   │   │   ├── colors-desktop.webp
+│   │   │   │   ├── colors-mobile.webp
+│   │   │   │   ├── qr-desktop.webp
+│   │   │   │   ├── qr-mobile.webp
+│   │   │   │   ├── solarsystem.webp
+│   │   │   │   ├── weather-desktop.webp
+│   │   │   │   └── weather-mobile.webp
+│   │   │   ├── ping-pong
+│   │   │   │   ├── index.html
+│   │   │   │   ├── script.js
+│   │   │   │   └── style.css
+│   │   │   ├── rock-paper-scissors
+│   │   │   │   ├── index.html
+│   │   │   │   ├── script.js
+│   │   │   │   └── style.css
+│   │   │   ├── snake
+│   │   │   │   ├── index.html
+│   │   │   │   ├── script.js
+│   │   │   │   └── style.css
+│   │   │   ├── stopwatch
+│   │   │   │   ├── index.html
+│   │   │   │   ├── script.js
+│   │   │   │   └── style.css
+│   │   │   └── tic-tac-toe
+│   │   │       ├── index.html
+│   │   │       ├── script.js
+│   │   │       └── style.css
 │   │   └── web-templates
 │   │       ├── apple-style-navigation-bar
-│   │       │   └── template-screenshot.png
+│   │       │   └── template-screenshot.webp
 │   │       ├── modern-footer
-│   │       │   └── template-screenshot.png
+│   │       │   └── template-screenshot.webp
 │   │       └── simple-old-school
-│   │           ├── template-screenshot-1.png
-│   │           ├── template-screenshot-2.png
-│   │           ├── template-screenshot-3.png
-│   │           └── template-screenshot-4.png
+│   │           ├── template-screenshot-1.webp
+│   │           ├── template-screenshot-2.webp
+│   │           ├── template-screenshot-3.webp
+│   │           └── template-screenshot-4.webp
 │   └── social
 │       ├── apple-music.webp
 │       ├── github.webp
@@ -95,10 +116,13 @@
 │   │   ├── layout.js
 │   │   ├── made-by-arsh
 │   │   │   ├── page.js
-│   │   │   └── templates
+│   │   │   ├── templates
+│   │   │   │   └── [slug]
+│   │   │   │       ├── page.js
+│   │   │   │       └── TemplateContent.js
+│   │   │   └── web-projects
 │   │   │       └── [slug]
-│   │   │           ├── page.js
-│   │   │           └── TemplateContent.js
+│   │   │           └── page.js
 │   │   ├── not-found.js
 │   │   └── page.js
 │   ├── assets
@@ -127,8 +151,7 @@
 │   │   │   ├── TextSection.jsx
 │   │   │   └── TimelineSection.jsx
 │   │   ├── Common
-│   │   │   ├── AnimateBackground.jsx
-│   │   │   └── PageTransitionWrapper.jsx
+│   │   │   └── AnimateBackground.jsx
 │   │   ├── Connect
 │   │   │   ├── Form.jsx
 │   │   │   ├── FormInputs.jsx
@@ -153,12 +176,12 @@
 │   │   │       └── NavbarLinks.js
 │   │   ├── MadeByArsh
 │   │   │   ├── PythonProjectsSection.jsx
+│   │   │   ├── WebMiniProjectsSection.jsx
 │   │   │   ├── WebProjectsSection.jsx
 │   │   │   └── WebTemplatesSection.jsx
-│   │   ├── Theme
-│   │   │   ├── SetMetaThemeColor.js
-│   │   │   └── ThemeToggle.js
-│   │   └── ui
+│   │   └── Theme
+│   │       ├── SetMetaThemeColor.js
+│   │       └── ThemeToggle.js
 │   ├── hooks
 │   │   └── useOutsideClick.jsx
 │   ├── lib
@@ -168,4 +191,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-41 directories, 128 files
+48 directories, 144 files

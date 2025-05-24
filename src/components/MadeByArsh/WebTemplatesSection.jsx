@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
-import { templateData } from '@/components/data/webTemplatesBase';
+import { templateData } from '@/components/staticData/webTemplatesBase';
 
 export const BentoGrid = ({ children }) => (
 	<div className="grid md:grid-cols-2">{children}</div>
@@ -30,7 +30,7 @@ const Slideshow = ({ screenshots }) => {
 				height={600}
 				className="h-auto w-full rounded-[15px] border-[1px] border-[var(--border-default)] object-cover"
 			/>
-			<div className="absolute bottom-2 left-2 rounded bg-black bg-opacity-50 px-2 py-1 text-xs text-white">
+			<div className="absolute bottom-2 left-2 rounded-full bg-black bg-opacity-50 px-2 py-1 text-xs text-white">
 				{caption}
 			</div>
 			{screenshots.length > 1 && (
@@ -81,6 +81,8 @@ export const BentoGridItem = ({
 			<div className="w-fit">
 				<Link
 					href={href}
+					target="_blank"
+					rel="noopener noreferrer"
 					className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 text-[#f5f5f7] hover:bg-[var(--accent)]"
 				>
 					<span className="text-sm md:text-[15px]">Check Out</span>

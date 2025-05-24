@@ -35,7 +35,6 @@ export default function AnimatedBackground() {
 			attributeFilter: ['class'],
 		});
 
-		// After 5s, capture canvas and overlay as static image
 		const timeout = setTimeout(() => {
 			const canvas = wrapperRef.current?.querySelector('canvas');
 			if (canvas) {

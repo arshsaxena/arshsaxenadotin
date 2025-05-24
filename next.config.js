@@ -3,7 +3,6 @@ const nextConfig = {
 	output: 'export',
 };
 
-// next.config.js
 module.exports = {
 	images: {
 		unoptimized: true,

@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 import { ChevronDown, ChevronUp, UserRound, Code, Mail } from 'lucide-react';
 

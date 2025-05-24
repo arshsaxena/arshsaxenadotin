@@ -22,7 +22,7 @@ const Slideshow = ({ screenshots }) => {
 				height={600}
 				className="h-auto w-full rounded-[15px] border-[1px] border-[var(--border-default)] object-cover"
 			/>
-			<div className="absolute bottom-2 left-2 rounded bg-black bg-opacity-50 px-2 py-1 text-xs text-white">
+			<div className="absolute bottom-2 left-2 rounded-full bg-black bg-opacity-50 px-2 py-1 text-xs text-white">
 				{caption}
 			</div>
 			{screenshots.length > 1 && (

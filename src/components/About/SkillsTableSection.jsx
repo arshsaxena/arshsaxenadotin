@@ -19,12 +19,11 @@ import MysqlIcon from '@/assets/about/skills/mysql.svg';
 import MarkdownIcon from '@/assets/about/skills/markdown.svg';
 import GitIcon from '@/assets/about/skills/git.svg';
 
-// Helper function to chunk an array into rows
 function chunkArray(array, size) {
 	if (!Array.isArray(array)) return [];
 	const result = [];
 	for (let i = 0; i < array.length; i += size) {
-		result.push(array.slice(i, i + size)); // small fix here too
+		result.push(array.slice(i, i + size));
 	}
 	return result;
 }
@@ -142,7 +141,6 @@ export default function SkillsTable() {
 								{row.map((skill, cellIndex) => (
 									<td
 										key={cellIndex}
-										// className={`border-[1px] border-[var(--border-default)] p-2 py-5 ${skill.css}`}
 										className={`border-[1px] border-[var(--border-default)] p-2 py-5 transition-all duration-300 ${skill.css} cursor-pointer`}
 									>
 										<div className="flex items-center justify-center text-[15px]">

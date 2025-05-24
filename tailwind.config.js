@@ -21,7 +21,7 @@ module.exports = {
 				sm: 'calc(var(--radius) - 4px)',
 			},
 			colors: {
-				...colors, // optional, for full Tailwind color palette
+				...colors,
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				card: {

@@ -181,7 +181,6 @@ const AnimatedImgsSection = ({ autoplay = false }) => {
 					</div>
 				</div>
 
-				{/* ✅ Memoized text – will NOT re-render on arrow clicks */}
 				<ProfileText onPrev={handlePrev} onNext={handleNext} />
 			</div>
 		</div>

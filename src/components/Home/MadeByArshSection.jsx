@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { webProjectsBase } from '@/components/data/webProjectsBase';
+import { webProjectsBase } from '@/components/staticData/webProjectsBase';
 
 import { ChevronRight, ArrowUpRight } from 'lucide-react';
 
@@ -9,22 +9,22 @@ const iconMap = { ChevronRight, ArrowUpRight };
 
 export default function MadeByArshSection() {
 	const items = [
-		{
-			href: '/',
-			label: 'Arsh Saxena',
-			tagLine: 'Official app.',
-			icon: '/made-by-arsh/web-projects/icons/arshsaxena-app-icon.webp',
-			buttonLabel: 'Coming Soon',
-			// buttonIcon: 'ChevronRight',
-			containerCss:
-				'pb-5 border-b-[1px] border-b-[var(--border-default)]',
-		},
+		// {
+		// 	href: '/',
+		// 	label: 'Arsh Saxena',
+		// 	tagLine: 'Official app.',
+		// 	icon: '/made-by-arsh/web-projects/icons/arshsaxena-app-icon.webp',
+		// 	buttonLabel: 'Coming Soon',
+		// 	// buttonIcon: 'ChevronRight',
+		// 	containerCss:
+		// 		'pb-5 border-b-[1px] border-b-[var(--border-default)]',
+		// },
 		{
 			...webProjectsBase.aeducational,
 			buttonLabel: 'Check Out',
 			buttonIcon: 'ArrowUpRight',
 			containerCss:
-				'py-5 border-b-[1px] border-b-[var(--border-default)]',
+				'pb-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
 		{
 			...webProjectsBase.aconverter,

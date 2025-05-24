@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 
 import Text from '@/components/About/TextSection';
 import SkillsTable from '@/components/About/SkillsTableSection';
