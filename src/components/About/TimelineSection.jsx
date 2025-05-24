@@ -29,7 +29,7 @@ const Timeline = () => {
 			textContentCss: '',
 			imgContent: ['/about/timeline/centralacademy.webp'],
 			imgWrapperCss: 'grid grid-cols-1 gap-4',
-			imgContentCss: '',
+			imgContentCss: 'h-1/2 md:h-full',
 			css: 'pt-20 md:pt-40',
 		},
 	];
