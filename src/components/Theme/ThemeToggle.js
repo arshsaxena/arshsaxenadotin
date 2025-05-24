@@ -3,12 +3,12 @@
 import { useEffect, useState } from 'react';
 
 export default function ThemeToggle() {
-	const [isMounted, setIsMounted] = useState(false); 
+	const [isMounted, setIsMounted] = useState(false);
 	const [isDark, setIsDark] = useState(false);
 	const [currentTheme, setCurrentTheme] = useState('system');
 
 	useEffect(() => {
-		setIsMounted(true); 
+		setIsMounted(true);
 
 		const storedTheme = localStorage.getItem('theme');
 		const systemPrefersDark = window.matchMedia(

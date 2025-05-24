@@ -45,8 +45,8 @@ export default function Footer() {
 			setYear(year);
 		};
 
-		showTime(); 
-		const interval = setInterval(showTime, 1000); 
+		showTime();
+		const interval = setInterval(showTime, 1000);
 		return () => clearInterval(interval);
 	}, []);
 
