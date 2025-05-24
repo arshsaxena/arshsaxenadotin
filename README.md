@@ -5,7 +5,7 @@
 </p>
 
 <p>
-  <img src="https://raw.githubusercontent.com/arshsaxena/arshsaxena.github.io/main/gh-readme/screenshot.png" alt="www.arshsaxena.in" />
+  <img src="https://raw.githubusercontent.com/arshsaxena/arshsaxenadotin/main/gh-readme/screenshot.png" alt="www.arshsaxena.in" />
 </p>
 
 <p>
