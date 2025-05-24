@@ -28,6 +28,29 @@ export const metadata = {
             ],
         },
     },
+    openGraph: {
+        title: 'Arsh Saxena',
+        description: 'Hi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
+        url: 'https://www.arshsaxena.in',
+        siteName: 'Arsh Saxena',
+        images: [
+            {
+                url: 'https://raw.githubusercontent.com/arshsaxena/arshsaxenadotin/refs/heads/main/gh-readme/screenshot.png',
+                width: 1200,
+                height: 630,
+                alt: 'www.arshsaxena.in',
+            },
+        ],
+        locale: 'en_US',
+        type: 'website',
+    },
+    twitter: {
+    card: 'summary_large_image',
+    title: 'Arsh Saxena',
+    description: 'EHi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
+    images: ['https://raw.githubusercontent.com/arshsaxena/arshsaxenadotin/refs/heads/main/gh-readme/screenshot.png'],
+    creator: '@arshsaxena02',
+  },
 };
 
 export default function RootLayout({ children }) {
