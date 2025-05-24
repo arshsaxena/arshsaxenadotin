@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
             <head>
                 {/* Open Graph */}
                 <meta property="og:title" content="Arsh Saxena" />
-                <meta property="og:description" content="BHi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!" />
+                <meta property="og:description" content="Hi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!" />
                 <meta property="og:image" content="https://raw.githubusercontent.com/arshsaxena/arshsaxenadotin/refs/heads/main/gh-readme/screenshot.png" />
                 <meta property="og:url" content="https://www.arshsaxena.in" />
                 <meta property="og:type" content="website" />
@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Arsh Saxena" />
-                <meta name="twitter:description" content="BHi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!" />
+                <meta name="twitter:description" content="Hi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!" />
                 <meta name="twitter:image" content="https://raw.githubusercontent.com/arshsaxena/arshsaxenadotin/refs/heads/main/gh-readme/screenshot.png" />
 
                 <meta
