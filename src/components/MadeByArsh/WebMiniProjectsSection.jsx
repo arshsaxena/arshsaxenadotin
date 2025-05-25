@@ -6,27 +6,27 @@ const rawMiniProjects = [
 	{
 		slug: 'tic-tac-toe',
 		name: 'Tic-Tac-Toe',
-		css: 'pt-0',
+		css: 'pt-0 border-b-[1px] border-[var(--border-default)]',
 	},
 	{
 		slug: 'snake',
 		name: 'Snake',
-		css: '',
+		css: 'border-b-[1px] border-[var(--border-default)]',
 	},
 	{
 		slug: 'ping-pong',
 		name: 'Ping-Pong',
-		css: '',
+		css: 'border-b-[1px] border-[var(--border-default)]',
 	},
 	{
 		slug: 'rock-paper-scissors',
 		name: 'Rock Paper Scissors',
-		css: '',
+		css: 'border-b-[1px] border-[var(--border-default)]',
 	},
 	{
 		slug: 'stopwatch',
 		name: 'Stopwatch',
-		css: 'pb-0 border-b-[0]',
+		css: 'pb-0',
 	},
 ];
 
@@ -44,7 +44,7 @@ export const WebMiniProjects = () => {
 			{miniProjects.map((project) => (
 				<div
 					key={project.slug}
-					className={`flex flex-col justify-between border-b-[1px] border-[var(--border-default)] py-5 sm:flex-row ${project.css}`}
+					className={`flex flex-col justify-between py-5 sm:flex-row ${project.css}`}
 				>
 					<div className="text-2xl font-bold">{project.name}</div>
 					<div className="mt-2 flex items-center sm:mt-0">
