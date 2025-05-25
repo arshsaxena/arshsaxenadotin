@@ -26,7 +26,7 @@ const rawMiniProjects = [
 	{
 		slug: 'stopwatch',
 		name: 'Stopwatch',
-		css: 'pb-0 border-b-[0px]',
+		css: 'pb-0 border-b-[0]',
 	},
 ];
 
@@ -38,6 +38,9 @@ export const miniProjects = rawMiniProjects.map((item) => ({
 export const WebMiniProjects = () => {
 	return (
 		<div className="rounded-b-[25px] border-[1px] border-t-0 border-[var(--border-default)] p-5">
+            <div className="mb-5 text-xs italic md:text-sm">
+				The following projects are best experienced on a desktop. They may not work properly on smaller screens. For the best experience, please switch to desktop mode.
+			</div>
 			{miniProjects.map((project) => (
 				<div
 					key={project.slug}
@@ -61,11 +64,6 @@ export const WebMiniProjects = () => {
 					</div>
 				</div>
 			))}
-			<div className="mt-5 text-xs italic md:text-sm">
-				These projects are best experienced on a desktop. They may not
-				work properly on smaller screens. For the best experience,
-				please switch to Desktop Mode.
-			</div>
 		</div>
 	);
 };
