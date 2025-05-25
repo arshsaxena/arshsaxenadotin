@@ -9,13 +9,14 @@ const rawMiniProjects = [
 		css: 'pt-0 border-b-[1px] border-[var(--border-default)]',
 	},
 	{
-		slug: 'snake',
-		name: 'Snake',
+		slug: 'ping-pong',
+		name: 'Ping-Pong',
+
 		css: 'border-b-[1px] border-[var(--border-default)]',
 	},
 	{
-		slug: 'ping-pong',
-		name: 'Ping-Pong',
+		slug: 'stopwatch',
+		name: 'Stopwatch',
 		css: 'border-b-[1px] border-[var(--border-default)]',
 	},
 	{
@@ -24,8 +25,8 @@ const rawMiniProjects = [
 		css: 'border-b-[1px] border-[var(--border-default)]',
 	},
 	{
-		slug: 'stopwatch',
-		name: 'Stopwatch',
+		slug: 'snake',
+		name: 'Snake',
 		css: 'pb-0',
 	},
 ];
@@ -38,8 +39,10 @@ export const miniProjects = rawMiniProjects.map((item) => ({
 export const WebMiniProjects = () => {
 	return (
 		<div className="rounded-b-[25px] border-[1px] border-t-0 border-[var(--border-default)] p-5">
-            <div className="mb-5 text-xs italic md:text-sm">
-				The following projects are best experienced on a desktop. They may not work properly on smaller screens. For the best experience, please switch to desktop mode.
+			<div className="mb-5 text-xs italic md:text-sm">
+				The following projects are best experienced on a desktop. They
+				may not work properly on smaller screens. For the best
+				experience, please switch to desktop mode.
 			</div>
 			{miniProjects.map((project) => (
 				<div
