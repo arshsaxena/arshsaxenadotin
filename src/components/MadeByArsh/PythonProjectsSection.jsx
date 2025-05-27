@@ -98,7 +98,9 @@ export const PythonProjects = ({ initialScroll = 0 }) => {
 
 	return (
 		<div className="relative w-full py-5">
-			<div className="px-5 text-3xl font-black">Python Projects</div>
+			<div className="border-b-[1px] border-[var(--border-default)] px-5 pb-5 text-3xl font-black">
+				Python Projects
+			</div>
 			<div className="p-5 pb-7 text-[var(--foreground)]">
 				<div className="text-xs italic md:text-sm">
 					To run any of the Python projects, just download them, open
