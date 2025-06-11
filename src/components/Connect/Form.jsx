@@ -8,7 +8,7 @@ import { Label } from '@/components/Connect/FormLabels';
 import { Input } from '@/components/Connect/FormInputs';
 import { cn } from '@/lib/utils';
 
-import { socialLinksBase } from '@/components/staticData/socialLinksBase';
+import { socialLinksBase } from '@/data/socialLinksBase';
 
 import { SendHorizontal } from 'lucide-react';
 

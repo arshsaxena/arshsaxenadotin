@@ -4,11 +4,15 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { webProjectsBase } from '@/components/staticData/webProjectsBase';
+import { webProjectsBase } from '@/data/webProjectsBase';
 
 import { ArrowUpRight } from 'lucide-react';
 
 const items = [
+	{
+		...webProjectsBase.vitcfacultyinfo,
+		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
+	},
 	{
 		...webProjectsBase.aeducational,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',

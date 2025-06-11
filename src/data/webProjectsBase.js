@@ -1,4 +1,13 @@
 export const webProjectsBase = {
+	vitcfacultyinfo: {
+		label: 'VIT Chennai Faculty Information',
+		tagLine: 'Search and filter VIT Chennai faculty.',
+		desc1: 'Easily browse and search for faculty members at VIT Chennai.',
+		desc2: 'Find comprehensive details quickly about the faculty members using smart filters and keyword search.',
+		href: 'https://vitcfacultyinfo.arshsaxena.in/',
+		icon: '/made-by-arsh/web-projects/icons/vitcfacultyinfo-icon.webp',
+		img: '/made-by-arsh/web-projects/imgs/vitcfacultyinfo.webp',
+	},
 	aeducational: {
 		label: 'aEducational',
 		tagLine: 'Free English writing resources.',

@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
-import { templateData } from '@/components/staticData/webTemplatesBase';
+import { templateData } from '@/data/webTemplatesBase';
 
 export const BentoGrid = ({ children }) => (
 	<div className="grid md:grid-cols-2">{children}</div>

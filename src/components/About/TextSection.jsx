@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { socialLinksBase } from '@/components/staticData/socialLinksBase';
+import { socialLinksBase } from '@/data/socialLinksBase';
 
 export default function TextSection() {
 	return (

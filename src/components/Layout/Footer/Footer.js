@@ -5,9 +5,9 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { socialLinksBase } from '@/components/staticData/socialLinksBase';
+import { socialLinksBase } from '@/data/socialLinksBase';
 import SocialLink from './SocialLinks';
-import { webProjectsBase } from '@/components/staticData/webProjectsBase';
+import { webProjectsBase } from '@/data/webProjectsBase';
 import MadebyArshLink from './MadebyArshLinks';
 
 import ThemeToggle from '@/components/Theme/ThemeToggle';
@@ -83,6 +83,10 @@ export default function Footer() {
 							</h3>
 							<div className="flex flex-col space-y-2 text-[var(--muted)]">
 								{[
+									{
+										...webProjectsBase.vitcfacultyinfo,
+										target: '_blank',
+									},
 									{
 										...webProjectsBase.aeducational,
 										target: '_blank',

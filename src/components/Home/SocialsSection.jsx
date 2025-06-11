@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { socialLinksBase } from '@/components/staticData/socialLinksBase';
+import { socialLinksBase } from '@/data/socialLinksBase';
 
 export default function SocialsSection() {
 	return (

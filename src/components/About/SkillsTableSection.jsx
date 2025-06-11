@@ -2,17 +2,18 @@
 
 import { useEffect, useState } from 'react';
 
-import PythonIcon from '@/assets/about/skills/python.svg';
 import CppIcon from '@/assets/about/skills/cpp.svg';
-import JavaIcon from '@/assets/about/skills/java.svg';
-import JavascriptIcon from '@/assets/about/skills/javascript.svg';
-import ReactIcon from '@/assets/about/skills/react.svg';
+import PythonIcon from '@/assets/about/skills/python.svg';
 import NextjsIcon from '@/assets/about/skills/nextjs.svg';
-import FlaskIcon from '@/assets/about/skills/flask.svg';
+import TailwindcssIcon from '@/assets/about/skills/tailwindcss.svg';
+import JavascriptIcon from '@/assets/about/skills/javascript.svg';
+import JavaIcon from '@/assets/about/skills/java.svg';
+import ReactIcon from '@/assets/about/skills/react.svg';
+import VercelIcon from '@/assets/about/skills/vercel.svg';
 import HtmlIcon from '@/assets/about/skills/html.svg';
 import CssIcon from '@/assets/about/skills/css.svg';
+import FlaskIcon from '@/assets/about/skills/flask.svg';
 import JqueryIcon from '@/assets/about/skills/jquery.svg';
-import TailwindcssIcon from '@/assets/about/skills/tailwindcss.svg';
 import BootstrapIcon from '@/assets/about/skills/bootstrap.svg';
 import PhpIcon from '@/assets/about/skills/php.svg';
 import MysqlIcon from '@/assets/about/skills/mysql.svg';
@@ -63,6 +64,11 @@ const skills = [
 		label: 'React',
 		icon: ReactIcon,
 		css: 'hover:bg-[#00d8ff] hover:text-[#0a0a0a]',
+	},
+	{
+		label: 'Vercel',
+		icon: VercelIcon,
+		css: 'hover:bg-[#000000] hover:text-[#f5f5f7]',
 	},
 	{
 		label: 'HTML',

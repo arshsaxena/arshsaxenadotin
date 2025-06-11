@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { webProjectsBase } from '@/components/staticData/webProjectsBase';
+import { webProjectsBase } from '@/data/webProjectsBase';
 
 import { ChevronRight, ArrowUpRight } from 'lucide-react';
 
@@ -20,11 +20,18 @@ export default function MadeByArshSection() {
 		// 		'pb-5 border-b-[1px] border-b-[var(--border-default)]',
 		// },
 		{
-			...webProjectsBase.aeducational,
+			...webProjectsBase.vitcfacultyinfo,
 			buttonLabel: 'Check Out',
 			buttonIcon: 'ArrowUpRight',
 			containerCss:
 				'pb-5 border-b-[1px] border-b-[var(--border-default)]',
+		},
+		{
+			...webProjectsBase.aeducational,
+			buttonLabel: 'Check Out',
+			buttonIcon: 'ArrowUpRight',
+			containerCss:
+				'py-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
 		{
 			...webProjectsBase.aconverter,

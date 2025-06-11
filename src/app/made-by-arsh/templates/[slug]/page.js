@@ -1,4 +1,4 @@
-import { templateData } from '@/components/staticData/webTemplatesBase';
+import { templateData } from '@/data/webTemplatesBase';
 import TemplateContent from './TemplateContent';
 
 export function generateMetadata({ params }) {
