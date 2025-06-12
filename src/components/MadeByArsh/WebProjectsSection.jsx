@@ -15,7 +15,7 @@ const items = [
 	},
 	{
 		...webProjectsBase.vitcfacultyinfo,
-		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
+		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
 	{
 		...webProjectsBase.aeducational,
