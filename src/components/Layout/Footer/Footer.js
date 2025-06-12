@@ -83,34 +83,7 @@ export default function Footer() {
 							</h3>
 							<div className="flex flex-col space-y-2 text-[var(--muted)]">
 								{[
-									{
-										...webProjectsBase.vitcfacultyinfo,
-										target: '_blank',
-									},
-									{
-										...webProjectsBase.aeducational,
-										target: '_blank',
-									},
-									{
-										...webProjectsBase.aconverter,
-										target: '_blank',
-									},
-									{
-										...webProjectsBase.solarsystem,
-										target: '_blank',
-									},
-									{
-										...webProjectsBase.colors,
-										target: '_blank',
-									},
-									{
-										...webProjectsBase.qr,
-										target: '_blank',
-									},
-									{
-										...webProjectsBase.weather,
-										target: '_blank',
-									},
+									...Object.values(webProjectsBase),
 									{
 										href: '/made-by-arsh/#templates',
 										label: 'Templates',

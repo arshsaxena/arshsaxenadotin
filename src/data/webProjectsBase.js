@@ -1,4 +1,14 @@
 export const webProjectsBase = {
+	nptelcompanion: {
+		label: 'NPTEL Companion',
+		tagLine: 'Free, exam-ready NPTEL practice.',
+		desc1: 'Free, exam-ready NPTEL practice.',
+		desc2: 'Prepare with weekly and full-length quizzes from real NPTEL courses. Designed for efficient revision and last-minute prep.',
+		href: 'https://nptelcompanion.arshsaxena.in/',
+		icon: '/made-by-arsh/web-projects/icons/nptelcompanion-icon.webp',
+		img: '/made-by-arsh/web-projects/imgs/nptelcompanion.webp',
+		target: '_blank',
+	},
 	vitcfacultyinfo: {
 		label: 'VIT Chennai Faculty Information',
 		tagLine: 'Search and filter VIT Chennai faculty.',
@@ -7,6 +17,7 @@ export const webProjectsBase = {
 		href: 'https://vitcfacultyinfo.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/vitcfacultyinfo-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/vitcfacultyinfo.webp',
+		target: '_blank',
 	},
 	aeducational: {
 		label: 'aEducational',
@@ -16,6 +27,7 @@ export const webProjectsBase = {
 		href: 'https://education.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/aeducational-app-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/aeducational-desktop.webp',
+		target: '_blank',
 	},
 	aconverter: {
 		label: 'aConverter',
@@ -25,6 +37,7 @@ export const webProjectsBase = {
 		href: 'https://converter.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/aconverter-app-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/aconverter-desktop.webp',
+		target: '_blank',
 	},
 	solarsystem: {
 		label: 'Solar System',
@@ -34,6 +47,7 @@ export const webProjectsBase = {
 		href: 'https://solarsystem.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/solarsystem-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/solarsystem.webp',
+		target: '_blank',
 	},
 	colors: {
 		label: 'Colors',
@@ -43,6 +57,7 @@ export const webProjectsBase = {
 		href: 'https://colors.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/colors-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/colors-desktop.webp',
+		target: '_blank',
 	},
 	qr: {
 		label: 'QR Code Generator',
@@ -52,6 +67,7 @@ export const webProjectsBase = {
 		href: 'https://qr.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/qr-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/qr-desktop.webp',
+		target: '_blank',
 	},
 	weather: {
 		label: 'Weather',
@@ -61,5 +77,6 @@ export const webProjectsBase = {
 		href: 'https://weather.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/weather-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/weather-desktop.webp',
+		target: '_blank',
 	},
 };

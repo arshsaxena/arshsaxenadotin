@@ -5,6 +5,7 @@
 ├── gh-readme
 │   └── screenshot.png
 ├── jsconfig.json
+├── LICENSE
 ├── next-sitemap.config.js
 ├── next.config.js
 ├── package-lock.json
@@ -58,8 +59,10 @@
 │   │   │   │   ├── aeducational-app-icon.webp
 │   │   │   │   ├── arshsaxena-app-icon.webp
 │   │   │   │   ├── colors-icon.webp
+│   │   │   │   ├── nptelcompanion-icon.webp
 │   │   │   │   ├── qr-icon.webp
 │   │   │   │   ├── solarsystem-icon.webp
+│   │   │   │   ├── vitcfacultyinfo-icon.webp
 │   │   │   │   └── weather-icon.webp
 │   │   │   ├── imgs
 │   │   │   │   ├── aconverter-desktop.webp
@@ -68,9 +71,11 @@
 │   │   │   │   ├── aeducational-mobile.webp
 │   │   │   │   ├── colors-desktop.webp
 │   │   │   │   ├── colors-mobile.webp
+│   │   │   │   ├── nptelcompanion.webp
 │   │   │   │   ├── qr-desktop.webp
 │   │   │   │   ├── qr-mobile.webp
 │   │   │   │   ├── solarsystem.webp
+│   │   │   │   ├── vitcfacultyinfo.webp
 │   │   │   │   ├── weather-desktop.webp
 │   │   │   │   └── weather-mobile.webp
 │   │   │   ├── ping-pong
@@ -150,7 +155,8 @@
 │   │           ├── php.svg
 │   │           ├── python.svg
 │   │           ├── react.svg
-│   │           └── tailwindcss.svg
+│   │           ├── tailwindcss.svg
+│   │           └── vercel.svg
 │   ├── components
 │   │   ├── About
 │   │   │   ├── SkillsTableSection.jsx
@@ -181,13 +187,13 @@
 │   │   │   ├── WebMiniProjectsSection.jsx
 │   │   │   ├── WebProjectsSection.jsx
 │   │   │   └── WebTemplatesSection.jsx
-│   │   ├── staticData
-│   │   │   ├── socialLinksBase.js
-│   │   │   ├── webProjectsBase.js
-│   │   │   └── webTemplatesBase.js
 │   │   └── Theme
 │   │       ├── SetMetaThemeColor.js
 │   │       └── ThemeToggle.js
+│   ├── data
+│   │   ├── socialLinksBase.js
+│   │   ├── webProjectsBase.js
+│   │   └── webTemplatesBase.js
 │   ├── hooks
 │   │   └── useOutsideClick.jsx
 │   ├── lib
@@ -197,4 +203,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-49 directories, 149 files
+49 directories, 155 files
