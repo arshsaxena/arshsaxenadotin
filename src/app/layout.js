@@ -36,7 +36,7 @@ export const metadata = {
 		siteName: 'Arsh Saxena',
 		images: [
 			{
-				url: 'https://raw.githubusercontent.com/arshsaxena/arshsaxenadotin/refs/heads/main/gh-readme/screenshot.png',
+				url: 'https://raw.githubusercontent.com/arshsaxena/arshsaxenadotin/main/gh-readme/screenshot.png',
 				width: 1200,
 				height: 630,
 				alt: 'www.arshsaxena.in',
@@ -51,7 +51,7 @@ export const metadata = {
 		description:
 			'Hi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
 		images: [
-			'https://raw.githubusercontent.com/arshsaxena/arshsaxenadotin/refs/heads/main/gh-readme/screenshot.png',
+			'https://raw.githubusercontent.com/arshsaxena/arshsaxenadotin/main/gh-readme/screenshot.png',
 		],
 		creator: '@arshsaxena02',
 	},
