@@ -23,7 +23,7 @@ export default function Navbar() {
 
 					{/* Mobile toggle */}
 					<button
-						className="rounded-full bg-[var(--main)] p-[0.5px] text-[#f5f5f7] md:hidden"
+						className="rounded-full border border-[var(--accent)] bg-[var(--main)] p-[0.5px] text-[#f5f5f7] md:hidden"
 						onClick={() => setIsOpen(!isOpen)}
 					>
 						{isOpen ? (

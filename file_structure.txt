@@ -109,6 +109,7 @@
 │   │           ├── template-screenshot-3.webp
 │   │           └── template-screenshot-4.webp
 │   ├── robots.txt
+│   ├── screenshot.png
 │   ├── sitemap-0.xml
 │   ├── sitemap.xml
 │   └── social
@@ -203,4 +204,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-49 directories, 155 files
+49 directories, 156 files
