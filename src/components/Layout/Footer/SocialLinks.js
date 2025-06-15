@@ -9,7 +9,6 @@ export default function SocialLink({ href, src, alt, label }) {
 			href={href}
 			className="flex items-center hover:text-[var(--accent)]"
 			target="_blank"
-			rel="noopener noreferrer"
 		>
 			<Image
 				src={src}

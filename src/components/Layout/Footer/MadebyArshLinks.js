@@ -9,7 +9,6 @@ export default function SocialLink({ href, label, target }) {
 				href={href}
 				className="flex w-fit items-center hover:text-[var(--accent)]"
 				target={target}
-				rel="noopener noreferrer"
 			>
 				<span>{label}</span>
 			</Link>

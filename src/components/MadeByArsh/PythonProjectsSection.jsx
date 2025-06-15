@@ -188,7 +188,6 @@ export const Card = ({ card }) => {
 					<Link
 						href={card.href}
 						target="_blank"
-						rel="noopener noreferrer"
 						className="flex w-fit items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-2 text-center text-[#f5f5f7] hover:bg-[var(--accent)]"
 					>
 						<span className="">Get Now</span>

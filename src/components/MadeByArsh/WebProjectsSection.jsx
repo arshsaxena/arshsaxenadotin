@@ -76,7 +76,6 @@ export const BentoGridItem = ({ label, desc1, desc2, href, img, css }) => {
 				<Link
 					href={href}
 					target="_blank"
-					rel="noopener noreferrer"
 					className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 text-center text-[#f5f5f7] hover:bg-[var(--accent)]"
 				>
 					<span className="text-sm md:text-[15px]">Check Out</span>

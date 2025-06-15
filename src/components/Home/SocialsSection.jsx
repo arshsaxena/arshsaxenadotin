@@ -21,7 +21,6 @@ export default function SocialsSection() {
 							key={i}
 							href={item.href}
 							target="_blank"
-							rel="noopener noreferrer"
 						>
 							<Image
 								src={item.icon}
