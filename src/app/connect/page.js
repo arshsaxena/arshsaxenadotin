@@ -4,6 +4,8 @@ import ConnectForm from '@/components/Connect/Form';
 
 export const metadata = {
 	title: 'Connect | Arsh Saxena',
+	description:
+		'Connect | Fill this form to connect with Arsh. | Hi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
 };
 
 export default function Connect() {

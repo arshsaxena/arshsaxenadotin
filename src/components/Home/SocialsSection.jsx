@@ -17,11 +17,7 @@ export default function SocialsSection() {
 						socialLinksBase.instagram,
 						socialLinksBase.x,
 					].map((item, i) => (
-						<Link
-							key={i}
-							href={item.href}
-							target="_blank"
-						>
+						<Link key={i} href={item.href} target="_blank">
 							<Image
 								src={item.icon}
 								width={40}
