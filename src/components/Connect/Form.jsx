@@ -54,7 +54,7 @@ export default function SignupFormDemo() {
 			label: 'Subject',
 			placeholder: 'Greetings',
 			type: 'text',
-			required: false,
+			required: true,
 		},
 		{
 			id: 'entry.1741632373',
