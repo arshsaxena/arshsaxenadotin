@@ -66,18 +66,13 @@
 │   │   │   │   └── weather-icon.webp
 │   │   │   ├── imgs
 │   │   │   │   ├── aconverter-desktop.webp
-│   │   │   │   ├── aconverter-mobile.webp
 │   │   │   │   ├── aeducational-desktop.webp
-│   │   │   │   ├── aeducational-mobile.webp
 │   │   │   │   ├── colors-desktop.webp
-│   │   │   │   ├── colors-mobile.webp
 │   │   │   │   ├── nptelcompanion.webp
 │   │   │   │   ├── qr-desktop.webp
-│   │   │   │   ├── qr-mobile.webp
 │   │   │   │   ├── solarsystem.webp
 │   │   │   │   ├── vitcfacultyinfo.webp
-│   │   │   │   ├── weather-desktop.webp
-│   │   │   │   └── weather-mobile.webp
+│   │   │   │   └── weather-desktop.webp
 │   │   │   ├── ping-pong
 │   │   │   │   ├── index.html
 │   │   │   │   ├── script.js
@@ -204,4 +199,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-49 directories, 156 files
+49 directories, 151 files

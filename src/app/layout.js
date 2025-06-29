@@ -31,7 +31,7 @@ export const metadata = {
 	openGraph: {
 		title: 'Arsh Saxena',
 		description:
-			'Hi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
+			'Hey, I’m Arsh, a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
 		url: 'https://www.arshsaxena.in',
 		siteName: 'Arsh Saxena',
 		images: [
@@ -49,7 +49,7 @@ export const metadata = {
 		card: 'summary_large_image',
 		title: 'Arsh Saxena',
 		description:
-			'Hi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
+			'Hey, I’m Arsh, a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
 		images: ['https://www.arshsaxena.in/screenshot.png'],
 		creator: '@arshsaxena02',
 	},

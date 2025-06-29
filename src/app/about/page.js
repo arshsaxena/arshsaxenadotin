@@ -7,7 +7,7 @@ import Timeline from '@/components/About/TimelineSection';
 export const metadata = {
 	title: 'About | Arsh Saxena',
 	description:
-		'About | Hi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
+		'About | Hey, I’m Arsh, a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
 };
 
 export default function About() {

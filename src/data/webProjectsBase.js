@@ -11,9 +11,9 @@ export const webProjectsBase = {
 	},
 	vitcfacultyinfo: {
 		label: 'VIT Chennai Faculty Information',
-		tagLine: 'Search and filter VIT Chennai faculty.',
-		desc1: 'Easily browse and search for faculty members at VIT Chennai.',
-		desc2: 'Find comprehensive details quickly about the faculty members using smart filters and keyword search.',
+		tagLine: 'Quickly search, filter, and rate VIT Chennai faculties.',
+		desc1: 'Easily browse, search, and rate faculty members at VIT Chennai.',
+		desc2: 'Find faculty details instantly with smart filters and fast search, and share anonymous 1-5 star ratings across five parameters to guide others.',
 		href: 'https://vitcfacultyinfo.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/vitcfacultyinfo-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/vitcfacultyinfo.webp',

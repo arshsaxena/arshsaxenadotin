@@ -8,7 +8,7 @@ import { WebTemplates } from '@/components/MadeByArsh/WebTemplatesSection';
 export const metadata = {
 	title: 'Made by Arsh | Arsh Saxena',
 	description:
-		'Made by Arsh | Explore the project made by Arsh. | Hi, I’m Arsh — a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
+		'Made by Arsh | Explore the project made by Arsh. | Hey, I’m Arsh, a web developer with a passion for programming and creating engaging digital experiences. This is my personal portfolio where I showcase my projects. Feel free to explore and get to know me better!',
 };
 
 export default function MadeByArsh() {

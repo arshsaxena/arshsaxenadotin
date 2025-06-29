@@ -8,7 +8,7 @@ export default function TextSection() {
 	return (
 		<>
 			<div className="space-y-5">
-				<div>Hi.</div>
+				<div>Hey.</div>
 				<div>
 					I’m Arsh Saxena, a developer currently pursuing a B.Tech. in
 					Electronics and Communication Engineering. I have a strong
