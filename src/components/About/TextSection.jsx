@@ -80,7 +80,7 @@ export default function TextSection() {
 					>
 						connect
 					</Link>
-					, ping my anywhere.
+					, ping me anywhere.
 				</div>
 				<div className="flex flex-wrap items-center gap-4">
 					{[

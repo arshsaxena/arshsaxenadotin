@@ -25,7 +25,7 @@ const Timeline = () => {
 			title: 'Early 2023',
 			preTextContent: 'Lucknow, India',
 			textContent:
-				'Graduated Class XII from <strong>Central Academy</strong> with Physics, Chemistry, Mathematics, and Computer Science.',
+				'Completed Class XII from <strong>Central Academy</strong> with Physics, Chemistry, Mathematics, and Computer Science.',
 			textContentCss: '',
 			imgContent: ['/about/timeline/centralacademy.webp'],
 			imgWrapperCss: 'grid grid-cols-1 gap-4',
