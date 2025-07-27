@@ -1,9 +1,11 @@
+// components/Layout/Footer/Footer.js
+
 'use client';
 
 import React, { useEffect, useState } from 'react';
 
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { socialLinksBase } from '@/data/socialLinksBase';
 import SocialLink from './SocialLinks';

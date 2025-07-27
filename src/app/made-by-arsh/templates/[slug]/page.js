@@ -1,3 +1,5 @@
+// app/made-by-arsh/templates/[slug]/page.js
+
 import { templateData } from '@/data/webTemplatesBase';
 import TemplateContent from './TemplateContent';
 

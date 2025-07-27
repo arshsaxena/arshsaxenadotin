@@ -1,7 +1,7 @@
 .
 ├── components.json
 ├── eslint.config.mjs
-├── file_structure.txt
+├── folder_structure.txt
 ├── gh-readme
 │   └── screenshot.png
 ├── jsconfig.json

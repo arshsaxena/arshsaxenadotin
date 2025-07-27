@@ -1,3 +1,5 @@
+// data/socialLinksBase.js
+
 export const socialLinksBase = {
 	linkedin: {
 		href: 'https://linkedin.com/in/arshsaxena',

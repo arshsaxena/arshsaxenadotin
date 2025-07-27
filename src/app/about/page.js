@@ -1,3 +1,5 @@
+// app/about/page.js
+
 import React from 'react';
 
 import Text from '@/components/About/TextSection';

@@ -1,10 +1,14 @@
+// components/MadeByArsh/PythonProjectsSection.jsx
+
 'use client';
+
 import React, { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 
 import { motion } from 'motion/react';
 import { cn } from '@/lib/utils';
+
+import Image from 'next/image';
+import Link from 'next/link';
 
 import { ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 
@@ -105,7 +109,7 @@ export const PythonProjects = ({ initialScroll = 0 }) => {
 				<div className="text-xs italic md:text-sm">
 					To run any of the Python projects, just download them, open
 					your Terminal or Command Prompt in the project folder, type{' '}
-					<span className="whitespace-nowrap rounded-full bg-[var(--accent)] px-[5px] py-[0px] font-mono not-italic md:px-[10px]">
+					<span className="whitespace-nowrap rounded-full bg-[var(--accent)] px-[5px] py-[0px] font-mono not-italic text-[#0a0a0a] md:px-[10px]">
 						python3 [file name].py
 					</span>
 					, and hit ENTER.

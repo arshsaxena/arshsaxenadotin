@@ -1,3 +1,5 @@
+// app/page.js
+
 import AnimatedImgs from '@/components/Home/AnimatesImgsSection';
 import SocialsSection from '@/components/Home/SocialsSection';
 import MadeByArshSection from '@/components/Home/MadeByArshSection';

@@ -1,3 +1,5 @@
+// components/About/SkillsTableSection.jsx
+
 'use client';
 
 import { useEffect, useState } from 'react';

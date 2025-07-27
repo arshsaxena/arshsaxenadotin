@@ -1,6 +1,9 @@
+// components/Common/AnimateBackground.jsx
+
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+
 import { GradientBackground } from 'react-gradient-animation';
 
 export default function AnimatedBackground() {

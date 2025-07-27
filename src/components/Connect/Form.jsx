@@ -1,4 +1,7 @@
+// components/Connect/Form.jsx
+
 'use client';
+
 import React, { useRef, useState } from 'react';
 
 import Image from 'next/image';

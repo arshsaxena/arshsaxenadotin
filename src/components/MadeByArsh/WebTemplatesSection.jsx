@@ -1,8 +1,11 @@
+// components/MadeByArsh/WebTemplatesSection.jsx
+
 'use client';
 
 import React, { useState } from 'react';
-import Link from 'next/link';
+
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 

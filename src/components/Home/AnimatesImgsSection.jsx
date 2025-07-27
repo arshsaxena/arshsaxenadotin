@@ -1,9 +1,14 @@
+// components/Home/AnimatesImgsSection.jsx
+
 'use client';
 
 import { useEffect, useState, useCallback, memo } from 'react';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+
+import Image from 'next/image';
+
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+
 import TypedWords from '@/components/Home/Typed';
 
 const MemoTypedWords = memo(() => <TypedWords strings={['Arsh Saxena']} />);

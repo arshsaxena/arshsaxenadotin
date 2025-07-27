@@ -1,3 +1,5 @@
+// components/Home/Typed.js
+
 'use client';
 
 import { useEffect, useRef, useState } from 'react';

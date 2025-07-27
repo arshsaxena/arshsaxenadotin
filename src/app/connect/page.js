@@ -1,3 +1,5 @@
+// app/connect/page.js
+
 import React from 'react';
 
 import ConnectForm from '@/components/Connect/Form';

@@ -1,3 +1,5 @@
+// components/Theme/SetMetaThemeColor.js
+
 'use client';
 
 import { useEffect } from 'react';

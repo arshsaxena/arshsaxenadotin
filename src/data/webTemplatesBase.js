@@ -1,3 +1,5 @@
+// data/webTemplatesBase.js
+
 export const rawTemplateData = [
 	{
 		slug: 'simple-old-school',

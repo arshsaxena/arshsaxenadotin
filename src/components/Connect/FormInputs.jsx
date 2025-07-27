@@ -1,3 +1,5 @@
+// components/Connect/FormInputs.jsx
+
 'use client';
 
 import * as React from 'react';

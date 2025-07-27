@@ -1,3 +1,5 @@
+// app/made-by-arsh/web-projects/[slug]/page.js
+
 import { redirect } from 'next/navigation';
 
 const allowedSlugs = [

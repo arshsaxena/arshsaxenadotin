@@ -1,7 +1,9 @@
+// components/Layout/Footer/SocialLinks.js
+
 'use client';
 
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function SocialLink({ href, src, alt, label }) {
 	return (

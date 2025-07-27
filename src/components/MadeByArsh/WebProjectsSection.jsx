@@ -1,12 +1,15 @@
+// components/MadeByArsh/WebProjectsSection.jsx
+
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 
-import { webProjectsBase } from '@/data/webProjectsBase';
+import Image from 'next/image';
+import Link from 'next/link';
 
 import { ArrowUpRight } from 'lucide-react';
+
+import { webProjectsBase } from '@/data/webProjectsBase';
 
 const items = [
 	{
