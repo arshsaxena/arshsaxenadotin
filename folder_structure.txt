@@ -131,7 +131,9 @@
 │   │   │       └── [slug]
 │   │   │           └── page.js
 │   │   ├── not-found.js
-│   │   └── page.js
+│   │   ├── page.js
+│   │   └── resume
+│   │       └── page.js
 │   ├── assets
 │   │   └── about
 │   │       └── skills
@@ -183,6 +185,8 @@
 │   │   │   ├── WebMiniProjectsSection.jsx
 │   │   │   ├── WebProjectsSection.jsx
 │   │   │   └── WebTemplatesSection.jsx
+│   │   ├── Resume
+│   │   │   └── Content.js
 │   │   └── Theme
 │   │       ├── SetMetaThemeColor.js
 │   │       └── ThemeToggle.js
@@ -199,4 +203,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-49 directories, 151 files
+51 directories, 153 files

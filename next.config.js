@@ -102,6 +102,12 @@ module.exports = {
 				destination: 'https://leetcode.com/u/arshsaxena/',
 				permanent: true,
 			},
+			{
+				source: '/resume-pdf',
+				destination:
+					'https://drive.google.com/file/d/1POQGO0s2za5EcAAWtuxmIlSjGM54dnuH/view',
+				permanent: true,
+			},
 		];
 	},
 };
