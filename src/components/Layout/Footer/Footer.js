@@ -57,7 +57,6 @@ export default function Footer() {
 			<div className="m-auto w-full max-w-[980px]">
 				<div className="mb-0 border-t-[1px] border-[var(--border-default)] bg-[var(--surface)] p-5 text-sm dark:border-[var(--border-default)] dark:bg-[var(--surface)] md:m-5 md:mb-0 md:mt-0 md:rounded-t-[25px] md:border-[1px] md:border-b-0">
 					<div className="grid grid-cols-2 gap-6 md:grid-cols-3">
-						{/* Column 1 - Discover */}
 						<div>
 							<h3 className="text-md mb-3 font-semibold">
 								Discover
@@ -70,6 +69,12 @@ export default function Footer() {
 									About
 								</Link>
 								<Link
+									href="/resume"
+									className="hover:text-[var(--accent)]"
+								>
+									Resume
+								</Link>
+								<Link
 									href="/connect"
 									className="hover:text-[var(--accent)]"
 								>
@@ -78,7 +83,6 @@ export default function Footer() {
 							</div>
 						</div>
 
-						{/* Column 2 - Made by Arsh */}
 						<div>
 							<h3 className="text-md mb-3 font-semibold">
 								Made by Arsh
@@ -101,7 +105,6 @@ export default function Footer() {
 							</div>
 						</div>
 
-						{/* Column 3 - Social */}
 						<div>
 							<h3 className="text-md mb-3 font-semibold">
 								Social

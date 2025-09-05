@@ -6,7 +6,14 @@ import React, { useState } from 'react';
 
 import Link from 'next/link';
 
-import { ChevronDown, ChevronUp, UserRound, Code, Mail } from 'lucide-react';
+import {
+	ChevronDown,
+	ChevronUp,
+	UserRound,
+	Code,
+	Mail,
+	FileText,
+} from 'lucide-react';
 
 import NavbarLink from './NavbarLinks';
 
@@ -44,6 +51,11 @@ export default function Navbar() {
 							label="About"
 						/>
 						<NavbarLink
+							href="/resume"
+							icon={FileText}
+							label="Resume"
+						/>
+						<NavbarLink
 							href="/made-by-arsh"
 							icon={Code}
 							label="Made by Arsh"
@@ -60,7 +72,7 @@ export default function Navbar() {
 				<div
 					className={`overflow-hidden transition-all duration-500 md:hidden ${
 						isOpen
-							? 'mt-4 max-h-40 border-t border-[var(--border-default)] dark:border-[var(--border-default)]'
+							? 'max-h-50 mt-4 border-t border-[var(--border-default)] dark:border-[var(--border-default)]'
 							: 'max-h-0'
 					}`}
 				>
@@ -69,6 +81,12 @@ export default function Navbar() {
 							href="/about"
 							icon={UserRound}
 							label="About"
+							onClick={() => setIsOpen(false)}
+						/>
+						<NavbarLink
+							href="/resume"
+							icon={FileText}
+							label="Resume"
 							onClick={() => setIsOpen(false)}
 						/>
 						<NavbarLink

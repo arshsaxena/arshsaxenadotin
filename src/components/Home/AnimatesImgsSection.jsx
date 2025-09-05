@@ -6,8 +6,9 @@ import { useEffect, useState, useCallback, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 
 import TypedWords from '@/components/Home/Typed';
 
@@ -75,6 +76,13 @@ const ProfileText = memo(({ onPrev, onNext }) => {
 				>
 					<ChevronRight className="h-5 w-5 text-[#f5f5f7]" />
 				</button>
+				<Link
+					href="/resume"
+					className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 pr-2 text-center text-[#f5f5f7] hover:bg-[var(--accent)]"
+				>
+					Resume
+					<ArrowUpRight className="ml-1 w-[15px]" />
+				</Link>
 			</div>
 		</div>
 	);
@@ -170,19 +178,30 @@ const AnimatedImgsSection = ({ autoplay = false }) => {
 						</AnimatePresence>
 					</div>
 
-					<div className="flex gap-4 pt-12 md:hidden">
-						<button
-							onClick={handlePrev}
-							className="group/button flex h-7 w-7 items-center justify-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] p-[0.5px] text-[#f5f5f7] hover:bg-[var(-accent)]"
-						>
-							<ChevronLeft className="h-5 w-5 text-[#f5f5f7]" />
-						</button>
-						<button
-							onClick={handleNext}
-							className="group/button flex h-7 w-7 items-center justify-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] p-[0.5px] text-[#f5f5f7] hover:bg-[var(-accent)]"
-						>
-							<ChevronRight className="h-5 w-5 text-[#f5f5f7]" />
-						</button>
+					<div className="flex flex-wrap gap-4 pt-12 sm:flex-row md:hidden">
+						<div className="flex gap-4 md:hidden">
+							<button
+								onClick={handlePrev}
+								className="group/button flex h-7 w-7 items-center justify-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] p-[0.5px] text-[#f5f5f7] hover:bg-[var(-accent)]"
+							>
+								<ChevronLeft className="h-5 w-5 text-[#f5f5f7]" />
+							</button>
+							<button
+								onClick={handleNext}
+								className="group/button flex h-7 w-7 items-center justify-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] p-[0.5px] text-[#f5f5f7] hover:bg-[var(-accent)]"
+							>
+								<ChevronRight className="h-5 w-5 text-[#f5f5f7]" />
+							</button>
+						</div>
+						<div>
+							<Link
+								href="/resume"
+								className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 text-center text-[#f5f5f7] hover:bg-[var(--accent)]"
+							>
+								Resume
+								<ArrowUpRight className="ml-1 w-[15px]" />
+							</Link>
+						</div>
 					</div>
 				</div>
 

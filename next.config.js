@@ -6,6 +6,27 @@ const nextConfig = {
 	output: 'export',
 };
 
+const urls = {
+	social: {
+		linkedin: 'https://www.linkedin.com/in/arshsaxena',
+		github: 'https://github.com/arshsaxena',
+		instagram: 'https://instagram.com/arsh.saxena02',
+		x: 'https://x.com/arshsaxena02',
+	},
+	music: {
+		applemusic:
+			'https://music.apple.com/in/playlist/arshs-favourites/pl.u-yZyVWPrCd3zXWGe',
+	},
+	projects: {
+		nptelcompanion: 'https://nptelcompanion.arshsaxena.in',
+		vitcfacultyinfo: 'https://vitcfacultyinfo.arshsaxena.in/',
+		leetcode: 'https://leetcode.com/u/arshsaxena/',
+	},
+	docs: {
+		resume: 'https://drive.google.com/file/d/1POQGO0s2za5EcAAWtuxmIlSjGM54dnuH/view',
+	},
+};
+
 module.exports = {
 	images: {
 		unoptimized: true,
@@ -20,92 +41,123 @@ module.exports = {
 	async redirects() {
 		return [
 			{
-				source: '/linkedin',
-				destination: 'https://www.linkedin.com/in/arshsaxena',
-				permanent: true,
-			},
-			{
-				source: '/github',
-				destination: 'https://github.com/arshsaxena',
-				permanent: true,
-			},
-			{
-				source: '/gh',
-				destination: 'https://github.com/arshsaxena',
-				permanent: true,
-			},
-			{
-				source: '/instagram',
-				destination: 'https://instagram.com/arsh.saxena02',
-				permanent: true,
-			},
-			{
-				source: '/insta',
-				destination: 'https://instagram.com/arsh.saxena02',
-				permanent: true,
-			},
-			{
-				source: '/ig',
-				destination: 'https://instagram.com/arsh.saxena02',
-				permanent: true,
-			},
-			{
-				source: '/x',
-				destination: 'https://x.com/arshsaxena02',
-				permanent: true,
-			},
-			{
-				source: '/twitter',
-				destination: 'https://x.com/arshsaxena02',
-				permanent: true,
-			},
-			{
-				source: '/music',
-				destination:
-					'https://music.apple.com/in/playlist/arshs-favourites/pl.u-yZyVWPrCd3zXWGe',
-				permanent: true,
-			},
-			{
-				source: '/applemusic',
-				destination:
-					'https://music.apple.com/in/playlist/arshs-favourites/pl.u-yZyVWPrCd3zXWGe',
-				permanent: true,
-			},
-			{
-				source: '/apple-music',
-				destination:
-					'https://music.apple.com/in/playlist/arshs-favourites/pl.u-yZyVWPrCd3zXWGe',
-				permanent: true,
-			},
-			{
-				source: '/nptelcompanion',
-				destination: 'https://nptelcompanion.arshsaxena.in',
-				permanent: true,
-			},
-			{
-				source: '/nptel',
-				destination: 'https://nptelcompanion.arshsaxena.in',
-				permanent: true,
-			},
-			{
-				source: '/vitc',
-				destination: 'https://vitcfacultyinfo.arshsaxena.in/',
-				permanent: true,
-			},
-			{
-				source: '/vitcfacultyinfo',
-				destination: 'https://vitcfacultyinfo.arshsaxena.in/',
-				permanent: true,
-			},
-			{
 				source: '/leetcode',
-				destination: 'https://leetcode.com/u/arshsaxena/',
+				destination: urls.projects.leetcode,
+				permanent: true,
+			},
+			{
+				source: '/resume/download',
+				destination: urls.docs.resume,
+				permanent: true,
+			},
+			{
+				source: '/resume/download/pdf',
+				destination: urls.docs.resume,
+				permanent: true,
+			},
+			{
+				source: '/resume/pdf',
+				destination: urls.docs.resume,
 				permanent: true,
 			},
 			{
 				source: '/resume-pdf',
-				destination:
-					'https://drive.google.com/file/d/1POQGO0s2za5EcAAWtuxmIlSjGM54dnuH/view',
+				destination: urls.docs.resume,
+				permanent: true,
+			},
+			{
+				source: '/cv',
+				destination: urls.docs.resume,
+				permanent: true,
+			},
+			{
+				source: '/projects',
+				destination: '/made-by-arsh',
+				permanent: false,
+			},
+			{
+				source: '/work',
+				destination: '/made-by-arsh',
+				permanent: false,
+			},
+			{
+				source: '/contact',
+				destination: '/connect',
+				permanent: false,
+			},
+			{
+				source: '/linkedin',
+				destination: urls.social.linkedin,
+				permanent: true,
+			},
+			{
+				source: '/github',
+				destination: urls.social.github,
+				permanent: true,
+			},
+			{
+				source: '/gh',
+				destination: urls.social.github,
+				permanent: true,
+			},
+			{
+				source: '/instagram',
+				destination: urls.social.instagram,
+				permanent: true,
+			},
+			{
+				source: '/insta',
+				destination: urls.social.instagram,
+				permanent: true,
+			},
+			{
+				source: '/ig',
+				destination: urls.social.instagram,
+				permanent: true,
+			},
+			{
+				source: '/x',
+				destination: urls.social.x,
+				permanent: true,
+			},
+			{
+				source: '/twitter',
+				destination: urls.social.x,
+				permanent: true,
+			},
+			{
+				source: '/music',
+				destination: urls.music.applemusic,
+				permanent: true,
+			},
+			{
+				source: '/applemusic',
+				destination: urls.music.applemusic,
+				permanent: true,
+			},
+			{
+				source: '/apple-music',
+				destination: urls.music.applemusic,
+				permanent: true,
+			},
+			{
+				source: '/nptelcompanion',
+				destination: urls.projects.nptelcompanion,
+				permanent: true,
+			},
+			{
+				source: '/nptel',
+				destination: urls.projects.nptelcompanion,
+				permanent: true,
+			},
+			{
+				source: '/vitc',
+				destination: urls.projects.vitcfacultyinfo,
+				permanent: true,
+			},
+			{
+				source: '/vitcfacultyinfo',
+				destination: urls.projects.vitcfacultyinfo,
 				permanent: true,
 			},
 		];

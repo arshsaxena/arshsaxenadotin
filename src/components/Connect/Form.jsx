@@ -122,11 +122,11 @@ export default function SignupFormDemo() {
 					<div className="mt-5 flex flex-col gap-4 space-y-2 sm:flex-row sm:justify-between sm:space-y-0">
 						<button
 							type="submit"
-							className="group/btn relative h-[40px] w-full rounded-[10px] border-[1px] border-[var(--accent)] bg-[var(--main)] px-5 py-2 font-medium text-white hover:cursor-pointer hover:bg-[var(--accent)] sm:w-fit"
+							className="group/btn relative h-[40px] w-full rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-5 py-1 pr-4 font-medium text-white hover:cursor-pointer hover:bg-[var(--accent)] sm:w-fit"
 						>
 							<div className="flex items-center justify-center">
 								<div>Send</div>
-								<SendHorizontal className="mb-[1.5px] ml-[0.5px] h-[14px]" />
+								<SendHorizontal className="mb-[1.5px] ml-[1.5px] h-[14px]" />
 							</div>
 						</button>
 						<div className="flex w-fit flex-wrap justify-between gap-4">
