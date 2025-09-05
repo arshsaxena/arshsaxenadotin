@@ -16,7 +16,7 @@ export default function TextSection() {
 					I’m Arsh Saxena, a developer currently pursuing a B.Tech. in
 					Electronics and Communication Engineering. I have a strong
 					interest in programming and web development, and I’m
-					proficient in Python and C++. I love exploring new
+					proficient in C/C++ and Python. I love exploring new
 					technologies and constantly improving my skills.
 				</div>
 				<div>

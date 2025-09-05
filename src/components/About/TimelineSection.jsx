@@ -10,10 +10,32 @@ import Image from 'next/image';
 const Timeline = () => {
 	const data = [
 		{
-			title: '2023',
+			title: 'Jul 2025',
+			preTextContent: 'Bengaluru, India',
+			textContent:
+				'Engaged as a <strong>PRISM Developer</strong> at <strong>Samsung R&D Institute India</strong> under the <strong>PRISM program</strong>, contributing to an AI/ML-focused research project.',
+			textContentCss: '',
+			imgContent: ['/about/timeline/samsungresearch.webp'],
+			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
+			imgContentCss: 'h-1/2 md:h-full',
+			css: '',
+		},
+		{
+			title: 'Sep 2023',
 			preTextContent: 'Chennai, India',
 			textContent:
-				'Started B.Tech. in <strong>Electronics and Communication Engineering</strong> at <strong>Vellore Institute of Technology</strong>.',
+				'Joined the Development Department of <strong>CYSCOM Student Chapter</strong>, VIT Chennai as a <strong>Web Developer</strong>.',
+			textContentCss: '',
+			imgContent: ['/about/timeline/cyscomvit.webp'],
+			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
+			imgContentCss: 'h-full',
+			css: 'pt-20 md:pt-40',
+		},
+		{
+			title: 'Aug 2023',
+			preTextContent: 'Chennai, India',
+			textContent:
+				'Started pursuing B.Tech. in <strong>Electronics and Communication Engineering</strong> at <strong>Vellore Institute of Technology</strong>.',
 			textContentCss: '',
 			imgContent: [
 				'/about/timeline/vitc1.webp',
@@ -21,17 +43,17 @@ const Timeline = () => {
 			],
 			imgWrapperCss: 'grid grid-cols-2 md:grid-cols-2 gap-2',
 			imgContentCss: 'h-40 md:h-80',
-			css: '',
+			css: 'pt-20 md:pt-40',
 		},
 		{
-			title: 'Early 2023',
+			title: 'May 2023',
 			preTextContent: 'Lucknow, India',
 			textContent:
-				'Completed Class XII from <strong>Central Academy</strong> with Physics, Chemistry, Mathematics, and Computer Science.',
+				'Completed <strong>CBSE Class XII</strong> from <strong>Central Academy</strong> with Physics, Chemistry, Mathematics, Computer Science, and English.',
 			textContentCss: '',
 			imgContent: ['/about/timeline/centralacademy.webp'],
-			imgWrapperCss: 'grid grid-cols-1 gap-4',
-			imgContentCss: 'h-1/2 md:h-full',
+			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
+			imgContentCss: 'h-3/4 md:h-full',
 			css: 'pt-20 md:pt-40',
 		},
 	];
@@ -79,7 +101,7 @@ const Timeline = () => {
 								</div>
 								<div className="text-sm md:text-lg">
 									{item.preTextContent && (
-										<div className="mb-3 flex w-fit items-center rounded-full border-[1px] border-[var(--border-default)] bg-[var(--main)] px-2 py-1 pr-3 text-xs text-[#f5f5f7] md:text-sm">
+										<div className="mb-3 flex w-fit items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-2 py-1 pr-3 text-xs text-[#f5f5f7] md:text-sm">
 											<Image
 												src="/emojis/pin.webp"
 												width={15}

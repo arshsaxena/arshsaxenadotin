@@ -16,6 +16,8 @@
 │   ├── about
 │   │   └── timeline
 │   │       ├── centralacademy.webp
+│   │       ├── cyscomvit.webp
+│   │       ├── samsungresearch.webp
 │   │       ├── vitc1.webp
 │   │       └── vitc2.webp
 │   ├── arsh-favicon-apple.png
@@ -203,4 +205,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-51 directories, 153 files
+51 directories, 155 files
