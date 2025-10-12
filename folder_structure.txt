@@ -1,11 +1,12 @@
 .
+├── LICENSE
+├── README.md
 ├── components.json
 ├── eslint.config.mjs
 ├── folder_structure.txt
 ├── gh-readme
 │   └── screenshot.png
 ├── jsconfig.json
-├── LICENSE
 ├── next-sitemap.config.js
 ├── next.config.js
 ├── package-lock.json
@@ -115,7 +116,6 @@
 │       ├── instagram.webp
 │       ├── linkedin.webp
 │       └── x.webp
-├── README.md
 ├── src
 │   ├── app
 │   │   ├── about
@@ -127,8 +127,8 @@
 │   │   │   ├── page.js
 │   │   │   ├── templates
 │   │   │   │   └── [slug]
-│   │   │   │       ├── page.js
-│   │   │   │       └── TemplateContent.js
+│   │   │   │       ├── TemplateContent.js
+│   │   │   │       └── page.js
 │   │   │   └── web-projects
 │   │   │       └── [slug]
 │   │   │           └── page.js

@@ -1,6 +1,6 @@
 // app/made-by-arsh/web-projects/[slug]/page.js
 
-import { redirect } from 'next/navigation';
+import { redirect, notFound } from 'next/navigation';
 
 const allowedSlugs = [
 	'tic-tac-toe',
