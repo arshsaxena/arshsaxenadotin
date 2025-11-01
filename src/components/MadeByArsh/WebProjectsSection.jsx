@@ -54,7 +54,15 @@ export const BentoGrid = ({ children }) => {
 	);
 };
 
-export const BentoGridItem = ({ label, desc1, desc2, href, img, css }) => {
+export const BentoGridItem = ({
+	icon,
+	label,
+	desc1,
+	desc2,
+	href,
+	img,
+	css,
+}) => {
 	return (
 		<div
 			className={`row-span-1 flex h-full flex-col space-y-5 p-5 text-[var(--foreground)] ${css}`}
@@ -69,7 +77,18 @@ export const BentoGridItem = ({ label, desc1, desc2, href, img, css }) => {
 				/>
 			</div>
 			<div className="flex h-full w-full flex-col space-y-5">
-				<div className="text-2xl font-bold md:text-3xl">{label}</div>
+				<div className="text-2xl font-bold md:text-3xl">
+					<div className="flex items-start gap-2">
+						<Image
+							src={icon}
+							width={0}
+							height={0}
+							alt={label}
+							className={`h-[30px] w-[30px] rounded-[6.5px] bg-[#f5f5f7] md:h-[35px] md:w-[35px] md:rounded-[7.5px]`}
+						/>
+						{label}
+					</div>
+				</div>
 				<div className="md:text-md space-y-5 text-sm">
 					<div>{desc1}</div>
 					<div>{desc2}</div>
@@ -100,6 +119,7 @@ export function WebProjects() {
 					{items.map((item, i) => (
 						<BentoGridItem
 							key={i}
+							icon={item.icon}
 							label={item.label}
 							desc1={item.desc1}
 							desc2={item.desc2}
