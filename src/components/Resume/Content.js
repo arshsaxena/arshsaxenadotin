@@ -46,9 +46,9 @@ const resumeData = {
 			location: 'Chennai, India',
 			duration: 'Sep 2023 – Present',
 			responsibilities: [
-				'Developed event websites including Zyper, HackFiesta, and the 2024–25 recruitment portal, improving UI/UX and performance.',
-				'Contributed to the revamp of the official CYSCOM website and optimized workflows for better maintainability.',
-				'Actively participated in chapter meets, tutorials, and organizing committees, supporting marketing and technical operations for major events.',
+				'Developed event websites including Zyper, HackFiesta, and the 2024–25 recruitment portal, enhancing UI/UX and performance.',
+				'Contributed to the revamp of the official CYSCOM website and improved code maintainability.',
+				'Supported chapter meets, tutorials, and event operations across marketing and technical teams.',
 			],
 		},
 	],
@@ -59,7 +59,7 @@ const resumeData = {
 			duration: 'Jun 2020 – Present',
 			details: [
 				'Developed a personal portfolio website entirely from scratch using Next.js and Tailwind CSS, hosted on Vercel.',
-				'Focus on clean design, fast performance, and responsive layout across devices.',
+				'Focused on clean design, fast performance, and responsive layout across devices.',
 				'Integrated tools like Google Search Console, Vercel Analytics, and Clarity for SEO, analytics, and user insights.',
 			],
 		},
@@ -68,11 +68,9 @@ const resumeData = {
 			tech: 'Next.js, Tailwind CSS',
 			duration: 'Jun 2025 – Present',
 			details: [
-				'Developed a web-based platform that organizes and simplifies access to NPTEL course resources for students across disciplines.',
-				'Implemented the frontend using Next.js and Tailwind CSS for a fast, responsive, and modern UI.',
-				'Automated fetching and structuring of NPTEL course data for subject-wise content clarity.',
-				'Integrated advanced search and filtering for quick access to relevant courses and materials.',
-				'Designed a mobile-optimized layout for better usability across devices.',
+				'Built a platform that aggregates and organizes NPTEL course resources with automated data fetching and structured presentation.',
+				'Implemented a fast, responsive UI with advanced search and filtering using Next.js and Tailwind CSS.',
+				'Reached 15,000+ unique users and enabled 1,20,000+ practice sessions.',
 			],
 		},
 		{
@@ -80,35 +78,28 @@ const resumeData = {
 			tech: 'Next.js, Tailwind CSS, Supabase',
 			duration: 'Jun 2025 – Present',
 			details: [
-				'Developed a responsive faculty directory web app with advanced search and filter capabilities.',
-				'Built a dynamic filtering interface for alphabet, designation, school, and building filters.',
-				'Designed reusable checkbox groups with expand/collapse functionality.',
-				'Implemented color-coded tags for schools with Tailwind CSS.',
-				'Added anonymous faculty rating system with secure student login.',
+				'Developed a responsive faculty directory with dynamic filters (alphabet, designation, school, building) and search.',
+				'Enhanced usability with reusable UI components, color-coded tags, and optimized multi-select filter logic.',
+				'Added anonymous faculty ratings with secure student login and analytics.',
+				'Engages 75–100 daily active student users.',
 			],
 		},
 		{
 			name: 'aEducational',
-			tech: 'HTML, CSS, JavaScript, jQuery',
+			tech: 'Next.js, Tailwind CSS, HTML, CSS, JavaScript',
 			duration: 'Feb 2021 – Present',
-			details: ['Developed a blog for English composition.'],
-		},
-		{
-			name: 'Solar System',
-			tech: 'HTML, CSS, JavaScript',
-			duration: 'Mar 2021 – Apr 2021',
-			details: ['Developed mainly using CSS animations.'],
-		},
-		{
-			name: 'Color-Based Object Detection using Python and OpenCV',
-			tech: 'Python, OpenCV',
-			duration: 'Oct 2024 – Nov 2024',
 			details: [
-				'Developed a real-time color detection system using Python and OpenCV.',
-				'Implemented HSV color space for accurate object tracking.',
-				'Enabled webcam integration for live object tracking.',
-				'Displayed RGB values upon mouse click on detected objects.',
+				'Built an English composition blog using HTML, CSS, JavaScript, and jQuery.',
+				'Currently redesigning the platform using Next.js and Tailwind CSS for a modern, faster, and more responsive UI.',
+				'Engages 500+ daily student users worldwide.',
 			],
+		},
+	],
+	certifications: [
+		{
+			name: 'Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate',
+			issuer: 'Oracle',
+			date: 'Sep 2025',
 		},
 	],
 	technicalSkills: {
@@ -148,7 +139,7 @@ export default function Content() {
 			</Head>
 
 			<div className="mx-auto max-w-[980px]">
-				<section className="text-md relative mx-5 mb-10 mt-10 rounded-[25px] border border-[var(--border-default)] bg-[var(--surface)] p-5 font-serif text-[var(--foreground)] md:p-10 md:text-[16px]">
+				<section className="text-md relative mx-5 mb-10 mt-10 rounded-[25px] border border-[var(--border-default)] bg-[var(--surface)] p-5 font-serif text-[var(--foreground)] md:p-10 md:px-9 md:text-[16px]">
 					<div className="absolute right-2 top-2 font-sans md:right-4 md:top-4">
 						<Link
 							href={resumeData.downloadLink}
@@ -159,7 +150,7 @@ export default function Content() {
 							<span className="hidden sm:block">PDF</span>
 						</Link>
 					</div>
-					<div className="mx-auto max-w-[850px] leading-relaxed">
+					<div className="mx-auto max-w-[900px] leading-relaxed">
 						<h1 className="text-center text-3xl font-bold tracking-wide md:text-4xl">
 							{resumeData.personalInfo.name}
 						</h1>
@@ -204,6 +195,12 @@ export default function Content() {
 							title="Projects"
 							items={resumeData.projects}
 							type="projects"
+						/>
+
+						<Section
+							title="Certifications"
+							items={resumeData.certifications}
+							type="certifications"
 						/>
 
 						<section>
@@ -257,7 +254,10 @@ function Section({ title, items, type }) {
 						<div className="flex flex-col justify-between md:flex-row">
 							<span
 								className={
-									type === 'projects' ? '' : 'font-bold'
+									type === 'projects' ||
+									type === 'certifications'
+										? ''
+										: 'font-bold'
 								}
 							>
 								{type === 'projects' ? (
@@ -270,6 +270,10 @@ function Section({ title, items, type }) {
 											{item.tech}
 										</span>
 									</>
+								) : type === 'certifications' ? (
+									<span className="font-bold">
+										{item.name}
+									</span>
 								) : type === 'education' ? (
 									item.institution
 								) : (
@@ -279,29 +283,38 @@ function Section({ title, items, type }) {
 							<span>
 								{type === 'projects'
 									? item.duration
-									: type === 'experience'
-										? item.duration
-										: item.location}
+									: type === 'certifications'
+										? item.date
+										: type === 'experience'
+											? item.duration
+											: item.location}
 							</span>
 						</div>
 
 						<div
-							className={`flex flex-col justify-between ${type !== 'projects' ? 'text-sm italic md:flex-row' : ''}`}
+							className={`flex flex-col justify-between ${type !== 'projects' && type !== 'certifications' ? 'text-sm italic md:flex-row' : ''}`}
 						>
-							{type !== 'projects' && (
-								<span>
-									{type === 'education'
-										? item.degree
-										: item.company}
+							{type === 'certifications' && (
+								<span className="text-sm italic">
+									{item.issuer}
 								</span>
 							)}
-							{type !== 'projects' && (
-								<span>
-									{type === 'experience'
-										? item.location
-										: item.duration}
-								</span>
-							)}
+							{type !== 'projects' &&
+								type !== 'certifications' && (
+									<span>
+										{type === 'education'
+											? item.degree
+											: item.company}
+									</span>
+								)}
+							{type !== 'projects' &&
+								type !== 'certifications' && (
+									<span>
+										{type === 'experience'
+											? item.location
+											: item.duration}
+									</span>
+								)}
 						</div>
 
 						{item.responsibilities || item.details ? (
