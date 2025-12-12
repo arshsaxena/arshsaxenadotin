@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <title>Ping-Pong  | Made by Arsh | Arsh Saxena</title>
+    
+    <link rel="stylesheet" href="ping-pong/style.css">
+
+    <link rel="icon" href="/arsh-favicon.png">
+</head>
+<body>
+    <div class="container">
+        <span id="top-button"></span>
+        <div class="nav-container">
+            <nav class="nav" id="nav"> 
+            </nav>
+        </div>
+        <div class="main-div main-div-desktop">
+            <div class="caution">
+                <div class="caution-symbol">
+                    ‼️
+                </div>
+                <div class="caution-content-container">
+                    <p>
+                        This project is best experienced on a desktop. It may not work properly on smaller screens. For the best experience, please switch to Desktop Mode.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="project-head">
+                Ping-Pong
+            </div>
+            <br>
+            <div id="gameContainer">
+                <canvas id="gameBoard" width="500" height="500"></canvas>
+                <div id="scoreText">0 : 0</div>
+                <button id="resetButton">RESET</button>
+            </div>
+            <script src="ping-pong/script.js"></script>
+        </div>
+    </div>  
+</html>

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.arshsaxena.in
+
+# Sitemaps
+Sitemap: https://www.arshsaxena.in/sitemap.xml

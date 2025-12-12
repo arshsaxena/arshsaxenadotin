@@ -1,0 +1,208 @@
+.
+├── LICENSE
+├── README.md
+├── components.json
+├── eslint.config.mjs
+├── folder_structure.txt
+├── gh-readme
+│   └── screenshot.png
+├── jsconfig.json
+├── next-sitemap.config.js
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── prettier.config.cjs
+├── public
+│   ├── about
+│   │   └── timeline
+│   │       ├── centralacademy.webp
+│   │       ├── cyscomvit.webp
+│   │       ├── samsungresearch.webp
+│   │       ├── vitc1.webp
+│   │       └── vitc2.webp
+│   ├── arsh-favicon-apple.png
+│   ├── arsh-favicon.png
+│   ├── download
+│   │   ├── Apple-Style-Navigation-Bar-by-Arsh.zip
+│   │   ├── Modern-Footer-by-Arsh.zip
+│   │   └── Simple-Old-School-by-Arsh.zip
+│   ├── emojis
+│   │   ├── books.webp
+│   │   ├── boy-using-laptop.webp
+│   │   ├── camera.webp
+│   │   ├── heart.webp
+│   │   ├── india1.webp
+│   │   ├── india2.webp
+│   │   ├── laptop.webp
+│   │   ├── movie-camera.webp
+│   │   ├── pen.webp
+│   │   ├── pin.webp
+│   │   ├── shoes.webp
+│   │   └── writing.webp
+│   ├── images
+│   │   ├── img1.webp
+│   │   ├── img2.webp
+│   │   ├── img3.webp
+│   │   ├── img4.webp
+│   │   ├── img5.webp
+│   │   ├── img6.webp
+│   │   └── img7.webp
+│   ├── made-by-arsh
+│   │   ├── python-projects
+│   │   │   ├── ping-pong.webp
+│   │   │   ├── snake.webp
+│   │   │   ├── space-invaders.webp
+│   │   │   ├── sudoku.webp
+│   │   │   ├── truck-vs-car.webp
+│   │   │   └── typing-speed-calculator.webp
+│   │   ├── web-projects
+│   │   │   ├── icons
+│   │   │   │   ├── aconverter-app-icon.webp
+│   │   │   │   ├── aeducational-app-icon.webp
+│   │   │   │   ├── arshsaxena-app-icon.webp
+│   │   │   │   ├── colors-icon.webp
+│   │   │   │   ├── nptelcompanion-icon.webp
+│   │   │   │   ├── qr-icon.webp
+│   │   │   │   ├── solarsystem-icon.webp
+│   │   │   │   ├── vitcfacultyinfo-icon.webp
+│   │   │   │   └── weather-icon.webp
+│   │   │   ├── imgs
+│   │   │   │   ├── aconverter-desktop.webp
+│   │   │   │   ├── aeducational-desktop.webp
+│   │   │   │   ├── colors-desktop.webp
+│   │   │   │   ├── nptelcompanion.webp
+│   │   │   │   ├── qr-desktop.webp
+│   │   │   │   ├── solarsystem.webp
+│   │   │   │   ├── vitcfacultyinfo.webp
+│   │   │   │   └── weather-desktop.webp
+│   │   │   ├── ping-pong
+│   │   │   │   ├── index.html
+│   │   │   │   ├── script.js
+│   │   │   │   └── style.css
+│   │   │   ├── rock-paper-scissors
+│   │   │   │   ├── index.html
+│   │   │   │   ├── script.js
+│   │   │   │   └── style.css
+│   │   │   ├── snake
+│   │   │   │   ├── index.html
+│   │   │   │   ├── script.js
+│   │   │   │   └── style.css
+│   │   │   ├── stopwatch
+│   │   │   │   ├── index.html
+│   │   │   │   ├── script.js
+│   │   │   │   └── style.css
+│   │   │   └── tic-tac-toe
+│   │   │       ├── index.html
+│   │   │       ├── script.js
+│   │   │       └── style.css
+│   │   └── web-templates
+│   │       ├── apple-style-navigation-bar
+│   │       │   └── template-screenshot.webp
+│   │       ├── modern-footer
+│   │       │   └── template-screenshot.webp
+│   │       └── simple-old-school
+│   │           ├── template-screenshot-1.webp
+│   │           ├── template-screenshot-2.webp
+│   │           ├── template-screenshot-3.webp
+│   │           └── template-screenshot-4.webp
+│   ├── robots.txt
+│   ├── screenshot.png
+│   ├── sitemap-0.xml
+│   ├── sitemap.xml
+│   └── social
+│       ├── apple-music.webp
+│       ├── github.webp
+│       ├── instagram.webp
+│       ├── linkedin.webp
+│       └── x.webp
+├── src
+│   ├── app
+│   │   ├── about
+│   │   │   └── page.js
+│   │   ├── connect
+│   │   │   └── page.js
+│   │   ├── layout.js
+│   │   ├── made-by-arsh
+│   │   │   ├── page.js
+│   │   │   ├── templates
+│   │   │   │   └── [slug]
+│   │   │   │       ├── TemplateContent.js
+│   │   │   │       └── page.js
+│   │   │   └── web-projects
+│   │   │       └── [slug]
+│   │   │           └── page.js
+│   │   ├── not-found.js
+│   │   ├── page.js
+│   │   └── resume
+│   │       └── page.js
+│   ├── assets
+│   │   └── about
+│   │       └── skills
+│   │           ├── bootstrap.svg
+│   │           ├── cpp.svg
+│   │           ├── css.svg
+│   │           ├── flask.svg
+│   │           ├── git.svg
+│   │           ├── html.svg
+│   │           ├── java.svg
+│   │           ├── java2.svg
+│   │           ├── javascript.svg
+│   │           ├── jquery.svg
+│   │           ├── markdown.svg
+│   │           ├── mysql.svg
+│   │           ├── nextjs.svg
+│   │           ├── php.svg
+│   │           ├── python.svg
+│   │           ├── react.svg
+│   │           ├── tailwindcss.svg
+│   │           └── vercel.svg
+│   ├── components
+│   │   ├── About
+│   │   │   ├── SkillsTableSection.jsx
+│   │   │   ├── TextSection.jsx
+│   │   │   └── TimelineSection.jsx
+│   │   ├── Common
+│   │   │   └── AnimateBackground.jsx
+│   │   ├── Connect
+│   │   │   ├── Form.jsx
+│   │   │   ├── FormInputs.jsx
+│   │   │   └── FormLabels.jsx
+│   │   ├── Home
+│   │   │   ├── AnimatesImgsSection.jsx
+│   │   │   ├── MadeByArshSection.jsx
+│   │   │   ├── SocialsSection.jsx
+│   │   │   └── Typed.js
+│   │   ├── Layout
+│   │   │   ├── Footer
+│   │   │   │   ├── Footer.js
+│   │   │   │   ├── MadebyArshLinks.js
+│   │   │   │   ├── SocialLinks.js
+│   │   │   │   └── TopButton.js
+│   │   │   └── Navbar
+│   │   │       ├── Navbar.js
+│   │   │       └── NavbarLinks.js
+│   │   ├── MadeByArsh
+│   │   │   ├── PythonProjectsSection.jsx
+│   │   │   ├── WebMiniProjectsSection.jsx
+│   │   │   ├── WebProjectsSection.jsx
+│   │   │   └── WebTemplatesSection.jsx
+│   │   ├── Resume
+│   │   │   └── Content.js
+│   │   └── Theme
+│   │       ├── SetMetaThemeColor.js
+│   │       └── ThemeToggle.js
+│   ├── data
+│   │   ├── socialLinksBase.js
+│   │   ├── webProjectsBase.js
+│   │   └── webTemplatesBase.js
+│   ├── hooks
+│   │   └── useOutsideClick.jsx
+│   ├── lib
+│   │   └── utils.js
+│   └── styles
+│       └── global.css
+├── tailwind.config.js
+└── vercel.json
+
+51 directories, 155 files
