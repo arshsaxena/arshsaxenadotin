@@ -46,7 +46,7 @@ const resumeData = {
 			location: 'Chennai, India',
 			duration: 'Sep 2023 – Present',
 			responsibilities: [
-				'Developed event websites including Zyper, HackFiesta, and the 2024–25 recruitment portal, enhancing UI/UX and performance.',
+				'Developed event websites for Zyper, HackFiesta, and the 2024–25 recruitment portal, enhancing UI/UX and performance.',
 				'Contributed to the revamp of the official CYSCOM website and improved code maintainability.',
 				'Supported chapter meets, tutorials, and event operations across marketing and technical teams.',
 			],
@@ -70,7 +70,7 @@ const resumeData = {
 			details: [
 				'Built a platform that aggregates and organizes NPTEL course resources with automated data fetching and structured presentation.',
 				'Implemented a fast, responsive UI with advanced search and filtering using Next.js and Tailwind CSS.',
-				'Reached 15,000+ unique users and enabled 1,20,000+ practice sessions.',
+				'<strong>Engaged 15,000+ unique users and enabled 1,20,000+ practice sessions.</strong>',
 			],
 		},
 		{
@@ -81,7 +81,7 @@ const resumeData = {
 				'Developed a responsive faculty directory with dynamic filters (alphabet, designation, school, building) and search.',
 				'Enhanced usability with reusable UI components, color-coded tags, and optimized multi-select filter logic.',
 				'Added anonymous faculty ratings with secure student login and analytics.',
-				'Engages 75–100 daily active student users.',
+				'<strong>Engages 75–100 daily active student users.</strong>',
 			],
 		},
 		{
@@ -91,7 +91,7 @@ const resumeData = {
 			details: [
 				'Built an English composition blog using HTML, CSS, JavaScript, and jQuery.',
 				'Currently redesigning the platform using Next.js and Tailwind CSS for a modern, faster, and more responsive UI.',
-				'Engages 500+ daily student users worldwide.',
+				'<strong>Engages 500+ daily student users worldwide.</strong>',
 			],
 		},
 	],
@@ -323,9 +323,7 @@ function Section({ title, items, type }) {
 							<ul className="ml-5 list-disc">
 								{(item.responsibilities || item.details).map(
 									(point, i) => (
-										<li key={i} className="ml-5">
-											{point}
-										</li>
+										<li key={i} className="ml-5" dangerouslySetInnerHTML={{ __html: point }} />
 									),
 								)}
 							</ul>
