@@ -34,10 +34,10 @@ const resumeData = {
 			location: 'Bengaluru, India',
 			duration: 'Aug 2025 – Present',
 			responsibilities: [
-				'Contributing to the design and development of an AI-powered intelligent chatbot for telecom network management (LSM/USM platforms).',
-				'Working on integrating chatbot capabilities with EMS/FCAPS modules to enable contextual fault, configuration, and performance insights.',
-				'Collaborating with the team to streamline real-time alarm analysis and troubleshooting workflows using conversational AI.',
-				'Exploring AI/ML integration in large-scale telecom systems to enhance accessibility and decision-making.',
+				'Contribute to the development of an AI-powered intelligent chatbot for telecom network management, with primary responsibility for building and refining the user interface.',
+				'Design responsive and user-friendly views using Next.js and Tailwind CSS to support real-time chatbot interactions and insights.',
+				'Work closely with team members to present fault, configuration, and performance information from EMS/FCAPS modules in a clear and usable manner.',
+				'Support real-time alarm analysis workflows and make minor improvements to the RAG-based retrieval pipeline.',
 			],
 		},
 		{
@@ -115,14 +115,14 @@ const resumeData = {
 		],
 		frameworksLibraries: [
 			'Next.js',
+			'React',
 			'Tailwind CSS',
-			'ReactJS',
 			'Node.js',
 			'Flask',
 			'jQuery',
 			'Bootstrap',
 		],
-		databasesTools: ['Git', 'VS Code', 'Vercel', 'Supabase'],
+		tools: ['Git', 'VS Code', 'Vercel', 'Supabase'],
 	},
 	downloadLink: '/resume/pdf',
 };
@@ -221,13 +221,15 @@ export default function Content() {
 										', ',
 									)}
 									<br />
-									<strong>Libraries/Frameworks</strong>:{' '}
+									<strong>
+										Frameworks & Libraries
+									</strong>:{' '}
 									{resumeData.technicalSkills.frameworksLibraries.join(
 										', ',
 									)}
 									<br />
-									<strong>Databases & Tools</strong>:{' '}
-									{resumeData.technicalSkills.databasesTools.join(
+									<strong>Tools</strong>:{' '}
+									{resumeData.technicalSkills.tools.join(
 										', ',
 									)}
 								</div>
