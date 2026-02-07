@@ -17,8 +17,8 @@ const resumeData = {
 		{
 			institution: 'Vellore Institute of Technology',
 			location: 'Chennai, India',
-			degree: 'Bachelor of Technology in Electronics and Communication Engineering',
-			duration: 'Aug 2023 – Jul 2027 (Expected)',
+			degree: 'Bachelor of Technology (BTech) in Electronics and Communication Engineering',
+			duration: 'Aug 2023 – Jul 2027',
 		},
 		{
 			institution: 'Central Academy Senior Secondary School',
@@ -44,7 +44,7 @@ const resumeData = {
 			role: 'Web Developer',
 			company: 'CYSCOM, VIT Chennai',
 			location: 'Chennai, India',
-			duration: 'Sep 2023 – Present',
+			duration: 'Sep 2023 – Aug 2025',
 			responsibilities: [
 				'Developed event websites for Zyper, HackFiesta, and the 2024–25 recruitment portal, enhancing UI/UX and performance.',
 				'Contributed to the revamp of the official CYSCOM website and improved code maintainability.',
@@ -55,7 +55,7 @@ const resumeData = {
 	projects: [
 		{
 			name: 'arshsaxena.in',
-			tech: 'Next.js, Tailwind CSS',
+			tech: 'Next.js, Tailwind CSS, Vercel',
 			duration: 'Jun 2020 – Present',
 			details: [
 				'Developed a personal portfolio website entirely from scratch using Next.js and Tailwind CSS, hosted on Vercel.',
@@ -65,33 +65,32 @@ const resumeData = {
 		},
 		{
 			name: 'NPTEL Companion',
-			tech: 'Next.js, Tailwind CSS',
+			tech: 'Next.js, Tailwind CSS, Cloudflare, Vercel',
 			duration: 'Jun 2025 – Present',
 			details: [
-				'Built a platform that aggregates and organizes NPTEL course resources with automated data fetching and structured presentation.',
-				'Implemented a fast, responsive UI with advanced search and filtering using Next.js and Tailwind CSS.',
-				'<strong>Engaged 15,000+ unique users and enabled 1,20,000+ practice sessions.</strong>',
-			],
-		},
-		{
-			name: 'VIT Chennai Faculty Information',
-			tech: 'Next.js, Tailwind CSS, Supabase',
-			duration: 'Jun 2025 – Present',
-			details: [
-				'Developed a responsive faculty directory with dynamic filters (alphabet, designation, school, building) and search.',
-				'Enhanced usability with reusable UI components, color-coded tags, and optimized multi-select filter logic.',
-				'Added anonymous faculty ratings with secure student login and analytics.',
-				'<strong>Engages 75–100 daily active student users.</strong>',
+				'Built a platform for NPTEL exam practice with quizzes, multiple modes, solutions, and study materials.',
+				'Created a fast, responsive interface with search and filter features using Next.js and Tailwind CSS.',
+				'<strong>Served 20,000+ unique users with over 2,00,000 practice sessions in the last semester and currently 500+ daily active users.</strong>',
 			],
 		},
 		{
 			name: 'aEducational',
-			tech: 'Next.js, Tailwind CSS, HTML, CSS, JavaScript',
+			tech: 'Next.js, Tailwind CSS, Vercel',
 			duration: 'Feb 2021 – Present',
 			details: [
-				'Built an English composition blog using HTML, CSS, JavaScript, and jQuery.',
-				'Currently redesigning the platform using Next.js and Tailwind CSS for a modern, faster, and more responsive UI.',
-				'<strong>Engages 500+ daily student users worldwide.</strong>',
+				'Built a comprehensive educational platform offering academic writing samples across multiple categories, including letters, essays, articles, reports, notices, speeches, and debates.',
+				'Redesigned from HTML/CSS/JavaScript to Next.js and Tailwind CSS for improved performance and modern UI.',
+				'<strong>Engages 5,000+ student users worldwide with 24/7 access to quality exam preparation content.</strong>',
+			],
+		},
+		{
+			name: 'VIT Chennai Faculty Information',
+			tech: 'Next.js, Tailwind CSS, Supabase, Vercel',
+			duration: 'Jun 2025 – Present',
+			details: [
+				'Developed a responsive faculty directory with dynamic filters (alphabet, designation, school, building) and search.',
+				'Enhanced usability with reusable UI components, color-coded tags, and optimized multi-select filter logic.',
+				'<strong>Engages 75–100 daily active student users.</strong>',
 			],
 		},
 	],
@@ -122,7 +121,13 @@ const resumeData = {
 			'jQuery',
 			'Bootstrap',
 		],
-		tools: ['Git', 'VS Code', 'Vercel', 'Supabase'],
+		tools: [
+			'Git',
+			'Visual Studio Code',
+			'Vercel',
+			'Cloudflare',
+			'Supabase',
+		],
 	},
 	downloadLink: '/resume/pdf',
 };
@@ -323,7 +328,13 @@ function Section({ title, items, type }) {
 							<ul className="ml-5 list-disc">
 								{(item.responsibilities || item.details).map(
 									(point, i) => (
-										<li key={i} className="ml-5" dangerouslySetInnerHTML={{ __html: point }} />
+										<li
+											key={i}
+											className="ml-5"
+											dangerouslySetInnerHTML={{
+												__html: point,
+											}}
+										/>
 									),
 								)}
 							</ul>

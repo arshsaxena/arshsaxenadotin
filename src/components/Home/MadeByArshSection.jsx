@@ -29,14 +29,14 @@ export default function MadeByArshSection() {
 				'pb-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
 		{
-			...webProjectsBase.vitcfacultyinfo,
+			...webProjectsBase.aeducational,
 			buttonLabel: 'Check Out',
 			buttonIcon: 'ArrowUpRight',
 			containerCss:
 				'py-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
 		{
-			...webProjectsBase.aeducational,
+			...webProjectsBase.vitcfacultyinfo,
 			buttonLabel: 'Check Out',
 			buttonIcon: 'ArrowUpRight',
 			containerCss:

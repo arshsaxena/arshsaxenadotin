@@ -12,10 +12,16 @@ import JavascriptIcon from '@/assets/about/skills/javascript.svg';
 import JavaIcon from '@/assets/about/skills/java.svg';
 import ReactIcon from '@/assets/about/skills/react.svg';
 import VercelIcon from '@/assets/about/skills/vercel.svg';
+import CloudflareIcon from '@/assets/about/skills/cloudflare.svg';
+import NetlifyIcon from '@/assets/about/skills/netlify.svg';
+import GitHubPagesIcon from '@/assets/about/skills/github-pages.svg';
 import HtmlIcon from '@/assets/about/skills/html.svg';
 import CssIcon from '@/assets/about/skills/css.svg';
 import FlaskIcon from '@/assets/about/skills/flask.svg';
+import NodejsIcon from '@/assets/about/skills/nodejs.svg';
 import JqueryIcon from '@/assets/about/skills/jquery.svg';
+import MathworksIcon from '@/assets/about/skills/mathworks.svg';
+import RIcon from '@/assets/about/skills/r.svg';
 import BootstrapIcon from '@/assets/about/skills/bootstrap.svg';
 import PhpIcon from '@/assets/about/skills/php.svg';
 import MysqlIcon from '@/assets/about/skills/mysql.svg';
@@ -73,6 +79,21 @@ const skills = [
 		css: 'hover:bg-[#000000] hover:text-[#f5f5f7]',
 	},
 	{
+		label: 'Cloudflare',
+		icon: CloudflareIcon,
+		css: 'hover:bg-[#f38020] hover:text-[#f5f5f7]',
+	},
+	{
+		label: 'Netlify',
+		icon: NetlifyIcon,
+		css: 'hover:bg-[#00c7b7] hover:text-[#f5f5f7]',
+	},
+	{
+		label: 'GitHub Pages',
+		icon: GitHubPagesIcon,
+		css: 'hover:bg-[#222222] hover:text-[#f5f5f7]',
+	},
+	{
 		label: 'HTML',
 		icon: HtmlIcon,
 		css: 'hover:bg-[#e34f26] hover:text-[#f5f5f7]',
@@ -88,9 +109,24 @@ const skills = [
 		css: 'hover:bg-[#000000] hover:text-[#f5f5f7]',
 	},
 	{
+		label: 'Node.js',
+		icon: NodejsIcon,
+		css: 'hover:bg-[#68a063] hover:text-[#f5f5f7]',
+	},
+	{
 		label: 'jQuery',
 		icon: JqueryIcon,
 		css: 'hover:bg-[#0769ad] hover:text-[#f5f5f7]',
+	},
+	{
+		label: 'MATLAB',
+		icon: MathworksIcon,
+		css: 'hover:bg-[#e16737] hover:text-[#f5f5f7]',
+	},
+	{
+		label: 'R',
+		icon: RIcon,
+		css: 'hover:bg-[#276dc3] hover:text-[#f5f5f7]',
 	},
 	{
 		label: 'Bootstrap',

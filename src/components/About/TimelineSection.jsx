@@ -101,7 +101,7 @@ const Timeline = () => {
 								</div>
 								<div className="text-sm md:text-lg">
 									{item.preTextContent && (
-										<div className="mb-3 flex w-fit items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-2 py-1 pr-3 text-xs text-[#f5f5f7] md:text-sm">
+										<div className="mb-3 flex w-fit items-center rounded-full bg-[var(--main)] px-2 py-1 pr-3 text-xs text-[#f5f5f7] md:text-sm">
 											<Image
 												src="/emojis/pin.webp"
 												width={15}

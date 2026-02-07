@@ -17,11 +17,11 @@ const items = [
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
 	},
 	{
-		...webProjectsBase.vitcfacultyinfo,
+		...webProjectsBase.aeducational,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
 	{
-		...webProjectsBase.aeducational,
+		...webProjectsBase.vitcfacultyinfo,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
 	},
 	{
@@ -84,7 +84,7 @@ export const BentoGridItem = ({
 							width={0}
 							height={0}
 							alt={label}
-							className={`h-[30px] w-[30px] rounded-[6.5px] bg-[#f5f5f7] md:h-[35px] md:w-[35px] md:rounded-[7.5px]`}
+							className={`h-[30px] w-[30px] rounded-[6.5px] border-[0.5px] border-[var(--border-default)] bg-[#f5f5f7] md:h-[35px] md:w-[35px] md:rounded-[7.5px]`}
 						/>
 						{label}
 					</div>

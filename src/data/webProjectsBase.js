@@ -11,6 +11,16 @@ export const webProjectsBase = {
 		img: '/made-by-arsh/web-projects/imgs/nptelcompanion.webp',
 		target: '_blank',
 	},
+	aeducational: {
+		label: 'aEducational',
+		tagLine: 'Free, quality educational content.',
+		desc1: 'Free, quality educational content.',
+		desc2: 'Get letters, essays, notices, speeches, debates, and paragraphs - all written by me. Perfect for students and learners.',
+		href: 'https://education.arshsaxena.in/',
+		icon: '/made-by-arsh/web-projects/icons/aeducational-icon.webp',
+		img: '/made-by-arsh/web-projects/imgs/aeducational-desktop.webp',
+		target: '_blank',
+	},
 	vitcfacultyinfo: {
 		label: 'VIT Chennai Faculty Information',
 		tagLine: 'Quickly search, filter, and rate VIT Chennai faculties.',
@@ -19,16 +29,6 @@ export const webProjectsBase = {
 		href: 'https://vitcfacultyinfo.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/vitcfacultyinfo-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/vitcfacultyinfo.webp',
-		target: '_blank',
-	},
-	aeducational: {
-		label: 'aEducational',
-		tagLine: 'Free English writing resources.',
-		desc1: 'Free English writing resources.',
-		desc2: 'Get letters, essays, notices, speeches, debates, and paragraphs - all written by me. Perfect for students and learners.',
-		href: 'https://education.arshsaxena.in/',
-		icon: '/made-by-arsh/web-projects/icons/aeducational-app-icon.webp',
-		img: '/made-by-arsh/web-projects/imgs/aeducational-desktop.webp',
 		target: '_blank',
 	},
 	aconverter: {
