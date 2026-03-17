@@ -2,7 +2,7 @@
 
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -73,16 +73,33 @@ export const BentoGridItem = ({
 	buttonLabel,
 	css,
 }) => {
-	const imageSources =
-		Array.isArray(screenshots) && screenshots.length > 0
-			? screenshots
-			: img
-				? [{ src: img, caption: label || 'Project image' }]
-				: [];
+	const imageSources = useMemo(() => {
+		if (Array.isArray(screenshots) && screenshots.length > 0) {
+			return screenshots;
+		}
+
+		if (img) {
+			return [{ src: img, caption: label || 'Project image' }];
+		}
+
+		return [];
+	}, [screenshots, img, label]);
+
 	const [currentSlide, setCurrentSlide] = useState(0);
 	const hasGallery = imageSources.length > 0;
 	const hasMultipleSlides = imageSources.length > 1;
 	const currentImage = hasGallery ? imageSources[currentSlide] : null;
+
+	useEffect(() => {
+		if (!hasMultipleSlides) {
+			return;
+		}
+
+		imageSources.forEach((shot) => {
+			const preloadImage = new window.Image();
+			preloadImage.src = shot.src;
+		});
+	}, [hasMultipleSlides, imageSources]);
 
 	const hasImage = Boolean(img);
 	const hasIcon = Boolean(icon);
