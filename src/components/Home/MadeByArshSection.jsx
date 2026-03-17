@@ -29,6 +29,13 @@ export default function MadeByArshSection() {
 				'pb-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
 		{
+			...webProjectsBase.vinhance,
+			buttonLabel: 'Chrome Web Store',
+			buttonIcon: 'ArrowUpRight',
+			containerCss:
+				'py-5 border-b-[1px] border-b-[var(--border-default)]',
+		},
+		{
 			...webProjectsBase.aeducational,
 			buttonLabel: 'Check Out',
 			buttonIcon: 'ArrowUpRight',

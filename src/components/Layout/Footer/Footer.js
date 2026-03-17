@@ -19,6 +19,18 @@ export default function Footer() {
 	const [timeString, setTimeString] = useState('');
 	const [year, setYear] = useState(new Date().getFullYear());
 
+	const madeByArshFooterLinks = [
+		webProjectsBase.nptelcompanion,
+		webProjectsBase.vinhance,
+		webProjectsBase.aeducational,
+		webProjectsBase.vitcfacultyinfo,
+		{
+			href: '/made-by-arsh',
+			label: 'See More',
+			target: '_self',
+		},
+	];
+
 	useEffect(() => {
 		const showTime = () => {
 			const time = new Date();
@@ -88,13 +100,7 @@ export default function Footer() {
 								Made by Arsh
 							</h3>
 							<div className="flex flex-col space-y-2 text-[var(--muted)]">
-								{[
-									...Object.values(webProjectsBase),
-									{
-										href: '/made-by-arsh/#templates',
-										label: 'Templates',
-									},
-								].map((item, i) => (
+								{madeByArshFooterLinks.map((item, i) => (
 									<MadebyArshLink
 										key={i}
 										href={item.href}

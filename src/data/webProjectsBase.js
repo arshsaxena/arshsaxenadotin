@@ -11,6 +11,39 @@ export const webProjectsBase = {
 		img: '/made-by-arsh/web-projects/imgs/nptelcompanion.webp',
 		target: '_blank',
 	},
+	vinhance: {
+		label: 'VInhance',
+		tagLine: 'Make VTOP useful.',
+		desc1: 'Make VTOP useful.',
+		desc2: 'Powerful Chrome extension designed to make VTOP more feature-rich for students across all VIT campuses.',
+		href: 'https://chromewebstore.google.com/detail/vinhance/kdpkhnlloacadjadmepfnpdliglafaaf',
+		buttonLabel: 'Chrome Web Store',
+		icon: '/made-by-arsh/web-projects/icons/vinhance.webp',
+		img: '/made-by-arsh/web-projects/imgs/vinhance.webp',
+		screenshots: [
+			{
+				src: '/made-by-arsh/web-projects/imgs/vinhance-home.webp',
+				caption: 'Home',
+			},
+			{
+				src: '/made-by-arsh/web-projects/imgs/vinhance-attendance.webp',
+				caption: 'Attendance',
+			},
+			{
+				src: '/made-by-arsh/web-projects/imgs/vinhance-marks.webp',
+				caption: 'Marks',
+			},
+			{
+				src: '/made-by-arsh/web-projects/imgs/vinhance-calendar.webp',
+				caption: 'Calendar',
+			},
+			{
+				src: '/made-by-arsh/web-projects/imgs/vinhance-home-cgpa.webp',
+				caption: 'Home CGPA',
+			},
+		],
+		target: '_blank',
+	},
 	aeducational: {
 		label: 'aEducational by Arsh',
 		tagLine: 'Free, quality educational content.',
@@ -80,5 +113,15 @@ export const webProjectsBase = {
 		icon: '/made-by-arsh/web-projects/icons/weather-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/weather-desktop.webp',
 		target: '_blank',
+	},
+	blank: {
+		label: '',
+		tagLine: '',
+		desc1: '',
+		desc2: '',
+		href: '',
+		icon: '',
+		img: '',
+		target: '',
 	},
 };

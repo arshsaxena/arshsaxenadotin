@@ -65,6 +65,7 @@
 │   │   │   │   ├── nptelcompanion-icon.webp
 │   │   │   │   ├── qr-icon.webp
 │   │   │   │   ├── solarsystem-icon.webp
+│   │   │   │   ├── vinhance.webp
 │   │   │   │   ├── vitcfacultyinfo-icon.webp
 │   │   │   │   └── weather-icon.webp
 │   │   │   ├── imgs
@@ -74,6 +75,11 @@
 │   │   │   │   ├── nptelcompanion.webp
 │   │   │   │   ├── qr-desktop.webp
 │   │   │   │   ├── solarsystem.webp
+│   │   │   │   ├── vinhance-attendance.webp
+│   │   │   │   ├── vinhance-calendar.webp
+│   │   │   │   ├── vinhance-home-cgpa.webp
+│   │   │   │   ├── vinhance-home.webp
+│   │   │   │   ├── vinhance-marks.webp
 │   │   │   │   ├── vitcfacultyinfo.webp
 │   │   │   │   └── weather-desktop.webp
 │   │   │   ├── ping-pong
@@ -211,4 +217,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-51 directories, 161 files
+51 directories, 167 files
