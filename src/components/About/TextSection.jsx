@@ -92,7 +92,7 @@ export default function TextSection() {
 						socialLinksBase.instagram,
 						socialLinksBase.x,
 					].map((item, i) => (
-						<Link key={i} href={item.href}>
+						<Link key={i} href={item.href} target="_blank">
 							<Image
 								src={item.icon}
 								width={40}

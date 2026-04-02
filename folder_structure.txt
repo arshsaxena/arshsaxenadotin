@@ -157,6 +157,7 @@
 │   │           ├── java2.svg
 │   │           ├── javascript.svg
 │   │           ├── jquery.svg
+│   │           ├── jupyter.svg
 │   │           ├── markdown.svg
 │   │           ├── mathworks.svg
 │   │           ├── mysql.svg
@@ -217,4 +218,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-51 directories, 167 files
+51 directories, 168 files

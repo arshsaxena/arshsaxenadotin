@@ -10,6 +10,7 @@ import NextjsIcon from '@/assets/about/skills/nextjs.svg';
 import TailwindcssIcon from '@/assets/about/skills/tailwindcss.svg';
 import JavascriptIcon from '@/assets/about/skills/javascript.svg';
 import JavaIcon from '@/assets/about/skills/java.svg';
+import JupyterIcon from '@/assets/about/skills/jupyter.svg';
 import ReactIcon from '@/assets/about/skills/react.svg';
 import VercelIcon from '@/assets/about/skills/vercel.svg';
 import CloudflareIcon from '@/assets/about/skills/cloudflare.svg';
@@ -67,6 +68,11 @@ const skills = [
 		label: 'Java',
 		icon: JavaIcon,
 		css: 'hover:bg-[#ed8b00] hover:text-[#f5f5f7]',
+	},
+	{
+		label: 'Jupyter',
+		icon: JupyterIcon,
+		css: 'hover:bg-[#f37726] hover:text-[#f5f5f7]',
 	},
 	{
 		label: 'React',
