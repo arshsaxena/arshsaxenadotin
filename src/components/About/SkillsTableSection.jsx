@@ -16,6 +16,7 @@ import VercelIcon from '@/assets/about/skills/vercel.svg';
 import CloudflareIcon from '@/assets/about/skills/cloudflare.svg';
 import NetlifyIcon from '@/assets/about/skills/netlify.svg';
 import GitHubPagesIcon from '@/assets/about/skills/github-pages.svg';
+import LatexIcon from '@/assets/about/skills/latex.svg';
 import HtmlIcon from '@/assets/about/skills/html.svg';
 import CssIcon from '@/assets/about/skills/css.svg';
 import FlaskIcon from '@/assets/about/skills/flask.svg';
@@ -98,6 +99,11 @@ const skills = [
 		label: 'GitHub Pages',
 		icon: GitHubPagesIcon,
 		css: 'hover:bg-[#222222] hover:text-[#f5f5f7]',
+	},
+	{
+		label: 'LaTeX',
+		icon: LatexIcon,
+		css: 'hover:bg-[#008080] hover:text-[#f5f5f7]',
 	},
 	{
 		label: 'HTML',

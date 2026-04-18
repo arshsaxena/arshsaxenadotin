@@ -19,6 +19,9 @@ const urls = {
 	},
 	projects: {
 		nptelcompanion: 'https://nptelcompanion.arshsaxena.in',
+		vinhance:
+			'https://chromewebstore.google.com/detail/vinhance/kdpkhnlloacadjadmepfnpdliglafaaf',
+		aeducational: 'https://education.arshsaxena.in/',
 		vitcfacultyinfo: 'https://vitcfacultyinfo.arshsaxena.in/',
 		leetcode: 'https://leetcode.com/u/arshsaxena/',
 	},
@@ -158,6 +161,21 @@ module.exports = {
 			{
 				source: '/vitcfacultyinfo',
 				destination: urls.projects.vitcfacultyinfo,
+				permanent: true,
+			},
+			{
+				source: '/vinhance',
+				destination: urls.projects.vinhance,
+				permanent: true,
+			},
+			{
+				source: '/education',
+				destination: urls.projects.aeducational,
+				permanent: true,
+			},
+			{
+				source: '/aeducational',
+				destination: urls.projects.aeducational,
 				permanent: true,
 			},
 		];

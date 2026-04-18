@@ -10,6 +10,7 @@ import { Download } from 'lucide-react';
 const resumeData = {
 	personalInfo: {
 		name: 'Arsh Saxena',
+		website: 'https://arshsaxena.in',
 		linkedin: 'https://linkedin.com/in/arshsaxena',
 		github: 'https://github.com/arshsaxena',
 	},
@@ -40,41 +41,34 @@ const resumeData = {
 				'Support real-time alarm analysis workflows and make minor improvements to the RAG-based retrieval pipeline.',
 			],
 		},
-		{
-			role: 'Web Developer',
-			company: 'CYSCOM, VIT Chennai',
-			location: 'Chennai, India',
-			duration: 'Sep 2023 – Aug 2025',
-			responsibilities: [
-				'Developed event websites for Zyper, HackFiesta, and the 2024–25 recruitment portal, enhancing UI/UX and performance.',
-				'Contributed to the revamp of the official CYSCOM website and improved code maintainability.',
-				'Supported chapter meets, tutorials, and event operations across marketing and technical teams.',
-			],
-		},
 	],
 	projects: [
 		{
-			name: 'arshsaxena.in',
-			tech: 'Next.js, Tailwind CSS, Vercel',
-			duration: 'Jun 2020 – Present',
-			details: [
-				'Developed a personal portfolio website entirely from scratch using Next.js and Tailwind CSS, hosted on Vercel.',
-				'Focused on clean design, fast performance, and responsive layout across devices.',
-				'Integrated tools like Google Search Console, Vercel Analytics, and Clarity for SEO, analytics, and user insights.',
-			],
-		},
-		{
 			name: 'NPTEL Companion',
+			link: 'https://nptelcompanion.arshsaxena.in/',
 			tech: 'Next.js, Tailwind CSS, Cloudflare, Vercel',
 			duration: 'Jun 2025 – Present',
 			details: [
 				'Built a platform for NPTEL exam practice with quizzes, multiple modes, solutions, and study materials.',
 				'Created a fast, responsive interface with search and filter features using Next.js and Tailwind CSS.',
-				'<strong>Served 20,000+ unique users with over 2,00,000 practice sessions in the last semester and currently 500+ daily active users.</strong>',
+				'<strong>Served 50,000+ unique users with over 2,00,000 practice sessions from Jul-Nov 2025 for 3 courses and currently serving 5000+ daily active users for 15 courses.</strong>',
+			],
+		},
+		{
+			name: 'VInhance',
+			link: 'https://chromewebstore.google.com/detail/vinhance/kdpkhnlloacadjadmepfnpdliglafaaf',
+			tech: 'JavaScript, HTML/CSS',
+			duration: 'Oct 2025 – Present',
+			details: [
+				'Developed a Chrome extension to improve the VTOP portal for students across VIT campuses.',
+				'Built and improved features for attendance planning, marks and grade analysis, exam schedule tools, and timetable-based daily dashboards.',
+				'Implemented quality-of-life tools such as dark mode, auto-captcha solving, and one-click export options for academic data.',
+				'<strong>Published for Chromium-based browsers via the Chrome Web Store.</strong>',
 			],
 		},
 		{
 			name: 'aEducational',
+			link: 'https://education.arshsaxena.in/',
 			tech: 'Next.js, Tailwind CSS, Vercel',
 			duration: 'Feb 2021 – Present',
 			details: [
@@ -85,6 +79,7 @@ const resumeData = {
 		},
 		{
 			name: 'VIT Chennai Faculty Information',
+			link: 'https://vitcfacultyinfo.arshsaxena.in/',
 			tech: 'Next.js, Tailwind CSS, Supabase, Vercel',
 			duration: 'Jun 2025 – Present',
 			details: [
@@ -127,6 +122,7 @@ const resumeData = {
 			'Vercel',
 			'Cloudflare',
 			'Supabase',
+			'LaTeX',
 		],
 	},
 	downloadLink: '/resume/pdf',
@@ -161,6 +157,17 @@ export default function Content() {
 						</h1>
 
 						<div className="mb-7 text-center text-sm">
+							<a
+								href={resumeData.personalInfo.website}
+								className="mx-1 underline"
+								target="_blank"
+							>
+								{resumeData.personalInfo.website.replace(
+									'https://',
+									'',
+								)}
+							</a>{' '}
+							|{' '}
 							<a
 								href={resumeData.personalInfo.linkedin}
 								className="mx-1 underline"
@@ -270,7 +277,17 @@ function Section({ title, items, type }) {
 								{type === 'projects' ? (
 									<>
 										<span className="font-bold">
-											{item.name}
+											{item.link ? (
+												<a
+													href={item.link}
+													target="_blank"
+													className="underline decoration-[0.5px] underline-offset-2 hover:no-underline"
+												>
+													{item.name}
+												</a>
+											) : (
+												item.name
+											)}
 										</span>{' '}
 										|{' '}
 										<span className="italic">

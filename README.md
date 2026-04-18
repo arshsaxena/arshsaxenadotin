@@ -11,5 +11,5 @@
 </p>
 
 <p>
-    Copyright &copy; 2025 Arsh Saxena.
+    Copyright &copy; 2026 Arsh Saxena.
 </p>
