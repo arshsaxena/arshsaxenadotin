@@ -23,7 +23,7 @@ export default function Footer() {
 		webProjectsBase.nptelcompanion,
 		webProjectsBase.vinhance,
 		webProjectsBase.aeducational,
-		webProjectsBase.vitcfacultyinfo,
+		// webProjectsBase.vitcfacultyinfo,
 		{
 			href: '/made-by-arsh',
 			label: 'See More',

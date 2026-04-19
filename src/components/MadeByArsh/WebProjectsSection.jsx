@@ -24,34 +24,38 @@ const items = [
 		...webProjectsBase.aeducational,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
 	},
-	{
-		...webProjectsBase.vitcfacultyinfo,
-		css: 'border-[1px] border-[var(--border-default)] border-b-0',
-	},
-	{
+	// {
+	// 	...webProjectsBase.vitcfacultyinfo,
+	// 	css: 'border-[1px] border-[var(--border-default)] border-b-0',
+	// },
+    {
 		...webProjectsBase.aconverter,
-		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
+		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
 	{
 		...webProjectsBase.solarsystem,
-		css: 'border-[1px] border-[var(--border-default)] border-b-0',
-	},
-	{
-		...webProjectsBase.colors,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
 	},
 	{
-		...webProjectsBase.qr,
+		...webProjectsBase.colors,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
 	{
-		...webProjectsBase.weather,
-		css: 'border-[1px] border-[var(--border-default)] md:border-r-0',
+		...webProjectsBase.qr,
+		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-b-[1px]  md:border-r-0',
 	},
 	{
-		...webProjectsBase.blank,
+		...webProjectsBase.weather,
 		css: 'border-[1px] border-[var(--border-default)]',
 	},
+	// {
+	// 	...webProjectsBase.blank,
+	// 	css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
+	// },
+	// {
+	// 	...webProjectsBase.blank,
+	// 	css: 'border-[1px] border-[var(--border-default)]',
+	// },
 ];
 
 export const BentoGrid = ({ children }) => {
@@ -189,7 +193,7 @@ export const BentoGridItem = ({
 					<Link
 						href={href}
 						target="_blank"
-						className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 text-center text-[#f5f5f7] hover:bg-[var(--accent)]"
+						className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 pr-[9px] text-center text-[#f5f5f7] hover:bg-[var(--accent)]"
 					>
 						<span className="text-sm md:text-[15px]">
 							{ctaLabel}

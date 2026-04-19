@@ -42,13 +42,13 @@ export default function MadeByArshSection() {
 			containerCss:
 				'py-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
-		{
-			...webProjectsBase.vitcfacultyinfo,
-			buttonLabel: 'Check Out',
-			buttonIcon: 'ArrowUpRight',
-			containerCss:
-				'py-5 border-b-[1px] border-b-[var(--border-default)]',
-		},
+		// {
+		// 	...webProjectsBase.vitcfacultyinfo,
+		// 	buttonLabel: 'Check Out',
+		// 	buttonIcon: 'ArrowUpRight',
+		// 	containerCss:
+		// 		'py-5 border-b-[1px] border-b-[var(--border-default)]',
+		// },
 		{
 			...webProjectsBase.aconverter,
 			buttonLabel: 'Check Out',
