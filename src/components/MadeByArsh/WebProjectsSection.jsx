@@ -28,7 +28,7 @@ const items = [
 	// 	...webProjectsBase.vitcfacultyinfo,
 	// 	css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	// },
-    {
+	{
 		...webProjectsBase.aconverter,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
