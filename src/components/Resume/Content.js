@@ -33,7 +33,7 @@ const resumeData = {
 			role: 'PRISM Developer',
 			company: 'Samsung R&D Institute India',
 			location: 'Bengaluru, India',
-			duration: 'Aug 2025 – Present',
+			duration: 'Aug 2025 – Nov 2025',
 			responsibilities: [
 				'Contribute to the development of an AI-powered intelligent chatbot for telecom network management, with primary responsibility for building and refining the user interface.',
 				'Design responsive and user-friendly views using Next.js and Tailwind CSS to support real-time chatbot interactions and insights.',
@@ -51,7 +51,7 @@ const resumeData = {
 			details: [
 				'Built a platform for NPTEL exam practice with quizzes, multiple modes, solutions, and study materials.',
 				'Created a fast, responsive interface with search and filter features using Next.js and Tailwind CSS.',
-				'<strong>Served 50,000+ unique users with over 2,00,000 practice sessions from Jul-Nov 2025 for 3 courses and currently serving 5000+ daily active users for 15 courses.</strong>',
+				'<strong>Served 1,00,000+ learners across India in just two NPTEL exam cycles, with 5,00,000+ practice sessions across multiple high-demand courses.</strong>',
 			],
 		},
 		{
@@ -63,7 +63,7 @@ const resumeData = {
 				'Developed a Chrome extension to improve the VTOP portal for students across VIT campuses.',
 				'Built and improved features for attendance planning, marks and grade analysis, exam schedule tools, and timetable-based daily dashboards.',
 				'Implemented quality-of-life tools such as dark mode, auto-captcha solving, and one-click export options for academic data.',
-				'<strong>Published for Chromium-based browsers via the Chrome Web Store.</strong>',
+				'<strong>Published for Chromium-based browsers via the Chrome Web Store, 200+ daily active users.</strong>',
 			],
 		},
 		{
@@ -123,6 +123,7 @@ const resumeData = {
 			'Cloudflare',
 			'Supabase',
 			'LaTeX',
+			'Markdown',
 		],
 	},
 	downloadLink: '/resume/pdf',

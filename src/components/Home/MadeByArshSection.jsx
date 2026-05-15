@@ -49,13 +49,13 @@ export default function MadeByArshSection() {
 		// 	containerCss:
 		// 		'py-5 border-b-[1px] border-b-[var(--border-default)]',
 		// },
-		{
-			...webProjectsBase.aconverter,
-			buttonLabel: 'Check Out',
-			buttonIcon: 'ArrowUpRight',
-			containerCss:
-				'py-5 border-b-[1px] border-b-[var(--border-default)]',
-		},
+		// {
+		// 	...webProjectsBase.aconverter,
+		// 	buttonLabel: 'Check Out',
+		// 	buttonIcon: 'ArrowUpRight',
+		// 	containerCss:
+		// 		'py-5 border-b-[1px] border-b-[var(--border-default)]',
+		// },
 		{
 			...webProjectsBase.solarsystem,
 			css: 'p-[2px]',
@@ -64,27 +64,37 @@ export default function MadeByArshSection() {
 			containerCss:
 				'py-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
+		// {
+		// 	...webProjectsBase.colors,
+		// 	css: 'p-[2px]',
+		// 	buttonLabel: 'Check Out',
+		// 	buttonIcon: 'ArrowUpRight',
+		// 	containerCss:
+		// 		'py-5 border-b-[1px] border-b-[var(--border-default)]',
+		// },
+		// {
+		// 	...webProjectsBase.qr,
+		// 	buttonLabel: 'Check Out',
+		// 	buttonIcon: 'ArrowUpRight',
+		// 	containerCss:
+		// 		'py-5 border-b-[1px] border-b-[var(--border-default)]',
+		// },
+		// {
+		// 	...webProjectsBase.weather,
+		// 	css: 'p-[0.5px]',
+		// 	buttonLabel: 'Check Out',
+		// 	buttonIcon: 'ArrowUpRight',
+		// 	containerCss: 'pt-5',
+		// },
 		{
-			...webProjectsBase.colors,
-			css: 'p-[2px]',
-			buttonLabel: 'Check Out',
-			buttonIcon: 'ArrowUpRight',
-			containerCss:
-				'py-5 border-b-[1px] border-b-[var(--border-default)]',
-		},
-		{
-			...webProjectsBase.qr,
-			buttonLabel: 'Check Out',
-			buttonIcon: 'ArrowUpRight',
-			containerCss:
-				'py-5 border-b-[1px] border-b-[var(--border-default)]',
-		},
-		{
-			...webProjectsBase.weather,
+			href: '/made-by-arsh',
 			css: 'p-[0.5px]',
-			buttonLabel: 'Check Out',
-			buttonIcon: 'ArrowUpRight',
+			buttonLabel: 'See More',
+			buttonIcon: 'ChevronRight',
 			containerCss: 'pt-5',
+			linkContainerCSS: 'mt-0 justify-start md:items-start',
+			linkCSS: 'pr-1.5',
+			target: '_self',
 		},
 	];
 
@@ -99,13 +109,15 @@ export default function MadeByArshSection() {
 							key={i}
 							className={`flex flex-row justify-between md:items-end ${item.containerCss}`}
 						>
-							<Image
-								src={item.icon}
-								width={0}
-								height={0}
-								alt={item.label}
-								className={`h-[70px] w-[70px] rounded-[15px] border-[1px] border-[var(--border-default)] bg-[#f5f5f7] md:h-[80px] md:w-[80px] ${item.css}`}
-							/>
+							{item.icon && (
+								<Image
+									src={item.icon}
+									width={0}
+									height={0}
+									alt={item.label}
+									className={`h-[70px] w-[70px] rounded-[15px] border-[1px] border-[var(--border-default)] bg-[#f5f5f7] md:h-[80px] md:w-[80px] ${item.css}`}
+								/>
+							)}
 							<div className="w-full">
 								<div className="ml-3 md:ml-5">
 									<div className="text-[17px] font-bold md:text-[23px]">
@@ -115,11 +127,13 @@ export default function MadeByArshSection() {
 										{item.tagLine}
 									</div>
 								</div>
-								<div className="mt-5 flex w-full justify-end sm:mt-0">
+								<div
+									className={`mt-5 flex w-full justify-end sm:mt-0 ${item.linkContainerCSS}`}
+								>
 									<Link
 										href={item.href}
-										target="_blank"
-										className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 text-center text-[#f5f5f7] hover:bg-[var(--accent)]"
+										target={item.target ?? '_blank'}
+										className={`flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 pr-2.5 text-center text-[#f5f5f7] hover:bg-[var(--accent)] ${item.linkCSS}`}
 									>
 										<span className="text-sm md:text-[15px]">
 											{item.buttonLabel}
