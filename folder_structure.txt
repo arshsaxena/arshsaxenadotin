@@ -4,8 +4,6 @@
 ├── components.json
 ├── eslint.config.mjs
 ├── folder_structure.txt
-├── gh-readme
-│   └── screenshot.png
 ├── jsconfig.json
 ├── next-sitemap.config.js
 ├── next.config.js
@@ -48,10 +46,7 @@
 │   │   ├── img1.webp
 │   │   ├── img2.webp
 │   │   ├── img3.webp
-│   │   ├── img4.webp
-│   │   ├── img5.webp
-│   │   ├── img6.webp
-│   │   └── img7.webp
+│   │   └── img4.webp
 │   ├── made-by-arsh
 │   │   ├── python-projects
 │   │   │   ├── ping-pong.webp
@@ -221,4 +216,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-51 directories, 171 files
+50 directories, 167 files

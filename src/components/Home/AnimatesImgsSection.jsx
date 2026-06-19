@@ -94,9 +94,6 @@ const AnimatedImgsSection = ({ autoplay = false }) => {
 		{ src: '/images/img2.webp' },
 		{ src: '/images/img3.webp' },
 		{ src: '/images/img4.webp' },
-		{ src: '/images/img5.webp' },
-		{ src: '/images/img6.webp' },
-		{ src: '/images/img7.webp' },
 	];
 
 	const [active, setActive] = useState(0);
