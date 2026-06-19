@@ -16,9 +16,13 @@
 ├── public
 │   ├── about
 │   │   └── timeline
+│   │       ├── aeducational-icon-old.webp
+│   │       ├── aeducational-icon.webp
 │   │       ├── centralacademy.webp
 │   │       ├── cyscomvit.webp
+│   │       ├── nptelcompanion-icon.webp
 │   │       ├── samsungresearch.webp
+│   │       ├── vinhance.webp
 │   │       ├── vitc1.webp
 │   │       └── vitc2.webp
 │   ├── arsh-favicon-apple.png
@@ -66,7 +70,6 @@
 │   │   │   │   ├── qr-icon.webp
 │   │   │   │   ├── solarsystem-icon.webp
 │   │   │   │   ├── vinhance.webp
-│   │   │   │   ├── vitcfacultyinfo-icon.webp
 │   │   │   │   └── weather-icon.webp
 │   │   │   ├── imgs
 │   │   │   │   ├── aconverter-desktop.webp
@@ -80,7 +83,6 @@
 │   │   │   │   ├── vinhance-home-cgpa.webp
 │   │   │   │   ├── vinhance-home.webp
 │   │   │   │   ├── vinhance-marks.webp
-│   │   │   │   ├── vitcfacultyinfo.webp
 │   │   │   │   └── weather-desktop.webp
 │   │   │   ├── ping-pong
 │   │   │   │   ├── index.html
@@ -219,4 +221,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-51 directories, 169 files
+51 directories, 171 files

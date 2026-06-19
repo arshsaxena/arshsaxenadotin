@@ -22,7 +22,6 @@ const urls = {
 		vinhance:
 			'https://chromewebstore.google.com/detail/vinhance/kdpkhnlloacadjadmepfnpdliglafaaf',
 		aeducational: 'https://education.arshsaxena.in/',
-		vitcfacultyinfo: 'https://vitcfacultyinfo.arshsaxena.in/',
 		leetcode: 'https://leetcode.com/u/arshsaxena/',
 	},
 	docs: {
@@ -151,16 +150,6 @@ module.exports = {
 			{
 				source: '/nptel',
 				destination: urls.projects.nptelcompanion,
-				permanent: true,
-			},
-			{
-				source: '/vitc',
-				destination: urls.projects.vitcfacultyinfo,
-				permanent: true,
-			},
-			{
-				source: '/vitcfacultyinfo',
-				destination: urls.projects.vitcfacultyinfo,
 				permanent: true,
 			},
 			{

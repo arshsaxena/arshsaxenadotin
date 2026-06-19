@@ -42,20 +42,6 @@ export default function MadeByArshSection() {
 			containerCss:
 				'py-5 border-b-[1px] border-b-[var(--border-default)]',
 		},
-		// {
-		// 	...webProjectsBase.vitcfacultyinfo,
-		// 	buttonLabel: 'Check Out',
-		// 	buttonIcon: 'ArrowUpRight',
-		// 	containerCss:
-		// 		'py-5 border-b-[1px] border-b-[var(--border-default)]',
-		// },
-		// {
-		// 	...webProjectsBase.aconverter,
-		// 	buttonLabel: 'Check Out',
-		// 	buttonIcon: 'ArrowUpRight',
-		// 	containerCss:
-		// 		'py-5 border-b-[1px] border-b-[var(--border-default)]',
-		// },
 		{
 			...webProjectsBase.solarsystem,
 			css: 'p-[2px]',
@@ -91,9 +77,9 @@ export default function MadeByArshSection() {
 			css: 'p-[0.5px]',
 			buttonLabel: 'See More',
 			buttonIcon: 'ChevronRight',
-			containerCss: 'pt-5',
+			containerCss: 'md:pt-5',
 			linkContainerCSS: 'mt-0 justify-start md:items-start',
-			linkCSS: 'pr-1.5',
+			linkCSS: 'pr-[5.5px]',
 			target: '_self',
 		},
 	];

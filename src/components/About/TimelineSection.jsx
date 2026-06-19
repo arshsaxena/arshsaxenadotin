@@ -6,9 +6,54 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useScroll, useTransform, motion } from 'motion/react';
 
 import Image from 'next/image';
+import Link from 'next/link';
+
+import { MapPin, ArrowUpRight } from 'lucide-react';
 
 const Timeline = () => {
 	const data = [
+		{
+			title: 'Mar 2026',
+			preTextContent: 'Chrome Web Store',
+			textContent:
+				'Shipped <strong>VInhance</strong>, a Chromium-based browser extension that provides enhanced analytics, attendance tracking, academic insights, and productivity features for students, making the portal more intuitive and useful.',
+			textContentCss: '',
+			imgContent: ['/about/timeline/vinhance.webp'],
+			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
+			imgContentCss: 'h-full',
+			css: '',
+			isProduct: true,
+			url: 'https://chromewebstore.google.com/detail/vinhance/kdpkhnlloacadjadmepfnpdliglafaaf',
+		},
+		{
+			title: 'Feb 2026',
+			preTextContent: 'education.arshsaxena.in',
+			textContent:
+				'Revamped and shipped <strong>aEducational by Arsh</strong>, a platform for students to get free English writing resources such as letters, essays, notices, speeches, debates, and paragraphs.',
+			textContentCss: '',
+			imgContent: [
+				'/about/timeline/aeducational-icon-old.webp',
+				'/about/timeline/aeducational-icon.webp',
+			],
+			imgWrapperCss: 'grid grid-cols-2 md:grid-cols-2 gap-2',
+			imgContentCss: 'h-full',
+			css: 'pt-20 md:pt-40',
+			isProduct: true,
+			url: 'https://education.arshsaxena.in',
+		},
+		{
+			title: 'Aug 2025',
+			preTextContent: 'nptelcompanion.arshsaxena.in',
+			textContent:
+				'Shipped <strong>NPTEL Companion</strong>, a platform for students to prepare, practice, and get exam-ready for NPTEL.',
+			textContentCss: '',
+			imgContent: ['/about/timeline/nptelcompanion-icon.webp'],
+			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
+			imgContentCss: 'h-full',
+			css: 'pt-20 md:pt-40',
+			isProduct: true,
+			url: 'https://nptelcompanion.arshsaxena.in',
+		},
 		{
 			title: 'Jul 2025',
 			preTextContent: 'Bengaluru, India',
@@ -18,7 +63,7 @@ const Timeline = () => {
 			imgContent: ['/about/timeline/samsungresearch.webp'],
 			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
 			imgContentCss: 'h-1/2 md:h-full',
-			css: '',
+			css: 'pt-20 md:pt-40',
 		},
 		{
 			title: 'Sep 2023',
@@ -101,15 +146,25 @@ const Timeline = () => {
 								</div>
 								<div className="text-sm md:text-lg">
 									{item.preTextContent && (
-										<div className="mb-3 flex w-fit items-center rounded-full bg-[var(--main)] px-2 py-1 pr-3 text-xs text-[#f5f5f7] md:text-sm">
-											<Image
-												src="/emojis/pin.webp"
-												width={15}
-												height={15}
-												alt="pin"
-												className="mr-1"
-											/>{' '}
-											{item.preTextContent}
+										<div
+											className={`mb-3 flex w-fit items-center rounded-full bg-[var(--main)] py-0.5 text-xs text-[#f5f5f7] md:text-sm ${item.isProduct ? 'border-[1px] border-[var(--accent)] px-3 pr-2.5 hover:bg-[var(--accent)]' : 'px-3'}`}
+										>
+											{item.isProduct ? (
+												<>
+													<Link
+														href={`${item.url}`}
+														target="_blank"
+													>
+														{item.preTextContent}
+													</Link>
+													<ArrowUpRight className="ml-1 w-[15px]" />
+												</>
+											) : (
+												<>
+													<MapPin className="mr-1 w-[15px]" />
+													{item.preTextContent}
+												</>
+											)}
 										</div>
 									)}
 									{item.textContent && (

@@ -13,6 +13,7 @@ const resumeData = {
 		website: 'https://arshsaxena.in',
 		linkedin: 'https://linkedin.com/in/arshsaxena',
 		github: 'https://github.com/arshsaxena',
+		leetcode: 'https://leetcode.com/u/arshsaxena',
 	},
 	education: [
 		{
@@ -91,6 +92,11 @@ const resumeData = {
 	],
 	certifications: [
 		{
+			name: 'Oracle Java Certified Foundations Associate',
+			issuer: 'Oracle',
+			date: 'Jun 2026',
+		},
+		{
 			name: 'Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate',
 			issuer: 'Oracle',
 			date: 'Sep 2025',
@@ -157,7 +163,7 @@ export default function Content() {
 							{resumeData.personalInfo.name}
 						</h1>
 
-						<div className="mb-7 text-center text-sm">
+						<div className="text-center text-sm">
 							<a
 								href={resumeData.personalInfo.website}
 								className="mx-1 underline"
@@ -167,8 +173,10 @@ export default function Content() {
 									'https://',
 									'',
 								)}
-							</a>{' '}
-							|{' '}
+							</a>
+						</div>
+
+						<div className="mb-7 text-center text-sm">
 							<a
 								href={resumeData.personalInfo.linkedin}
 								className="mx-1 underline"
@@ -186,6 +194,17 @@ export default function Content() {
 								target="_blank"
 							>
 								{resumeData.personalInfo.github.replace(
+									'https://',
+									'',
+								)}
+							</a>
+							|{' '}
+							<a
+								href={resumeData.personalInfo.leetcode}
+								className="mx-1 underline"
+								target="_blank"
+							>
+								{resumeData.personalInfo.leetcode.replace(
 									'https://',
 									'',
 								)}

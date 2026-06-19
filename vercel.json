@@ -71,16 +71,6 @@
 			"permanent": true
 		},
 		{
-			"source": "/vitc",
-			"destination": "https://vitcfacultyinfo.arshsaxena.in/",
-			"permanent": true
-		},
-		{
-			"source": "/vitcfacultyinfo",
-			"destination": "https://vitcfacultyinfo.arshsaxena.in/",
-			"permanent": true
-		},
-		{
 			"source": "/leetcode",
 			"destination": "https://leetcode.com/u/arshsaxena/",
 			"permanent": true

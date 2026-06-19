@@ -24,10 +24,6 @@ const items = [
 		...webProjectsBase.aeducational,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
 	},
-	// {
-	// 	...webProjectsBase.vitcfacultyinfo,
-	// 	css: 'border-[1px] border-[var(--border-default)] border-b-0',
-	// },
 	{
 		...webProjectsBase.aconverter,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0',
