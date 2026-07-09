@@ -13,24 +13,34 @@ export default function TextSection() {
 			<div className="space-y-5">
 				<div>Hey.</div>
 				<div>
-					I’m Arsh Saxena, a developer currently pursuing a B.Tech. in
-					Electronics and Communication Engineering. I have a strong
-					interest in programming and web development, and I’m
-					proficient in C/C++ and Python. I love exploring new
-					technologies and constantly improving my skills.
+					I'm Arsh Saxena, a B.Tech. student in Electronics and
+					Communication Engineering with a strong passion for software
+					development, problem solving, and building impactful
+					applications. I enjoy turning ideas into practical solutions
+					and continuously expanding my technical expertise.
 				</div>
 				<div>
-					Beyond coding, I’m into photography, video editing, and
-					photo editing. I also enjoy writing engaging content,
-					especially in English composition. In my free time, I watch
-					movies and TV shows, and I collect sneakers as a hobby.
+					My primary programming language is C++, and I also work with
+					Python and JavaScript. I'm currently focused on mastering
+					Data Structures & Algorithms, strengthening my
+					problem-solving skills, and building full-stack web
+					applications while preparing for software engineering roles.
+				</div>
+				<div>
+					I enjoy learning new technologies, writing clean and
+					efficient code, and working on projects that challenge me to
+					grow as a developer. I'm always looking for opportunities to
+					improve, whether through personal projects, competitive
+					programming, or exploring modern development tools and
+					frameworks.
+				</div>
+				<div>
+					Outside of coding, I enjoy photography, photo and video
+					editing, watching movies and TV shows, and collecting
+					sneakers.
 				</div>
 				<div className="flex w-fit flex-wrap justify-start gap-2">
 					{[
-						{
-							alt: 'books',
-							icon: '/emojis/books.webp',
-						},
 						{
 							alt: 'boy-using-laptop',
 							icon: '/emojis/boy-using-laptop.webp',

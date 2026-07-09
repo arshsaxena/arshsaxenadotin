@@ -11,89 +11,48 @@ const iconMap = { ChevronRight, ArrowUpRight };
 
 export default function MadeByArshSection() {
 	const items = [
-		// {
-		// 	href: '/',
-		// 	label: 'Arsh Saxena',
-		// 	tagLine: 'Official app.',
-		// 	icon: '/made-by-arsh/web-projects/icons/arshsaxena-app-icon.webp',
-		// 	buttonLabel: 'Coming Soon',
-		// 	// buttonIcon: 'ChevronRight',
-		// 	containerCss:
-		// 		'pb-5 border-b-[1px] border-b-[var(--border-default)]',
-		// },
 		{
-			...webProjectsBase.nptelcompanion,
+			...webProjectsBase.peerroom,
 			buttonLabel: 'Check Out',
 			buttonIcon: 'ArrowUpRight',
-			containerCss:
-				'pb-5 border-b-[1px] border-b-[var(--border-default)]',
+		},
+		{
+			...webProjectsBase.stackshot,
+			buttonLabel: 'Check Out',
+			buttonIcon: 'ArrowUpRight',
+		},
+		{
+			...webProjectsBase.airroomtv,
+			buttonLabel: 'Check Out',
+			buttonIcon: 'ArrowUpRight',
 		},
 		{
 			...webProjectsBase.vinhance,
 			buttonLabel: 'Chrome Web Store',
 			buttonIcon: 'ArrowUpRight',
-			containerCss:
-				'py-5 border-b-[1px] border-b-[var(--border-default)]',
+		},
+		{
+			...webProjectsBase.nptelcompanion,
+			buttonLabel: 'Check Out',
+			buttonIcon: 'ArrowUpRight',
 		},
 		{
 			...webProjectsBase.aeducational,
 			buttonLabel: 'Check Out',
 			buttonIcon: 'ArrowUpRight',
-			containerCss:
-				'py-5 border-b-[1px] border-b-[var(--border-default)]',
-		},
-		{
-			...webProjectsBase.solarsystem,
-			css: 'p-[2px]',
-			buttonLabel: 'Check Out',
-			buttonIcon: 'ArrowUpRight',
-			containerCss:
-				'py-5 border-b-[1px] border-b-[var(--border-default)]',
-		},
-		// {
-		// 	...webProjectsBase.colors,
-		// 	css: 'p-[2px]',
-		// 	buttonLabel: 'Check Out',
-		// 	buttonIcon: 'ArrowUpRight',
-		// 	containerCss:
-		// 		'py-5 border-b-[1px] border-b-[var(--border-default)]',
-		// },
-		// {
-		// 	...webProjectsBase.qr,
-		// 	buttonLabel: 'Check Out',
-		// 	buttonIcon: 'ArrowUpRight',
-		// 	containerCss:
-		// 		'py-5 border-b-[1px] border-b-[var(--border-default)]',
-		// },
-		// {
-		// 	...webProjectsBase.weather,
-		// 	css: 'p-[0.5px]',
-		// 	buttonLabel: 'Check Out',
-		// 	buttonIcon: 'ArrowUpRight',
-		// 	containerCss: 'pt-5',
-		// },
-		{
-			href: '/made-by-arsh',
-			css: 'p-[0.5px]',
-			buttonLabel: 'See More',
-			buttonIcon: 'ChevronRight',
-			containerCss: 'md:pt-5',
-			linkContainerCSS: 'mt-0 justify-start md:items-start',
-			linkCSS: 'pr-[5.5px]',
-			target: '_self',
 		},
 	];
 
 	return (
 		<>
-			<div className="mx-auto flex flex-col justify-between">
+			<div className="mx-auto grid grid-cols-1 justify-between gap-2 md:grid-cols-2">
 				{items.map((item, i) => {
 					const ButtonIcon = iconMap[item.buttonIcon];
 
 					return (
 						<div
 							key={i}
-							className={`flex flex-row justify-between md:items-end ${item.containerCss}`}
+							className={`items-top flex flex-row justify-between ${item.containerCss} rounded-[25px] border-[1px] border-[var(--border-default)] bg-[var(--surface)] p-3`}
 						>
 							{item.icon && (
 								<Image
@@ -101,7 +60,7 @@ export default function MadeByArshSection() {
 									width={0}
 									height={0}
 									alt={item.label}
-									className={`h-[70px] w-[70px] rounded-[15px] border-[1px] border-[var(--border-default)] bg-[#f5f5f7] md:h-[80px] md:w-[80px] ${item.css}`}
+									className={`h-[80px] w-[80px] rounded-[15px] border-[1px] border-[var(--border-default)] bg-[#f5f5f7] align-middle ${item.css}`}
 								/>
 							)}
 							<div className="w-full">
@@ -109,12 +68,12 @@ export default function MadeByArshSection() {
 									<div className="text-[17px] font-bold md:text-[23px]">
 										{item.label}
 									</div>
-									<div className="text-sm">
+									<div className="text-[12px] md:text-[13px]">
 										{item.tagLine}
 									</div>
 								</div>
 								<div
-									className={`mt-5 flex w-full justify-end sm:mt-0 ${item.linkContainerCSS}`}
+									className={`mt-3 flex w-full justify-end sm:mt-0 ${item.linkContainerCSS}`}
 								>
 									<Link
 										href={item.href}

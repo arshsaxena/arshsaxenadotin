@@ -22,12 +22,6 @@ const resumeData = {
 			degree: 'Bachelor of Technology (BTech) in Electronics and Communication Engineering',
 			duration: 'Aug 2023 – Jul 2027',
 		},
-		{
-			institution: 'Central Academy Senior Secondary School',
-			location: 'Lucknow, India',
-			degree: 'Senior Secondary Education – PCM + CS',
-			duration: 'Apr 2021 – May 2023',
-		},
 	],
 	experience: [
 		{
@@ -36,57 +30,79 @@ const resumeData = {
 			location: 'Bengaluru, India',
 			duration: 'Aug 2025 – Nov 2025',
 			responsibilities: [
-				'Contribute to the development of an AI-powered intelligent chatbot for telecom network management, with primary responsibility for building and refining the user interface.',
-				'Design responsive and user-friendly views using Next.js and Tailwind CSS to support real-time chatbot interactions and insights.',
-				'Work closely with team members to present fault, configuration, and performance information from EMS/FCAPS modules in a clear and usable manner.',
-				'Support real-time alarm analysis workflows and make minor improvements to the RAG-based retrieval pipeline.',
+				'Contributed to the development of an AI-powered chatbot for telecom network management, with primary responsibility for building and refining the UI.',
+				'Presented fault, configuration, and performance data from EMS/FCAPS modules in a clear, usable interface.',
+				'Supported real-time alarm analysis workflows and made improvements to the RAG-based retrieval pipeline.',
 			],
 		},
 	],
 	projects: [
 		{
-			name: 'NPTEL Companion',
-			link: 'https://nptelcompanion.arshsaxena.in/',
-			tech: 'Next.js, Tailwind CSS, Cloudflare, Vercel',
-			duration: 'Jun 2025 – Present',
+			name: 'PeerRoom',
+			link: 'https://peerroom.arshsaxena.in',
+			tech: 'Next.js, Tailwind CSS, WebRTC, Cloudflare Workers',
+			duration: 'Jul 2026',
 			details: [
-				'Built a platform for NPTEL exam practice with quizzes, multiple modes, solutions, and study materials.',
-				'Created a fast, responsive interface with search and filter features using Next.js and Tailwind CSS.',
-				'<strong>Served 1,00,000+ learners across India in just two NPTEL exam cycles, with 5,00,000+ practice sessions across multiple high-demand courses.</strong>',
+				'Built an open source private file sharing and collaboration web app with direct P2P transfers using WebRTC, no sign-up.',
+				'Implemented local network discovery for nearby devices and secure pairing using room codes across different networks.',
+				'Developed temporary collaboration rooms featuring a real-time collaborative text editor, encrypted Cloudflare R2 file storage, and automatic data deletion after 7 days.',
+				'Designed the backend on Cloudflare Workers with Durable Objects for signaling, room management, and synchronization.',
+			],
+		},
+		{
+			name: 'AirRoom TV',
+			link: 'https://github.com/arshsaxena/AirRoomTV',
+			tech: 'Kotlin, Jetpack Compose, C++, Android TV',
+			duration: 'Jun 2026',
+			details: [
+				'Developed an open source Android TV AirPlay receiver for screen mirroring and audio streaming from Apple devices.',
+				'Implemented AirPlay and RAOP protocol handling through a native C++ layer integrated with Kotlin using JNI.',
+				"Built a TV-friendly UI with Jetpack Compose and enabled automatic device discovery using Android's NsdManager.",
+			],
+		},
+		{
+			name: 'StackShot',
+			link: 'https://github.com/arshsaxena/StackShot',
+			tech: 'Swift, SwiftUI, ScreenCaptureKit, macOS',
+			duration: 'May 2026',
+			details: [
+				'Built an open source macOS application that stores screenshots in a floating visual stack instead of cluttering the desktop.',
+				'Implemented a clipboard queue, enabling sequential pasting of multiple screenshots across applications.',
+				'Supported region, window, and full-screen capture modes with drag-and-drop organization and batch export functionality.',
 			],
 		},
 		{
 			name: 'VInhance',
 			link: 'https://chromewebstore.google.com/detail/vinhance/kdpkhnlloacadjadmepfnpdliglafaaf',
 			tech: 'JavaScript, HTML/CSS',
-			duration: 'Oct 2025 – Present',
+			duration: 'Oct 2025',
 			details: [
-				'Developed a Chrome extension to improve the VTOP portal for students across VIT campuses.',
-				'Built and improved features for attendance planning, marks and grade analysis, exam schedule tools, and timetable-based daily dashboards.',
-				'Implemented quality-of-life tools such as dark mode, auto-captcha solving, and one-click export options for academic data.',
-				'<strong>Published for Chromium-based browsers via the Chrome Web Store, 200+ daily active users.</strong>',
+				'Developed a Chromium extension enhancing the VTOP portal experience for students across VIT campuses.',
+				'Implemented attendance analytics, grade visualization, exam planning tools, timetable dashboards, and academic utilities.',
+				'Added productivity features including dark mode, automatic CAPTCHA solving, and one-click academic data export.',
+				'<strong>Published for Chromium-based browsers via the Chrome Web Store, 300+ daily active users.</strong>',
+			],
+		},
+		{
+			name: 'NPTEL Companion',
+			link: 'https://nptelcompanion.arshsaxena.in',
+			tech: 'Next.js, Tailwind CSS, Cloudflare, Vercel',
+			duration: 'Jun 2025',
+			details: [
+				'Built a platform for NPTEL exam practice with quizzes, multiple modes, solutions, and study materials.',
+				'Built a responsive interface with optimized search and filtering for quick access to course material.',
+				'<strong>Served 1,00,000+ learners across India in just two NPTEL exam cycles, with 5,00,000+ practice sessions across multiple high-demand courses.</strong>',
 			],
 		},
 		{
 			name: 'aEducational',
-			link: 'https://education.arshsaxena.in/',
+			link: 'https://education.arshsaxena.in',
 			tech: 'Next.js, Tailwind CSS, Vercel',
-			duration: 'Feb 2021 – Present',
+			duration: 'Feb 2021',
 			details: [
-				'Built a comprehensive educational platform offering academic writing samples across multiple categories, including letters, essays, articles, reports, notices, speeches, and debates.',
-				'Redesigned from HTML/CSS/JavaScript to Next.js and Tailwind CSS for improved performance and modern UI.',
-				'<strong>Engages 5,000+ student users worldwide with 24/7 access to quality exam preparation content.</strong>',
-			],
-		},
-		{
-			name: 'arshsaxena.in',
-			link: 'https://www.arshsaxena.in/',
-			tech: 'Next.js, Tailwind CSS, Vercel',
-			duration: 'Jun 2020 – Present',
-			details: [
-				'Developed a personal portfolio website entirely from scratch using Next.js and Tailwind CSS, hosted on Vercel.',
-				'Focused on clean design, fast performance, and responsive layout across devices.',
-				'Integrated tools like Google Search Console, Vercel Analytics, and Clarity for SEO, analytics, and user insights.',
+				'Built an educational platform for academic writing resources, including essays, letters, articles, speeches, and reports.',
+				'Migrated the platform from static HTML/CSS to Next.js and Tailwind CSS, improving maintainability and performance.',
+				'<strong>Supports more than 5,000 students worldwide with freely accessible academic resources.</strong>',
 			],
 		},
 	],
@@ -104,27 +120,29 @@ const resumeData = {
 	],
 	technicalSkills: {
 		languages: [
-			'C/C++',
-			'Python',
-			'HTML/CSS',
-			'JavaScript',
+			'C++',
+			'C',
 			'Java',
+			'Python',
+			'JavaScript',
 			'SQL',
+			'HTML/CSS',
 			'R',
 			'MATLAB',
 		],
 		frameworksLibraries: [
-			'Next.js',
 			'React',
-			'Tailwind CSS',
+			'Next.js',
 			'Node.js',
 			'Flask',
-			'jQuery',
+			'Tailwind CSS',
 			'Bootstrap',
+			'jQuery',
 		],
 		tools: [
 			'Git',
-			'Visual Studio Code',
+			'GitHub',
+			'VS Code',
 			'Vercel',
 			'Cloudflare',
 			'Supabase',
@@ -173,10 +191,8 @@ export default function Content() {
 									'https://',
 									'',
 								)}
-							</a>
-						</div>
-
-						<div className="mb-7 text-center text-sm">
+							</a>{' '}
+							|{' '}
 							<a
 								href={resumeData.personalInfo.linkedin}
 								className="mx-1 underline"
@@ -197,7 +213,7 @@ export default function Content() {
 									'https://',
 									'',
 								)}
-							</a>
+							</a>{' '}
 							|{' '}
 							<a
 								href={resumeData.personalInfo.leetcode}
@@ -276,7 +292,7 @@ export default function Content() {
 
 function Section({ title, items, type }) {
 	return (
-		<section className="mb-6">
+		<section className="mb-6 mt-6">
 			<h2 className="mb-2 border-b-[0.5px] border-[var(--foreground)] text-[1.1em] uppercase">
 				{title[0]}
 				<span className="align-baseline text-sm">{title.slice(1)}</span>
@@ -335,31 +351,20 @@ function Section({ title, items, type }) {
 							</span>
 						</div>
 
-						<div
-							className={`flex flex-col justify-between ${type !== 'projects' && type !== 'certifications' ? 'text-sm italic md:flex-row' : ''}`}
-						>
-							{type === 'certifications' && (
-								<span className="text-sm italic">
-									{item.issuer}
+						{type !== 'projects' && type !== 'certifications' && (
+							<div className="flex flex-col justify-between text-sm italic md:flex-row">
+								<span>
+									{type === 'education'
+										? item.degree
+										: item.company}
 								</span>
-							)}
-							{type !== 'projects' &&
-								type !== 'certifications' && (
-									<span>
-										{type === 'education'
-											? item.degree
-											: item.company}
-									</span>
-								)}
-							{type !== 'projects' &&
-								type !== 'certifications' && (
-									<span>
-										{type === 'experience'
-											? item.location
-											: item.duration}
-									</span>
-								)}
-						</div>
+								<span>
+									{type === 'experience'
+										? item.location
+										: item.duration}
+								</span>
+							</div>
+						)}
 
 						{item.responsibilities || item.details ? (
 							<ul className="ml-5 list-disc">

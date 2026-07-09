@@ -9,11 +9,28 @@ import Link from 'next/link';
 
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
+import CppIcon from '@/assets/about/skills/cpp.svg';
+import NextjsIcon from '@/assets/about/skills/nextjs.svg';
+import TailwindcssIcon from '@/assets/about/skills/tailwindcss.svg';
+import JavascriptIcon from '@/assets/about/skills/javascript.svg';
+import VercelIcon from '@/assets/about/skills/vercel.svg';
+import CloudflareIcon from '@/assets/about/skills/cloudflare.svg';
+import HtmlIcon from '@/assets/about/skills/html.svg';
+import CssIcon from '@/assets/about/skills/css.svg';
+
 import { webProjectsBase } from '@/data/webProjectsBase';
 
 const items = [
 	{
-		...webProjectsBase.nptelcompanion,
+		...webProjectsBase.peerroom,
+		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0 rounded-t-[25px] md:rounded-tr-none md:rounded-tl-[25px]',
+	},
+	{
+		...webProjectsBase.stackshot,
+		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:rounded-tr-[25px]',
+	},
+	{
+		...webProjectsBase.airroomtv,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
 	},
 	{
@@ -21,38 +38,121 @@ const items = [
 		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
 	{
-		...webProjectsBase.aeducational,
+		...webProjectsBase.nptelcompanion,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
+	},
+	{
+		...webProjectsBase.aeducational,
+		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
 	{
 		...webProjectsBase.aconverter,
-		css: 'border-[1px] border-[var(--border-default)] border-b-0',
-	},
-	{
-		...webProjectsBase.solarsystem,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
 	},
 	{
-		...webProjectsBase.colors,
+		...webProjectsBase.solarsystem,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
 	{
+		...webProjectsBase.colors,
+		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
+	},
+	{
 		...webProjectsBase.qr,
-		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-b-[1px]  md:border-r-0',
+		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
 	{
 		...webProjectsBase.weather,
-		css: 'border-[1px] border-[var(--border-default)]',
+		css: 'border-[1px] border-[var(--border-default)] rounded-b-[25px] md:rounded-b-none md:rounded-bl-[25px] md:border-r-0',
 	},
 	// {
 	// 	...webProjectsBase.blank,
 	// 	css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
 	// },
-	// {
-	// 	...webProjectsBase.blank,
-	// 	css: 'border-[1px] border-[var(--border-default)]',
-	// },
+	{
+		...webProjectsBase.blank,
+		css: 'hidden md:block border-[1px] border-[var(--border-default)] md:rounded-br-[25px]',
+	},
 ];
+
+const techStyles = {
+	'Next.js': {
+		bg: 'bg-black text-white border-transparent',
+		icon: NextjsIcon,
+	},
+	'Tailwind CSS': {
+		bg: 'bg-[#38b2ac] text-white border-transparent',
+		icon: TailwindcssIcon,
+	},
+	WebRTC: {
+		bg: 'bg-[#e33e38] text-white border-transparent',
+		icon: null,
+	},
+	Cloudflare: {
+		bg: 'bg-[#f38020] text-white border-transparent',
+		icon: CloudflareIcon,
+	},
+	'Cloudflare Workers': {
+		bg: 'bg-[#f38020] text-white border-transparent',
+		icon: CloudflareIcon,
+	},
+	Swift: {
+		bg: 'bg-[#f05138] text-white border-transparent',
+		icon: null,
+	},
+	SwiftUI: {
+		bg: 'bg-[#f05138] text-white border-transparent',
+		icon: null,
+	},
+	macOS: {
+		bg: 'bg-zinc-800 text-white border-transparent',
+		icon: null,
+	},
+	ScreenCaptureKit: {
+		bg: 'bg-indigo-600 text-white border-transparent',
+		icon: null,
+	},
+	Kotlin: {
+		bg: 'bg-[#7f52ff] text-white border-transparent',
+		icon: null,
+	},
+	'Jetpack Compose': {
+		bg: 'bg-[#4285f4] text-white border-transparent',
+		icon: null,
+	},
+	'Android TV': {
+		bg: 'bg-[#3ddc84] text-black border-transparent',
+		icon: null,
+	},
+	'C++': {
+		bg: 'bg-[#00599c] text-white border-transparent',
+		icon: CppIcon,
+	},
+	Vercel: {
+		bg: 'bg-black text-white border-transparent',
+		icon: VercelIcon,
+	},
+	JavaScript: {
+		bg: 'bg-[#f0db4f] text-[#0a0a0a] border-transparent',
+		icon: JavascriptIcon,
+	},
+	'Chrome Extension': {
+		bg: 'bg-[#ea4335] text-white border-transparent',
+		icon: null,
+	},
+	HTML: {
+		bg: 'bg-[#e34f26] text-white border-transparent',
+		icon: HtmlIcon,
+	},
+	CSS: {
+		bg: 'bg-[#3670a0] text-white border-transparent',
+		icon: CssIcon,
+	},
+	'HTML/CSS': {
+		bg: 'bg-[#e34f26] text-white border-transparent',
+		icon: HtmlIcon,
+	},
+};
 
 export const BentoGrid = ({ children }) => {
 	return (
@@ -68,9 +168,11 @@ export const BentoGridItem = ({
 	desc1,
 	desc2,
 	href,
+	github,
 	img,
 	screenshots,
 	buttonLabel,
+	techStack,
 	css,
 }) => {
 	const imageSources = useMemo(() => {
@@ -107,6 +209,7 @@ export const BentoGridItem = ({
 	const hasDesc1 = Boolean(desc1);
 	const hasDesc2 = Boolean(desc2);
 	const hasHref = Boolean(href);
+	const hasGithub = Boolean(github);
 	const ctaLabel = buttonLabel || 'Check Out';
 
 	const goToNextSlide = () => {
@@ -177,6 +280,28 @@ export const BentoGridItem = ({
 						</div>
 					</div>
 				)}
+				{Array.isArray(techStack) && techStack.length > 0 && (
+					<div className="flex flex-wrap gap-[6px]">
+						{techStack.map((tech) => {
+							const style = techStyles[tech] || {
+								bg: 'bg-neutral-500 text-white border-transparent',
+								icon: null,
+							};
+							const Icon = style.icon;
+							return (
+								<span
+									key={tech}
+									className={`flex items-center gap-1.5 rounded-full border-[1px] px-[10px] py-[2px] text-[11px] font-normal transition-colors md:text-xs ${style.bg}`}
+								>
+									{Icon && (
+										<Icon className="h-3 w-3 fill-current" />
+									)}
+									<span>{tech}</span>
+								</span>
+							);
+						})}
+					</div>
+				)}
 				{(hasDesc1 || hasDesc2) && (
 					<div className="md:text-md space-y-5 text-sm">
 						{hasDesc1 && <div>{desc1}</div>}
@@ -184,18 +309,32 @@ export const BentoGridItem = ({
 					</div>
 				)}
 			</div>
-			{hasHref && (
-				<div className="w-fit">
-					<Link
-						href={href}
-						target="_blank"
-						className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 pr-[9px] text-center text-[#f5f5f7] hover:bg-[var(--accent)]"
-					>
-						<span className="text-sm md:text-[15px]">
-							{ctaLabel}
-						</span>
-						<ArrowUpRight className={`ml-1 w-[15px]`} />
-					</Link>
+			{(hasHref || hasGithub) && (
+				<div className="flex w-fit gap-2">
+					{hasHref && (
+						<Link
+							href={href}
+							target="_blank"
+							className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 pr-[9px] text-center text-[#f5f5f7] hover:bg-[var(--accent)]"
+						>
+							<span className="text-sm md:text-[15px]">
+								{ctaLabel}
+							</span>
+							<ArrowUpRight className={`ml-1 w-[15px]`} />
+						</Link>
+					)}
+					{hasGithub && (
+						<Link
+							href={github}
+							target="_blank"
+							className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 pr-[9px] text-center text-[#f5f5f7] hover:bg-[var(--accent)]"
+						>
+							<span className="text-sm md:text-[15px]">
+								Open Source
+							</span>
+							<ArrowUpRight className={`ml-1 w-[15px]`} />
+						</Link>
+					)}
 				</div>
 			)}
 		</div>
@@ -206,9 +345,6 @@ export function WebProjects() {
 	return (
 		<>
 			<div>
-				<div className="rounded-t-[25px] border-[1px] border-b-0 border-[var(--border-default)] p-5 text-3xl font-black">
-					Projects
-				</div>
 				<BentoGrid className="mx-auto md:auto-rows-[20rem]">
 					{items.map((item, i) => (
 						<BentoGridItem
@@ -218,9 +354,11 @@ export function WebProjects() {
 							desc1={item.desc1}
 							desc2={item.desc2}
 							href={item.href}
+							github={item.github}
 							img={item.img}
 							screenshots={item.screenshots}
 							buttonLabel={item.buttonLabel}
+							techStack={item.techStack}
 							css={item.css}
 						/>
 					))}

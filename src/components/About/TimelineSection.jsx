@@ -13,21 +13,87 @@ import { MapPin, ArrowUpRight } from 'lucide-react';
 const Timeline = () => {
 	const data = [
 		{
+			title: 'Jul 2026',
+			textContent:
+				'Shipped <strong>PeerRoom</strong>, an open-source private file sharing and collaboration web app with direct P2P transfers using WebRTC. Features secure local network pairing, ephemeral workspaces with collaborative text editing, and encrypted R2 storage.',
+			textContentCss: '',
+			imgContent: ['/made-by-arsh/web-projects/icons/peerroom-icon.webp'],
+			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
+			imgContentCss: 'h-full',
+			css: '',
+			links: [
+				{
+					label: 'peerroom.arshsaxena.in',
+					url: 'https://peerroom.arshsaxena.in',
+				},
+				{
+					label: 'Open Source',
+					url: 'https://github.com/arshsaxena/PeerRoom',
+				},
+			],
+		},
+		{
+			title: 'Jun 2026',
+			textContent:
+				'Developed <strong>AirRoom TV</strong>, an open-source Android TV AirPlay receiver. Implemented AirPlay and RAOP protocol handling through a native C++ layer integrated with Kotlin using JNI.',
+			textContentCss: '',
+			imgContent: [
+				'/made-by-arsh/web-projects/icons/airroomtv-icon-tv.webp',
+			],
+			imgWrapperCss: 'grid grid-cols-1',
+			imgContentCss: 'h-full',
+			css: 'pt-20 md:pt-40',
+			links: [
+				{
+					label: 'airroomtv.arshsaxena.in',
+					url: 'https://airroomtv.arshsaxena.in',
+				},
+				{
+					label: 'Open Source',
+					url: 'https://github.com/arshsaxena/AirRoomTV',
+				},
+			],
+		},
+		{
+			title: 'May 2026',
+			textContent:
+				'Shipped <strong>StackShot</strong>, an open-source macOS utility for managing screenshots in a floating visual stack. Supports region, window, and full-screen captures with clipboard queue organization and batch export.',
+			textContentCss: '',
+			imgContent: [
+				'/made-by-arsh/web-projects/icons/stackshot-icon.webp',
+			],
+			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
+			imgContentCss: 'h-full',
+			css: 'pt-20 md:pt-40',
+			links: [
+				{
+					label: 'stackshot.arshsaxena.in',
+					url: 'https://stackshot.arshsaxena.in',
+				},
+				{
+					label: 'Open Source',
+					url: 'https://github.com/arshsaxena/StackShot',
+				},
+			],
+		},
+		{
 			title: 'Mar 2026',
-			preTextContent: 'Chrome Web Store',
 			textContent:
 				'Shipped <strong>VInhance</strong>, a Chromium-based browser extension that provides enhanced analytics, attendance tracking, academic insights, and productivity features for students, making the portal more intuitive and useful.',
 			textContentCss: '',
 			imgContent: ['/about/timeline/vinhance.webp'],
 			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
 			imgContentCss: 'h-full',
-			css: '',
-			isProduct: true,
-			url: 'https://chromewebstore.google.com/detail/vinhance/kdpkhnlloacadjadmepfnpdliglafaaf',
+			css: 'pt-20 md:pt-40',
+			links: [
+				{
+					label: 'Chrome Web Store',
+					url: 'https://chromewebstore.google.com/detail/vinhance/kdpkhnlloacadjadmepfnpdliglafaaf',
+				},
+			],
 		},
 		{
 			title: 'Feb 2026',
-			preTextContent: 'education.arshsaxena.in',
 			textContent:
 				'Revamped and shipped <strong>aEducational by Arsh</strong>, a platform for students to get free English writing resources such as letters, essays, notices, speeches, debates, and paragraphs.',
 			textContentCss: '',
@@ -38,12 +104,15 @@ const Timeline = () => {
 			imgWrapperCss: 'grid grid-cols-2 md:grid-cols-2 gap-2',
 			imgContentCss: 'h-full',
 			css: 'pt-20 md:pt-40',
-			isProduct: true,
-			url: 'https://education.arshsaxena.in',
+			links: [
+				{
+					label: 'education.arshsaxena.in',
+					url: 'https://education.arshsaxena.in',
+				},
+			],
 		},
 		{
 			title: 'Aug 2025',
-			preTextContent: 'nptelcompanion.arshsaxena.in',
 			textContent:
 				'Shipped <strong>NPTEL Companion</strong>, a platform for students to prepare, practice, and get exam-ready for NPTEL.',
 			textContentCss: '',
@@ -51,12 +120,15 @@ const Timeline = () => {
 			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
 			imgContentCss: 'h-full',
 			css: 'pt-20 md:pt-40',
-			isProduct: true,
-			url: 'https://nptelcompanion.arshsaxena.in',
+			links: [
+				{
+					label: 'nptelcompanion.arshsaxena.in',
+					url: 'https://nptelcompanion.arshsaxena.in',
+				},
+			],
 		},
 		{
 			title: 'Jul 2025',
-			preTextContent: 'Bengaluru, India',
 			textContent:
 				'Engaged as a <strong>PRISM Developer</strong> at <strong>Samsung R&D Institute India</strong> under the <strong>PRISM program</strong>, contributing to an AI/ML-focused research project.',
 			textContentCss: '',
@@ -64,10 +136,10 @@ const Timeline = () => {
 			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
 			imgContentCss: 'h-1/2 md:h-full',
 			css: 'pt-20 md:pt-40',
+			location: 'Bengaluru, India',
 		},
 		{
 			title: 'Sep 2023',
-			preTextContent: 'Chennai, India',
 			textContent:
 				'Joined the Development Department of <strong>CYSCOM Student Chapter</strong>, VIT Chennai as a <strong>Web Developer</strong>.',
 			textContentCss: '',
@@ -75,10 +147,10 @@ const Timeline = () => {
 			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
 			imgContentCss: 'h-full',
 			css: 'pt-20 md:pt-40',
+			location: 'Chennai, India',
 		},
 		{
 			title: 'Aug 2023',
-			preTextContent: 'Chennai, India',
 			textContent:
 				'Started pursuing B.Tech. in <strong>Electronics and Communication Engineering</strong> at <strong>Vellore Institute of Technology</strong>.',
 			textContentCss: '',
@@ -89,10 +161,10 @@ const Timeline = () => {
 			imgWrapperCss: 'grid grid-cols-2 md:grid-cols-2 gap-2',
 			imgContentCss: 'h-40 md:h-80',
 			css: 'pt-20 md:pt-40',
+			location: 'Chennai, India',
 		},
 		{
 			title: 'May 2023',
-			preTextContent: 'Lucknow, India',
 			textContent:
 				'Completed <strong>CBSE Class XII</strong> from <strong>Central Academy</strong> with Physics, Chemistry, Mathematics, Computer Science, and English.',
 			textContentCss: '',
@@ -100,6 +172,7 @@ const Timeline = () => {
 			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
 			imgContentCss: 'h-3/4 md:h-full',
 			css: 'pt-20 md:pt-40',
+			location: 'Lucknow, India',
 		},
 	];
 
@@ -145,26 +218,29 @@ const Timeline = () => {
 									{item.title}
 								</div>
 								<div className="text-sm md:text-lg">
-									{item.preTextContent && (
-										<div
-											className={`mb-3 flex w-fit items-center rounded-full bg-[var(--main)] py-0.5 text-xs text-[#f5f5f7] md:text-sm ${item.isProduct ? 'border-[1px] border-[var(--accent)] px-3 pr-2.5 hover:bg-[var(--accent)]' : 'px-3'}`}
-										>
-											{item.isProduct ? (
-												<>
-													<Link
-														href={`${item.url}`}
-														target="_blank"
-													>
-														{item.preTextContent}
-													</Link>
-													<ArrowUpRight className="ml-1 w-[15px]" />
-												</>
-											) : (
-												<>
+									{((item.links && item.links.length > 0) ||
+										item.location) && (
+										<div className="mb-3 flex flex-wrap items-center gap-2">
+											{item.location && (
+												<div className="flex items-center rounded-full bg-[var(--main)] px-3 py-0.5 text-sm text-[#f5f5f7]">
 													<MapPin className="mr-1 w-[15px]" />
-													{item.preTextContent}
-												</>
+													{item.location}
+												</div>
 											)}
+											{item.links &&
+												item.links.map((link, idx) => (
+													<Link
+														key={idx}
+														href={link.url}
+														target="_blank"
+														className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 py-0.5 pr-2.5 text-sm text-[#f5f5f7] hover:bg-[var(--accent)]"
+													>
+														<span>
+															{link.label}
+														</span>
+														<ArrowUpRight className="ml-1 w-[15px]" />
+													</Link>
+												))}
 										</div>
 									)}
 									{item.textContent && (

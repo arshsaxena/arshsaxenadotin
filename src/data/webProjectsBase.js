@@ -1,14 +1,60 @@
 // data/webProjectsBase.js
 
 export const webProjectsBase = {
-	nptelcompanion: {
-		label: 'NPTEL Companion',
-		tagLine: 'Free, exam-ready NPTEL practice.',
-		desc1: 'Free, exam-ready NPTEL practice.',
-		desc2: 'Prepare with weekly and full-length quizzes from real NPTEL courses. Designed for efficient revision and last-minute prep.',
-		href: 'https://nptelcompanion.arshsaxena.in/',
-		icon: '/made-by-arsh/web-projects/icons/nptelcompanion-icon.webp',
-		img: '/made-by-arsh/web-projects/imgs/nptelcompanion.webp',
+	peerroom: {
+		label: 'PeerRoom',
+		tagLine: 'File sharing & collaboration.',
+		desc1: 'File sharing & collaboration.',
+		desc2: 'Instant, private P2P file transfers and real-time collaborative workspaces right in your browser. No registration, no ads, no tracking.',
+		href: 'https://peerroom.arshsaxena.in/',
+		github: 'https://github.com/arshsaxena/PeerRoom',
+		icon: '/made-by-arsh/web-projects/icons/peerroom-icon.webp',
+		img: '/made-by-arsh/web-projects/imgs/peerroom.webp',
+		screenshots: [
+			{
+				src: '/made-by-arsh/web-projects/imgs/peerroom-p2p.webp',
+				caption: 'Peer-to-Peer',
+			},
+			{
+				src: '/made-by-arsh/web-projects/imgs/peerroom-room.webp',
+				caption: 'Ephemeral Room',
+			},
+		],
+		techStack: ['Next.js', 'Tailwind CSS', 'WebRTC', 'Cloudflare Workers'],
+		target: '_blank',
+	},
+	stackshot: {
+		label: 'StackShot',
+		tagLine: 'Screenshot queue for macOS.',
+		desc1: 'Screenshot queue for macOS.',
+		desc2: 'A native macOS utility that captures screenshots into a temporary visual stack, letting you queue, copy, drag, or export them in the order you need.',
+		href: 'https://stackshot.arshsaxena.in/',
+		github: 'https://github.com/arshsaxena/StackShot',
+		icon: '/made-by-arsh/web-projects/icons/stackshot-icon.webp',
+		img: '/made-by-arsh/web-projects/imgs/stackshot.webp',
+		techStack: ['Swift', 'SwiftUI', 'ScreenCaptureKit', 'macOS'],
+		target: '_blank',
+	},
+	airroomtv: {
+		label: 'AirRoom TV',
+		tagLine: 'AirPlay receiver for Android TV.',
+		desc1: 'AirPlay receiver for Android TV.',
+		desc2: 'Instant, private screen mirroring and high-fidelity music streaming on your television. No registration, no ads, zero tracking.',
+		href: 'https://airroomtv.arshsaxena.in/',
+		github: 'https://github.com/arshsaxena/AirRoomTV',
+		icon: '/made-by-arsh/web-projects/icons/airroomtv-icon.webp',
+		img: '/made-by-arsh/web-projects/imgs/airroomtv.webp',
+		screenshots: [
+			{
+				src: '/made-by-arsh/web-projects/imgs/airroomtv-home.webp',
+				caption: 'Home Screen',
+			},
+			{
+				src: '/made-by-arsh/web-projects/imgs/airroomtv-media-player.webp',
+				caption: 'Media Player',
+			},
+		],
+		techStack: ['Kotlin', 'Jetpack Compose', 'C++', 'Android TV'],
 		target: '_blank',
 	},
 	vinhance: {
@@ -42,6 +88,18 @@ export const webProjectsBase = {
 				caption: 'Home CGPA',
 			},
 		],
+		techStack: ['JavaScript', 'HTML', 'CSS'],
+		target: '_blank',
+	},
+	nptelcompanion: {
+		label: 'NPTEL Companion',
+		tagLine: 'Free, exam-ready NPTEL practice.',
+		desc1: 'Free, exam-ready NPTEL practice.',
+		desc2: 'Prepare with weekly and full-length quizzes from real NPTEL courses. Designed for efficient revision and last-minute prep.',
+		href: 'https://nptelcompanion.arshsaxena.in/',
+		icon: '/made-by-arsh/web-projects/icons/nptelcompanion-icon.webp',
+		img: '/made-by-arsh/web-projects/imgs/nptelcompanion.webp',
+		techStack: ['Next.js', 'Tailwind CSS', 'Cloudflare', 'Vercel'],
 		target: '_blank',
 	},
 	aeducational: {
@@ -52,6 +110,7 @@ export const webProjectsBase = {
 		href: 'https://education.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/aeducational-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/aeducational-desktop.webp',
+		techStack: ['Next.js', 'Tailwind CSS', 'Vercel'],
 		target: '_blank',
 	},
 	aconverter: {
@@ -62,6 +121,7 @@ export const webProjectsBase = {
 		href: 'https://converter.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/aconverter-app-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/aconverter-desktop.webp',
+		techStack: ['HTML', 'CSS', 'JavaScript'],
 		target: '_blank',
 	},
 	solarsystem: {
@@ -72,6 +132,7 @@ export const webProjectsBase = {
 		href: 'https://solarsystem.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/solarsystem-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/solarsystem.webp',
+		techStack: ['HTML', 'CSS', 'JavaScript'],
 		target: '_blank',
 	},
 	colors: {
@@ -82,6 +143,7 @@ export const webProjectsBase = {
 		href: 'https://colors.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/colors-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/colors-desktop.webp',
+		techStack: ['HTML', 'CSS', 'JavaScript'],
 		target: '_blank',
 	},
 	qr: {
@@ -92,6 +154,7 @@ export const webProjectsBase = {
 		href: 'https://qr.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/qr-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/qr-desktop.webp',
+		techStack: ['HTML', 'CSS', 'JavaScript'],
 		target: '_blank',
 	},
 	weather: {
@@ -102,6 +165,7 @@ export const webProjectsBase = {
 		href: 'https://weather.arshsaxena.in/',
 		icon: '/made-by-arsh/web-projects/icons/weather-icon.webp',
 		img: '/made-by-arsh/web-projects/imgs/weather-desktop.webp',
+		techStack: ['HTML', 'CSS', 'JavaScript'],
 		target: '_blank',
 	},
 	blank: {

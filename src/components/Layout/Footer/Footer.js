@@ -20,10 +20,12 @@ export default function Footer() {
 	const [year, setYear] = useState(new Date().getFullYear());
 
 	const madeByArshFooterLinks = [
-		webProjectsBase.nptelcompanion,
+		webProjectsBase.peerroom,
+		webProjectsBase.stackshot,
+		webProjectsBase.airroomtv,
 		webProjectsBase.vinhance,
+		webProjectsBase.nptelcompanion,
 		webProjectsBase.aeducational,
-		webProjectsBase.solarsystem,
 		{
 			href: '/made-by-arsh',
 			label: 'See More',

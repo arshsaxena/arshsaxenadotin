@@ -10,6 +10,7 @@ import Link from 'next/link';
 
 import { ChevronLeft, ChevronRight, ArrowUpRight } from 'lucide-react';
 
+import { socialLinksBase } from '@/data/socialLinksBase';
 import TypedWords from '@/components/Home/Typed';
 
 const MemoTypedWords = memo(() => <TypedWords strings={['Arsh Saxena']} />);
@@ -27,23 +28,31 @@ const ProfileText = memo(({ onPrev, onNext }) => {
 				<MemoTypedWords />
 			</h3>
 			<div className="flex flex-row items-center align-middle text-[15px] font-medium text-[var(--foreground)] md:text-[18px]">
-				{year - 2005},
-				<Image
-					src="/emojis/india1.webp"
-					width={20}
-					height={20}
-					alt="india"
-					className="ml-1 mr-[0.5px]"
-				/>
-				India
+				<div className="mt-5 flex flex-wrap items-center gap-3">
+					{[
+						socialLinksBase.linkedin,
+						socialLinksBase.github,
+						socialLinksBase.instagram,
+						socialLinksBase.x,
+					].map((item, i) => (
+						<Link key={i} href={item.href} target="_blank">
+							<Image
+								src={item.icon}
+								width={35}
+								height={35}
+								alt={item.label}
+								className="rounded-[7px]"
+							/>
+						</Link>
+					))}
+				</div>
 			</div>
 			<div className="mx-auto mt-5 text-[16.5px] font-medium leading-7 md:text-[19px]">
-				Student, developer, photographer, tech enthusiast, video editor,
-				writer, and sneakerhead.
+				Developer, photographer, tech enthusiast, video editor, writer,
+				and sneakerhead.
 			</div>
-			<div className="mt-10 flex w-fit flex-wrap justify-start gap-3">
+			<div className="mt-5 flex w-fit flex-wrap justify-start gap-3">
 				{[
-					{ alt: 'books', icon: '/emojis/books.webp' },
 					{
 						alt: 'boy-using-laptop',
 						icon: '/emojis/boy-using-laptop.webp',

@@ -18,6 +18,9 @@ const urls = {
 			'https://music.apple.com/in/playlist/arshs-favourites/pl.u-yZyVWPrCd3zXWGe',
 	},
 	projects: {
+		peerroom: 'https://peerroom.arshsaxena.in',
+		stackshot: 'https://stackshot.arshsaxena.in',
+		airroomtv: 'https://airroomtv.arshsaxena.in',
 		nptelcompanion: 'https://nptelcompanion.arshsaxena.in',
 		vinhance:
 			'https://chromewebstore.google.com/detail/vinhance/kdpkhnlloacadjadmepfnpdliglafaaf',
@@ -165,6 +168,21 @@ module.exports = {
 			{
 				source: '/aeducational',
 				destination: urls.projects.aeducational,
+				permanent: true,
+			},
+			{
+				source: '/peerroom',
+				destination: urls.projects.peerroom,
+				permanent: true,
+			},
+			{
+				source: '/stackshot',
+				destination: urls.projects.stackshot,
+				permanent: true,
+			},
+			{
+				source: '/airroomtv',
+				destination: urls.projects.airroomtv,
 				permanent: true,
 			},
 		];
