@@ -51,7 +51,7 @@ const resumeData = {
 		},
 		{
 			name: 'AirRoom TV',
-			link: 'https://github.com/arshsaxena/AirRoomTV',
+			link: 'https://airroomtv.arshsaxena.in',
 			tech: 'Kotlin, Jetpack Compose, C++, Android TV',
 			duration: 'Jun 2026',
 			details: [
@@ -62,7 +62,7 @@ const resumeData = {
 		},
 		{
 			name: 'StackShot',
-			link: 'https://github.com/arshsaxena/StackShot',
+			link: 'https://stackshot.arshsaxena.in',
 			tech: 'Swift, SwiftUI, ScreenCaptureKit, macOS',
 			duration: 'May 2026',
 			details: [
@@ -305,7 +305,7 @@ function Section({ title, items, type }) {
 							<span
 								className={
 									type === 'projects' ||
-									type === 'certifications'
+										type === 'certifications'
 										? ''
 										: 'font-bold'
 								}
