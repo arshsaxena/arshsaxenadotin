@@ -21,8 +21,8 @@ export default function Footer() {
 
 	const madeByArshFooterLinks = [
 		webProjectsBase.peerroom,
-		webProjectsBase.stackshot,
 		webProjectsBase.airroomtv,
+		webProjectsBase.stackshot,
 		webProjectsBase.vinhance,
 		webProjectsBase.gitsort,
 		webProjectsBase.nptelcompanion,

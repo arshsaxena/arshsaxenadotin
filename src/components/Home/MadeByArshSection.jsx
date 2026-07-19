@@ -17,12 +17,12 @@ export default function MadeByArshSection() {
 			buttonIcon: 'ArrowUpRight',
 		},
 		{
-			...webProjectsBase.stackshot,
+			...webProjectsBase.airroomtv,
 			buttonLabel: 'Check Out',
 			buttonIcon: 'ArrowUpRight',
 		},
 		{
-			...webProjectsBase.airroomtv,
+			...webProjectsBase.stackshot,
 			buttonLabel: 'Check Out',
 			buttonIcon: 'ArrowUpRight',
 		},

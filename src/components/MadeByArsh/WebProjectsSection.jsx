@@ -26,11 +26,11 @@ const items = [
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0 rounded-t-[25px] md:rounded-tr-none md:rounded-tl-[25px]',
 	},
 	{
-		...webProjectsBase.stackshot,
+		...webProjectsBase.airroomtv,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:rounded-tr-[25px]',
 	},
 	{
-		...webProjectsBase.airroomtv,
+		...webProjectsBase.stackshot,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
 	},
 	{
@@ -232,7 +232,7 @@ export const BentoGridItem = ({
 						className="h-full w-full rounded-[10px] border-[1px] border-[var(--border-default)]"
 					/>
 					{hasMultipleSlides && currentImage?.caption && (
-						<div className="absolute bottom-2 left-2 rounded-full bg-black/50 px-2 py-1 text-xs text-white">
+						<div className="absolute bottom-2 left-2 rounded-[5px] border-[1px] border-[var(--border-default)] bg-black/50 px-2 py-1 text-xs text-white backdrop-blur-xl">
 							{currentImage.caption}
 						</div>
 					)}

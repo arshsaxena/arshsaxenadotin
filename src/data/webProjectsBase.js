@@ -13,7 +13,7 @@ export const webProjectsBase = {
 		screenshots: [
 			{
 				src: '/made-by-arsh/web-projects/imgs/peerroom-p2p.webp',
-				caption: 'Peer-to-Peer',
+				caption: 'Peer-to-Peer (P2P)',
 			},
 			{
 				src: '/made-by-arsh/web-projects/imgs/peerroom-room.webp',
@@ -21,18 +21,6 @@ export const webProjectsBase = {
 			},
 		],
 		techStack: ['Next.js', 'Tailwind CSS', 'WebRTC', 'Cloudflare Workers'],
-		target: '_blank',
-	},
-	stackshot: {
-		label: 'StackShot',
-		tagLine: 'Screenshot queue for macOS.',
-		desc1: 'Screenshot queue for macOS.',
-		desc2: 'A native macOS utility that captures screenshots into a temporary visual stack, letting you queue, copy, drag, or export them in the order you need.',
-		href: 'https://stackshot.arshsaxena.in/',
-		github: 'https://github.com/arshsaxena/StackShot',
-		icon: '/made-by-arsh/web-projects/icons/stackshot-icon.webp',
-		img: '/made-by-arsh/web-projects/imgs/stackshot.webp',
-		techStack: ['Swift', 'SwiftUI', 'ScreenCaptureKit', 'macOS'],
 		target: '_blank',
 	},
 	airroomtv: {
@@ -47,7 +35,7 @@ export const webProjectsBase = {
 		screenshots: [
 			{
 				src: '/made-by-arsh/web-projects/imgs/airroomtv-home.webp',
-				caption: 'Home Screen',
+				caption: 'Home',
 			},
 			{
 				src: '/made-by-arsh/web-projects/imgs/airroomtv-media-player.webp',
@@ -55,6 +43,18 @@ export const webProjectsBase = {
 			},
 		],
 		techStack: ['Kotlin', 'Jetpack Compose', 'C++', 'Android TV'],
+		target: '_blank',
+	},
+	stackshot: {
+		label: 'StackShot',
+		tagLine: 'Screenshot queue for macOS.',
+		desc1: 'Screenshot queue for macOS.',
+		desc2: 'A native macOS utility that captures screenshots into a temporary visual stack, letting you queue, copy, drag, or export them in the order you need.',
+		href: 'https://stackshot.arshsaxena.in/',
+		github: 'https://github.com/arshsaxena/StackShot',
+		icon: '/made-by-arsh/web-projects/icons/stackshot-icon.webp',
+		img: '/made-by-arsh/web-projects/imgs/stackshot.webp',
+		techStack: ['Swift', 'SwiftUI', 'ScreenCaptureKit', 'macOS'],
 		target: '_blank',
 	},
 	vinhance: {
