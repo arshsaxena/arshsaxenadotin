@@ -95,8 +95,7 @@ export default function RootLayout({ children }) {
 								'https://www.github.com/arshsaxena',
 								'https://www.arshsaxena.in',
 							],
-							jobTitle:
-								'Student, developer, photographer, tech enthusiast, video editor, writer, and sneakerhead',
+							jobTitle: 'Software Development Engineer (SDE)',
 							image: 'https://www.arshsaxena.in/arsh-favicon.png',
 						}),
 					}}

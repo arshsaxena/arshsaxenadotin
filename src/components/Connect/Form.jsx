@@ -129,7 +129,7 @@ export default function SignupFormDemo() {
 								<SendHorizontal className="mb-[1.5px] ml-[1.5px] h-[14px]" />
 							</div>
 						</button>
-						<div className="flex w-fit flex-wrap justify-between gap-4">
+						<div className="flex w-fit flex-wrap justify-between gap-2.5">
 							{[
 								socialLinksBase.linkedin,
 								socialLinksBase.instagram,

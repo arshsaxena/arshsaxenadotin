@@ -33,6 +33,22 @@ const Timeline = () => {
 			],
 		},
 		{
+			title: 'Jul 2026',
+			textContent:
+				'Shipped <strong>GitSort</strong>, an open-source Chrome extension that sorts GitHub repository files and folders by their last commit date.',
+			textContentCss: '',
+			imgContent: ['/made-by-arsh/web-projects/icons/gitsort.webp'],
+			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
+			imgContentCss: 'h-full',
+			css: 'pt-10 md:pt-20',
+			links: [
+				{
+					label: 'Open Source',
+					url: 'https://github.com/arshsaxena/GitSort',
+				},
+			],
+		},
+		{
 			title: 'Jun 2026',
 			textContent:
 				'Developed <strong>AirRoom TV</strong>, an open-source Android TV AirPlay receiver. Implemented AirPlay and RAOP protocol handling through a native C++ layer integrated with Kotlin using JNI.',
@@ -42,7 +58,7 @@ const Timeline = () => {
 			],
 			imgWrapperCss: 'grid grid-cols-1',
 			imgContentCss: 'h-full',
-			css: 'pt-20 md:pt-40',
+			css: 'pt-10 md:pt-20',
 			links: [
 				{
 					label: 'airroomtv.arshsaxena.in',
@@ -64,7 +80,7 @@ const Timeline = () => {
 			],
 			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
 			imgContentCss: 'h-full',
-			css: 'pt-20 md:pt-40',
+			css: 'pt-10 md:pt-20',
 			links: [
 				{
 					label: 'stackshot.arshsaxena.in',
@@ -84,7 +100,7 @@ const Timeline = () => {
 			imgContent: ['/about/timeline/vinhance.webp'],
 			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
 			imgContentCss: 'h-full',
-			css: 'pt-20 md:pt-40',
+			css: 'pt-10 md:pt-20',
 			links: [
 				{
 					label: 'Chrome Web Store',
@@ -103,7 +119,7 @@ const Timeline = () => {
 			],
 			imgWrapperCss: 'grid grid-cols-2 md:grid-cols-2 gap-2',
 			imgContentCss: 'h-full',
-			css: 'pt-20 md:pt-40',
+			css: 'pt-10 md:pt-20',
 			links: [
 				{
 					label: 'education.arshsaxena.in',
@@ -119,7 +135,7 @@ const Timeline = () => {
 			imgContent: ['/about/timeline/nptelcompanion-icon.webp'],
 			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
 			imgContentCss: 'h-full',
-			css: 'pt-20 md:pt-40',
+			css: 'pt-10 md:pt-20',
 			links: [
 				{
 					label: 'nptelcompanion.arshsaxena.in',
@@ -135,7 +151,7 @@ const Timeline = () => {
 			imgContent: ['/about/timeline/samsungresearch.webp'],
 			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
 			imgContentCss: 'h-1/2 md:h-full',
-			css: 'pt-20 md:pt-40',
+			css: 'pt-10 md:pt-20',
 			location: 'Bengaluru, India',
 		},
 		{
@@ -146,7 +162,7 @@ const Timeline = () => {
 			imgContent: ['/about/timeline/cyscomvit.webp'],
 			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
 			imgContentCss: 'h-full',
-			css: 'pt-20 md:pt-40',
+			css: 'pt-10 md:pt-20',
 			location: 'Chennai, India',
 		},
 		{
@@ -160,7 +176,7 @@ const Timeline = () => {
 			],
 			imgWrapperCss: 'grid grid-cols-2 md:grid-cols-2 gap-2',
 			imgContentCss: 'h-40 md:h-80',
-			css: 'pt-20 md:pt-40',
+			css: 'pt-10 md:pt-20',
 			location: 'Chennai, India',
 		},
 		{
@@ -171,7 +187,7 @@ const Timeline = () => {
 			imgContent: ['/about/timeline/centralacademy.webp'],
 			imgWrapperCss: 'grid grid-cols-1 md:grid-cols-2 gap-4',
 			imgContentCss: 'h-3/4 md:h-full',
-			css: 'pt-20 md:pt-40',
+			css: 'pt-10 md:pt-20',
 			location: 'Lucknow, India',
 		},
 	];
@@ -199,79 +215,94 @@ const Timeline = () => {
 		<>
 			<div className="w-full" ref={containerRef}>
 				<div ref={ref} className="relative mx-auto max-w-7xl pb-16">
-					{data.map((item, index) => (
-						<div
-							key={index}
-							className={`flex justify-start md:gap-10 ${item.css}`}
-						>
-							<div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm">
-								<div className="absolute left-0 flex h-10 w-10 items-center justify-center rounded-full bg-[#dadada] dark:bg-[#131313]">
-									<div className="h-4 w-4 rounded-full border border-[var(--main)] bg-[var(--accent)] p-2" />
+					{data.map((item, index) => {
+						const isDuplicateTitle =
+							index > 0 && data[index - 1].title === item.title;
+						return (
+							<div
+								key={index}
+								className={`flex justify-start md:gap-10 ${item.css}`}
+							>
+								<div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm">
+									<div className="absolute left-0 flex h-10 w-10 items-center justify-center rounded-full bg-[#dadada] dark:bg-[#131313]">
+										<div className="h-4 w-4 rounded-full border border-[var(--main)] bg-[var(--accent)] p-2" />
+									</div>
+									<h3
+										className={`hidden text-xl font-bold text-[var(--foreground)] md:block md:pl-20 md:text-5xl ${isDuplicateTitle ? 'md:invisible' : ''}`}
+									>
+										{item.title}
+									</h3>
 								</div>
-								<h3 className="hidden text-xl font-bold text-[var(--foreground)] md:block md:pl-20 md:text-5xl">
-									{item.title}
-								</h3>
-							</div>
 
-							<div className="relative w-full pl-20 md:pl-0">
-								<div className="mb-4 block text-left text-2xl font-bold text-[var(--foreground)] md:hidden">
-									{item.title}
-								</div>
-								<div className="text-sm md:text-lg">
-									{((item.links && item.links.length > 0) ||
-										item.location) && (
-										<div className="mb-3 flex flex-wrap items-center gap-2">
-											{item.location && (
-												<div className="flex items-center rounded-full bg-[var(--main)] px-3 py-0.5 text-sm text-[#f5f5f7]">
-													<MapPin className="mr-1 w-[15px]" />
-													{item.location}
-												</div>
-											)}
-											{item.links &&
-												item.links.map((link, idx) => (
-													<Link
-														key={idx}
-														href={link.url}
-														target="_blank"
-														className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 py-0.5 pr-2.5 text-sm text-[#f5f5f7] hover:bg-[var(--accent)]"
-													>
-														<span>
-															{link.label}
-														</span>
-														<ArrowUpRight className="ml-1 w-[15px]" />
-													</Link>
-												))}
-										</div>
-									)}
-									{item.textContent && (
-										<div
-											className={`mb-5 text-[14px] leading-[24px] text-[var(--foreground)] md:text-[16px] ${item.textContentCss}`}
-											dangerouslySetInnerHTML={{
-												__html: item.textContent,
-											}}
-										/>
-									)}
-									{item.imgContent &&
-										Array.isArray(item.imgContent) && (
-											<div className={item.imgWrapperCss}>
-												{item.imgContent.map(
-													(src, i) => (
-														<Image
-															key={i}
-															src={src}
-															alt={`Timeline image ${i + 1}`}
-															width={0}
-															height={0}
-															className={`w-full rounded-[10px] border-[1px] border-[var(--border-default)] object-cover ${item.imgContentCss}`}
-														/>
-													),
+								<div className="relative w-full pl-20 md:pl-0">
+									<div
+										className={`mb-4 block text-left text-2xl font-bold text-[var(--foreground)] md:hidden ${isDuplicateTitle ? 'hidden' : ''}`}
+									>
+										{item.title}
+									</div>
+									<div className="text-sm md:text-lg">
+										{((item.links &&
+											item.links.length > 0) ||
+											item.location) && (
+											<div className="mb-3 flex flex-wrap items-center gap-2">
+												{item.location && (
+													<div className="flex items-center text-sm text-[var(--foreground)] opacity-70">
+														<MapPin className="mr-1.5 h-[14px] w-[14px]" />
+														{item.location}
+													</div>
 												)}
+												{item.links &&
+													item.links.map(
+														(link, idx) => (
+															<Link
+																key={idx}
+																href={link.url}
+																target="_blank"
+																className="flex items-center rounded-full border-[1px] border-[var(--accent)] bg-[var(--main)] px-3 py-[3px] pr-2.5 text-xs text-[#f5f5f7] hover:bg-[var(--accent)]"
+															>
+																<span>
+																	{link.label}
+																</span>
+																<ArrowUpRight className="ml-1 h-[13px] w-[13px]" />
+															</Link>
+														),
+													)}
 											</div>
 										)}
+										{item.textContent && (
+											<div
+												className={`mb-5 text-[14px] leading-[24px] text-[var(--foreground)] md:text-[16px] ${item.textContentCss}`}
+												dangerouslySetInnerHTML={{
+													__html: item.textContent,
+												}}
+											/>
+										)}
+										{item.imgContent &&
+											Array.isArray(item.imgContent) && (
+												<div
+													className={
+														item.imgWrapperCss
+													}
+												>
+													{item.imgContent.map(
+														(src, i) => (
+															<Image
+																key={i}
+																src={src}
+																alt={`Timeline image ${i + 1}`}
+																width={0}
+																height={0}
+																className={`w-full rounded-[10px] border-[1px] border-[var(--border-default)] object-cover ${item.imgContentCss}`}
+															/>
+														),
+													)}
+												</div>
+											)}
+									</div>
 								</div>
 							</div>
-						</div>
-					))}
+						);
+					})}
 					<div
 						style={{ height: height + 'px' }}
 						className="absolute left-5 top-0 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-[#a8a8a8] to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] dark:via-[#333333] md:left-5"

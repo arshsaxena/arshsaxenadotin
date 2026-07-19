@@ -65,7 +65,7 @@ export default function MadeByArshSection() {
 									width={0}
 									height={0}
 									alt={item.label}
-									className={`h-[80px] w-[80px] rounded-[15px] border-[1px] border-[var(--border-default)] bg-[#f5f5f7] align-middle ${item.css}`}
+									className={`h-[80px] w-[80px] rounded-[15px] border-[1px] border-[var(--border-default)] align-middle ${item.css}`}
 								/>
 							)}
 							<div className="w-full">

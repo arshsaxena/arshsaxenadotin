@@ -90,7 +90,7 @@ const techStyles = {
 	},
 	WebRTC: {
 		bg: 'bg-[#e33e38] text-white border-transparent',
-		icon: null,
+		icon: 'https://cdn.simpleicons.org/webrtc/fff',
 	},
 	Cloudflare: {
 		bg: 'bg-[#f38020] text-white border-transparent',
@@ -102,7 +102,7 @@ const techStyles = {
 	},
 	Swift: {
 		bg: 'bg-[#f05138] text-white border-transparent',
-		icon: null,
+		icon: 'https://cdn.simpleicons.org/swift/fff',
 	},
 	SwiftUI: {
 		bg: 'bg-[#f05138] text-white border-transparent',
@@ -110,7 +110,7 @@ const techStyles = {
 	},
 	macOS: {
 		bg: 'bg-zinc-800 text-white border-transparent',
-		icon: null,
+		icon: 'https://cdn.simpleicons.org/apple/fff',
 	},
 	ScreenCaptureKit: {
 		bg: 'bg-indigo-600 text-white border-transparent',
@@ -118,15 +118,15 @@ const techStyles = {
 	},
 	Kotlin: {
 		bg: 'bg-[#7f52ff] text-white border-transparent',
-		icon: null,
+		icon: 'https://cdn.simpleicons.org/kotlin/fff',
 	},
 	'Jetpack Compose': {
 		bg: 'bg-[#4285f4] text-white border-transparent',
-		icon: null,
+		icon: 'https://cdn.simpleicons.org/jetpackcompose/fff',
 	},
 	'Android TV': {
 		bg: 'bg-[#3ddc84] text-black border-transparent',
-		icon: null,
+		icon: 'https://cdn.simpleicons.org/android/000',
 	},
 	'C++': {
 		bg: 'bg-[#00599c] text-white border-transparent',
@@ -140,10 +140,6 @@ const techStyles = {
 		bg: 'bg-[#f0db4f] text-[#0a0a0a] border-transparent',
 		icon: JavascriptIcon,
 	},
-	'Chrome Extension': {
-		bg: 'bg-[#ea4335] text-white border-transparent',
-		icon: null,
-	},
 	HTML: {
 		bg: 'bg-[#e34f26] text-white border-transparent',
 		icon: HtmlIcon,
@@ -151,10 +147,6 @@ const techStyles = {
 	CSS: {
 		bg: 'bg-[#3670a0] text-white border-transparent',
 		icon: CssIcon,
-	},
-	'HTML/CSS': {
-		bg: 'bg-[#e34f26] text-white border-transparent',
-		icon: HtmlIcon,
 	},
 };
 
@@ -237,7 +229,7 @@ export const BentoGridItem = ({
 						alt={currentImage?.caption || label || 'Project image'}
 						width={0}
 						height={0}
-						className="h-full w-full rounded-[15px] border-[1px] border-[var(--border-default)]"
+						className="h-full w-full rounded-[10px] border-[1px] border-[var(--border-default)]"
 					/>
 					{hasMultipleSlides && currentImage?.caption && (
 						<div className="absolute bottom-2 left-2 rounded-full bg-black/50 px-2 py-1 text-xs text-white">
@@ -277,7 +269,13 @@ export const BentoGridItem = ({
 									width={0}
 									height={0}
 									alt={label || 'Project icon'}
-									className={`h-[30px] w-[30px] rounded-[6.5px] border-[0.5px] border-[var(--border-default)] bg-[#f5f5f7] md:h-[35px] md:w-[35px] md:rounded-[7.5px]`}
+									className={`h-[30px] w-[30px] rounded-[6.5px] border-[1px] border-[var(--border-default)] md:h-[35px] md:w-[35px] md:rounded-[7.5px] ${
+										label === 'Solar System' ||
+										label === 'Colors' ||
+										label === 'Weather'
+											? 'bg-[#f5f5f7]'
+											: ''
+									}`}
 								/>
 							)}
 							{hasLabel && label}
@@ -297,9 +295,17 @@ export const BentoGridItem = ({
 									key={tech}
 									className={`flex items-center gap-1.5 rounded-full border-[1px] px-[10px] py-[2px] text-[11px] font-normal transition-colors md:text-xs ${style.bg}`}
 								>
-									{Icon && (
-										<Icon className="h-3 w-3 fill-current" />
-									)}
+									{Icon &&
+										(typeof Icon === 'string' ? (
+											<img
+												src={Icon}
+												alt={tech}
+												className="h-3 w-3 select-none"
+												loading="lazy"
+											/>
+										) : (
+											<Icon className="h-3 w-3 fill-current" />
+										))}
 									<span>{tech}</span>
 								</span>
 							);

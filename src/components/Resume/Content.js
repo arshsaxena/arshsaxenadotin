@@ -30,7 +30,7 @@ const resumeData = {
 			location: 'Bengaluru, India',
 			duration: 'Aug 2025 – Nov 2025',
 			responsibilities: [
-				'Contributed to the development of an AI-powered chatbot for telecom network management, with primary responsibility for building and refining the UI.',
+				'Contributed to the development of an AI-powered chatbot for telecom network management, with primary responsibility for designing and developing the user interface.',
 				'Presented fault, configuration, and performance data from EMS/FCAPS modules in a clear, usable interface.',
 				'Supported real-time alarm analysis workflows and made improvements to the RAG-based retrieval pipeline.',
 			],
@@ -43,9 +43,9 @@ const resumeData = {
 			tech: 'Next.js, Tailwind CSS, WebRTC, Cloudflare Workers',
 			duration: 'Jul 2026',
 			details: [
-				'Built an open source private file sharing and collaboration web app with direct P2P transfers using WebRTC, no sign-up.',
+				'Built an open-source file sharing and collaboration platform with direct peer-to-peer (P2P) transfers using WebRTC, requiring no user accounts.',
 				'Implemented local network discovery for nearby devices and secure pairing using room codes across different networks.',
-				'Developed temporary collaboration rooms featuring a real-time collaborative text editor, encrypted Cloudflare R2 file storage, and automatic data deletion after 7 days.',
+				'Developed temporary collaboration rooms featuring a real-time collaborative text editor, Cloudflare R2 file storage, and automatic data deletion after 7 days.',
 				'Designed the backend on Cloudflare Workers with Durable Objects for signaling, room management, and synchronization.',
 			],
 		},
@@ -55,7 +55,7 @@ const resumeData = {
 			tech: 'Kotlin, Jetpack Compose, C++, Android TV',
 			duration: 'Jun 2026',
 			details: [
-				'Developed an open source Android TV AirPlay receiver for screen mirroring and audio streaming from Apple devices.',
+				'Developed an open-source Android TV AirPlay receiver for screen mirroring and audio streaming from Apple devices.',
 				'Implemented AirPlay and RAOP protocol handling through a native C++ layer integrated with Kotlin using JNI.',
 				"Built a TV-friendly UI with Jetpack Compose and enabled automatic device discovery using Android's NsdManager.",
 			],
@@ -66,7 +66,7 @@ const resumeData = {
 			tech: 'Swift, SwiftUI, ScreenCaptureKit, macOS',
 			duration: 'May 2026',
 			details: [
-				'Built an open source macOS application that stores screenshots in a floating visual stack instead of cluttering the desktop.',
+				'Built an open-source macOS application that stores screenshots in a floating visual stack instead of cluttering the desktop.',
 				'Implemented a clipboard queue, enabling sequential pasting of multiple screenshots across applications.',
 				'Supported region, window, and full-screen capture modes with drag-and-drop organization and batch export functionality.',
 			],
@@ -80,7 +80,7 @@ const resumeData = {
 				'Developed a Chromium extension enhancing the VTOP portal experience for students across VIT campuses.',
 				'Implemented attendance analytics, grade visualization, exam planning tools, timetable dashboards, and academic utilities.',
 				'Added productivity features including dark mode, automatic CAPTCHA solving, and one-click academic data export.',
-				'<strong>Published for Chromium-based browsers via the Chrome Web Store, 300+ daily active users.</strong>',
+				'<strong>Published on the Chrome Web Store for Chromium-based browsers, serving 300+ daily active users.</strong>',
 			],
 		},
 		{
@@ -89,20 +89,20 @@ const resumeData = {
 			tech: 'Next.js, Tailwind CSS, Cloudflare, Vercel',
 			duration: 'Jun 2025',
 			details: [
-				'Built a platform for NPTEL exam practice with quizzes, multiple modes, solutions, and study materials.',
+				'Developed an online platform for NPTEL exam practice with quizzes, multiple modes, solutions, and study materials.',
 				'Built a responsive interface with optimized search and filtering for quick access to course material.',
 				'<strong>Served 1,00,000+ learners across India in just two NPTEL exam cycles, with 5,00,000+ practice sessions across multiple high-demand courses.</strong>',
 			],
 		},
 		{
-			name: 'aEducational',
-			link: 'https://education.arshsaxena.in',
-			tech: 'Next.js, Tailwind CSS, Vercel',
-			duration: 'Feb 2021',
+			name: 'GitSort',
+			link: 'https://github.com/arshsaxena/GitSort',
+			tech: 'JavaScript, HTML/CSS',
+			duration: 'Jul 2026',
 			details: [
-				'Built an educational platform for academic writing resources, including essays, letters, articles, speeches, and reports.',
-				'Migrated the platform from static HTML/CSS to Next.js and Tailwind CSS, improving maintainability and performance.',
-				'<strong>Supports more than 5,000 students worldwide with freely accessible academic resources.</strong>',
+				'Developed a Chromium extension that enhances GitHub by sorting repository items based on their commit timestamps.',
+				'Implemented client-side DOM parsing and dynamic sorting without using GitHub APIs or external services.',
+				'Built a native GitHub-styled interface with persistent user preferences and support for relative and absolute timestamps.',
 			],
 		},
 	],
@@ -126,7 +126,8 @@ const resumeData = {
 			'Python',
 			'JavaScript',
 			'SQL',
-			'HTML/CSS',
+			'HTML',
+			'CSS',
 			'R',
 			'MATLAB',
 		],
@@ -184,7 +185,7 @@ export default function Content() {
 						<div className="text-center text-sm">
 							<a
 								href={resumeData.personalInfo.website}
-								className="mx-1 underline"
+								className="mx-1 underline decoration-[0.5px] underline-offset-2 hover:no-underline"
 								target="_blank"
 							>
 								{resumeData.personalInfo.website.replace(
@@ -195,7 +196,7 @@ export default function Content() {
 							|{' '}
 							<a
 								href={resumeData.personalInfo.linkedin}
-								className="mx-1 underline"
+								className="mx-1 underline decoration-[0.5px] underline-offset-2 hover:no-underline"
 								target="_blank"
 							>
 								{resumeData.personalInfo.linkedin.replace(
@@ -206,7 +207,7 @@ export default function Content() {
 							|{' '}
 							<a
 								href={resumeData.personalInfo.github}
-								className="mx-1 underline"
+								className="mx-1 underline decoration-[0.5px] underline-offset-2 hover:no-underline"
 								target="_blank"
 							>
 								{resumeData.personalInfo.github.replace(
@@ -217,7 +218,7 @@ export default function Content() {
 							|{' '}
 							<a
 								href={resumeData.personalInfo.leetcode}
-								className="mx-1 underline"
+								className="mx-1 underline decoration-[0.5px] underline-offset-2 hover:no-underline"
 								target="_blank"
 							>
 								{resumeData.personalInfo.leetcode.replace(

@@ -24,11 +24,66 @@ const ProfileText = memo(({ onPrev, onNext }) => {
 
 	return (
 		<div className="flex flex-col justify-between md:pl-8">
-			<h3 className="text-[33px] font-bold leading-[50px] text-[var(--foreground)] md:text-[40px]">
+			<h3 className="text-[36px] font-bold leading-[50px] text-[var(--foreground)] md:text-[46px]">
 				<MemoTypedWords />
 			</h3>
+			<div className="mx-auto mt-5 text-[17.5px] font-normal leading-7 md:text-[20px]">
+				Building software for the{' '}
+				<span className="inline-flex items-center gap-1.5 whitespace-nowrap align-middle">
+					<Image
+						src="/emojis/web.webp"
+						width={22}
+						height={22}
+						alt="web"
+						className="h-[22px] w-[22px] select-none"
+					/>
+					<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+						web
+					</span>
+				</span>
+				,{' '}
+				<span className="ml-1 inline-flex items-center gap-1.5 whitespace-nowrap align-middle">
+					<Image
+						src="/emojis/desktop.webp"
+						width={22}
+						height={22}
+						alt="desktop"
+						className="h-[22px] w-[22px] select-none"
+					/>
+					<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+						desktop
+					</span>
+				</span>
+				, and{' '}
+				<span className="ml-1 inline-flex items-center gap-1.5 whitespace-nowrap align-middle">
+					<Image
+						src="/emojis/rocket.webp"
+						width={22}
+						height={22}
+						alt="beyond"
+						className="h-[22px] w-[22px] select-none"
+					/>
+					<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+						beyond
+					</span>
+				</span>
+				, alongside{' '}
+				<span className="ml-1 inline-flex items-center gap-1.5 whitespace-nowrap align-middle">
+					<Image
+						src="/emojis/camera.webp"
+						width={22}
+						height={22}
+						alt="photography"
+						className="h-[22px] w-[22px] select-none"
+					/>
+					<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+						photography
+					</span>
+				</span>
+				.
+			</div>
 			<div className="flex flex-row items-center align-middle text-[15px] font-medium text-[var(--foreground)] md:text-[18px]">
-				<div className="mt-5 flex flex-wrap items-center gap-3">
+				<div className="mt-7 flex flex-wrap items-center gap-2.5">
 					{[
 						socialLinksBase.linkedin,
 						socialLinksBase.github,
@@ -38,39 +93,14 @@ const ProfileText = memo(({ onPrev, onNext }) => {
 						<Link key={i} href={item.href} target="_blank">
 							<Image
 								src={item.icon}
-								width={35}
-								height={35}
+								width={40}
+								height={40}
 								alt={item.label}
-								className="rounded-[7px]"
+								className="rounded-[8px]"
 							/>
 						</Link>
 					))}
 				</div>
-			</div>
-			<div className="mx-auto mt-5 text-[16.5px] font-medium leading-7 md:text-[19px]">
-				Developer, photographer, tech enthusiast, video editor, writer,
-				and sneakerhead.
-			</div>
-			<div className="mt-5 flex w-fit flex-wrap justify-start gap-3">
-				{[
-					{
-						alt: 'boy-using-laptop',
-						icon: '/emojis/boy-using-laptop.webp',
-					},
-					{ alt: 'camera', icon: '/emojis/camera.webp' },
-					{ alt: 'laptop', icon: '/emojis/laptop.webp' },
-					{ alt: 'movie-camera', icon: '/emojis/movie-camera.webp' },
-					{ alt: 'pen', icon: '/emojis/writing.webp' },
-					{ alt: 'shoes', icon: '/emojis/shoes.webp' },
-				].map((item, i) => (
-					<Image
-						key={i}
-						src={item.icon}
-						width={27}
-						height={27}
-						alt={item.alt}
-					/>
-				))}
 			</div>
 			<div className="mt-12 hidden gap-5 md:mt-10 md:flex">
 				<button

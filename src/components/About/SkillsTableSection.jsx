@@ -5,10 +5,10 @@
 import { useEffect, useState } from 'react';
 
 import CppIcon from '@/assets/about/skills/cpp.svg';
-import PythonIcon from '@/assets/about/skills/python.svg';
 import NextjsIcon from '@/assets/about/skills/nextjs.svg';
 import TailwindcssIcon from '@/assets/about/skills/tailwindcss.svg';
 import JavascriptIcon from '@/assets/about/skills/javascript.svg';
+import PythonIcon from '@/assets/about/skills/python.svg';
 import JavaIcon from '@/assets/about/skills/java.svg';
 import JupyterIcon from '@/assets/about/skills/jupyter.svg';
 import ReactIcon from '@/assets/about/skills/react.svg';
@@ -25,8 +25,7 @@ import JqueryIcon from '@/assets/about/skills/jquery.svg';
 import MathworksIcon from '@/assets/about/skills/mathworks.svg';
 import RIcon from '@/assets/about/skills/r.svg';
 import BootstrapIcon from '@/assets/about/skills/bootstrap.svg';
-import PhpIcon from '@/assets/about/skills/php.svg';
-import MysqlIcon from '@/assets/about/skills/mysql.svg';
+import SqlIcon from '@/assets/about/skills/mysql.svg';
 import MarkdownIcon from '@/assets/about/skills/markdown.svg';
 import GitIcon from '@/assets/about/skills/git.svg';
 
@@ -46,11 +45,6 @@ const skills = [
 		css: 'hover:bg-[#00599c] hover:text-[#f5f5f7]',
 	},
 	{
-		label: 'Python',
-		icon: PythonIcon,
-		css: 'hover:bg-[#3670a0] hover:text-[#f5f5f7]',
-	},
-	{
 		label: 'Next.js',
 		icon: NextjsIcon,
 		css: 'hover:bg-[#000000] hover:text-[#f5f5f7]',
@@ -64,6 +58,11 @@ const skills = [
 		label: 'JavaScript',
 		icon: JavascriptIcon,
 		css: 'hover:bg-[#f0db4f] hover:text-[#0a0a0a]',
+	},
+	{
+		label: 'Python',
+		icon: PythonIcon,
+		css: 'hover:bg-[#3670a0] hover:text-[#f5f5f7]',
 	},
 	{
 		label: 'Java',
@@ -146,18 +145,8 @@ const skills = [
 		css: 'hover:bg-[#8511fa] hover:text-[#f5f5f7]',
 	},
 	{
-		label: 'Pygame',
-		icon: PythonIcon,
-		css: 'hover:bg-[#4ea94b] hover:text-[#f5f5f7]',
-	},
-	{
-		label: 'PHP',
-		icon: PhpIcon,
-		css: 'hover:bg-[#777bb4] hover:text-[#f5f5f7]',
-	},
-	{
-		label: 'MySQL',
-		icon: MysqlIcon,
+		label: 'SQL',
+		icon: SqlIcon,
 		css: 'hover:bg-[#4479a1] hover:text-[#f5f5f7]',
 	},
 	{

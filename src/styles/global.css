@@ -21,7 +21,7 @@
 	--overlay: #131313;
 	--muted: #393939;
 
-	--border-default: #a8a8a8;
+	--border-default: #a8a8a891;
 }
 
 .dark {
@@ -35,7 +35,7 @@
 	--overlay: #dadada;
 	--muted: #a2a2a9;
 
-	--border-default: #333333;
+	--border-default: #33333391;
 }
 
 body {

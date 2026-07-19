@@ -97,7 +97,7 @@ export const webProjectsBase = {
 		desc1: 'GitHub Folder & File Sorter.',
 		desc2: 'Quickly sort GitHub repository files and folders by their last commit date. Features a native UI, local preference memory, and absolute date toggles. Zero setup, zero tokens, 100% local.',
 		href: 'https://github.com/arshsaxena/GitSort',
-		buttonLabel: 'Check Out',
+		buttonLabel: 'Open Source',
 		icon: '/made-by-arsh/web-projects/icons/gitsort.webp',
 		img: '/made-by-arsh/web-projects/imgs/gitsort.webp',
 		techStack: ['JavaScript', 'HTML', 'CSS'],

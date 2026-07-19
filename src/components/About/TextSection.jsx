@@ -13,73 +13,139 @@ export default function TextSection() {
 			<div className="space-y-5">
 				<div>Hey.</div>
 				<div>
-					I'm Arsh Saxena, a B.Tech. student in Electronics and
-					Communication Engineering with a strong passion for software
-					development, problem solving, and building impactful
-					applications. I enjoy turning ideas into practical solutions
-					and continuously expanding my technical expertise.
-				</div>
-				<div>
-					My primary programming language is C++, and I also work with
-					Python and JavaScript. I'm currently focused on mastering
-					Data Structures & Algorithms, strengthening my
-					problem-solving skills, and building full-stack web
-					applications while preparing for software engineering roles.
-				</div>
-				<div>
-					I enjoy learning new technologies, writing clean and
-					efficient code, and working on projects that challenge me to
-					grow as a developer. I'm always looking for opportunities to
-					improve, whether through personal projects, competitive
-					programming, or exploring modern development tools and
-					frameworks.
-				</div>
-				<div>
-					Outside of coding, I enjoy photography, photo and video
-					editing, watching movies and TV shows, and collecting
-					sneakers.
-				</div>
-				<div className="flex w-fit flex-wrap justify-start gap-2">
-					{[
-						{
-							alt: 'boy-using-laptop',
-							icon: '/emojis/boy-using-laptop.webp',
-						},
-						{
-							alt: 'camera',
-							icon: '/emojis/camera.webp',
-						},
-						{
-							alt: 'laptop',
-							icon: '/emojis/laptop.webp',
-						},
-						{
-							alt: 'movie-camera',
-							icon: '/emojis/movie-camera.webp',
-						},
-						{
-							alt: 'pen',
-							icon: '/emojis/writing.webp',
-						},
-						{
-							alt: 'shoes',
-							icon: '/emojis/shoes.webp',
-						},
-					].map((item, i) => (
+					I'm Arsh Saxena, a final-year Electronics and Communication
+					Engineering student interested in software engineering. I
+					enjoy building software for the{' '}
+					<span className="inline-flex items-center gap-1 whitespace-nowrap align-middle">
 						<Image
-							key={i}
-							src={item.icon}
-							width={21}
-							height={21}
-							alt={item.alt}
+							src="/emojis/web.webp"
+							width={20}
+							height={20}
+							alt="web"
+							className="h-[20px] w-[20px] select-none"
 						/>
-					))}
+						<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+							web
+						</span>
+					</span>
+					,{' '}
+					<span className="ml-1 inline-flex items-center gap-1 whitespace-nowrap align-middle">
+						<Image
+							src="/emojis/desktop.webp"
+							width={20}
+							height={20}
+							alt="desktop"
+							className="h-[20px] w-[20px] select-none"
+						/>
+						<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+							desktop
+						</span>
+					</span>
+					, and{' '}
+					<span className="ml-1 inline-flex items-center gap-1 whitespace-nowrap align-middle">
+						<Image
+							src="/emojis/rocket.webp"
+							width={20}
+							height={20}
+							alt="beyond"
+							className="h-[20px] w-[20px] select-none"
+						/>
+						<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+							beyond
+						</span>
+					</span>
+					, while capturing moments through{' '}
+					<span className="ml-1 inline-flex items-center gap-1 whitespace-nowrap align-middle">
+						<Image
+							src="/emojis/camera.webp"
+							width={20}
+							height={20}
+							alt="photography"
+							className="h-[20px] w-[20px] select-none"
+						/>
+						<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+							photography
+						</span>
+					</span>{' '}
+					and turning ideas into practical applications.
 				</div>
 				<div>
-					Take a look at my work on{' '}
+					I enjoy learning new technologies, experimenting with ideas,
+					and building projects that challenge me to grow. Whether
+					it's contributing to{' '}
+					<span className="font-bold">open source</span>, building{' '}
+					<span className="font-bold">personal projects</span>, or
+					putting together something creative through{' '}
+					<span className="ml-1 inline-flex items-center gap-1.5 whitespace-nowrap align-middle">
+						<Image
+							src="/emojis/pen.webp"
+							width={20}
+							height={20}
+							alt="writing"
+							className="h-[20px] w-[20px] select-none"
+						/>
+						<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+							writing
+						</span>
+					</span>{' '}
+					and{' '}
+					<span className="ml-1 inline-flex items-center gap-1.5 whitespace-nowrap align-middle">
+						<Image
+							src="/emojis/movie-camera.webp"
+							width={20}
+							height={20}
+							alt="editing"
+							className="h-[20px] w-[20px] select-none"
+						/>
+						<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+							photo
+						</span>
+					</span>{' '}
+					<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+						& video editing
+					</span>
+					, I enjoy creating things and learning along the way.
+				</div>
+				<div>
+					When I'm not coding, you'll usually find me{' '}
+					<span className="ml-1 inline-flex items-center gap-1.5 whitespace-nowrap align-middle">
+						<Image
+							src="/emojis/popcorn.webp"
+							width={20}
+							height={20}
+							alt="movies"
+							className="h-[20px] w-[20px] select-none"
+						/>
+						<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+							watching
+						</span>
+					</span>{' '}
+					<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+						movies and TV shows
+					</span>{' '}
+					or{' '}
+					<span className="ml-1 inline-flex items-center gap-1.5 whitespace-nowrap align-middle">
+						<Image
+							src="/emojis/shoes.webp"
+							width={20}
+							height={20}
+							alt="sneakers"
+							className="h-[20px] w-[20px] select-none"
+						/>
+						<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+							collecting
+						</span>
+					</span>{' '}
+					<span className="font-bold text-[var(--main)] dark:text-[var(--accent)]">
+						sneakers
+					</span>
+					.
+				</div>
+				<div>
+					Check out my work on{' '}
 					<Link
 						href="/made-by-arsh"
-						className="text-[var(--accent)] hover:underline"
+						className="font-bold text-[var(--main)] hover:underline dark:text-[var(--accent)]"
 					>
 						Made by Arsh
 					</Link>
@@ -89,13 +155,13 @@ export default function TextSection() {
 					Let's{' '}
 					<Link
 						href="/connect"
-						className="text-[var(--accent)] hover:underline"
+						className="font-bold text-[var(--main)] hover:underline dark:text-[var(--accent)]"
 					>
 						connect
 					</Link>
-					, ping me anywhere.
+					. I'd love to hear from you.
 				</div>
-				<div className="flex flex-wrap items-center gap-4">
+				<div className="flex flex-wrap items-center gap-2.5">
 					{[
 						socialLinksBase.linkedin,
 						socialLinksBase.github,

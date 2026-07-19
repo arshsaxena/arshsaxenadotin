@@ -1,5 +1,4 @@
 .
-├── LICENSE
 ├── README.md
 ├── components.json
 ├── eslint.config.mjs
@@ -30,17 +29,17 @@
 │   │   ├── Modern-Footer-by-Arsh.zip
 │   │   └── Simple-Old-School-by-Arsh.zip
 │   ├── emojis
-│   │   ├── books.webp
-│   │   ├── boy-using-laptop.webp
 │   │   ├── camera.webp
+│   │   ├── desktop.webp
 │   │   ├── heart.webp
 │   │   ├── india1.webp
 │   │   ├── india2.webp
-│   │   ├── laptop.webp
 │   │   ├── movie-camera.webp
 │   │   ├── pen.webp
-│   │   ├── pin.webp
+│   │   ├── popcorn.webp
+│   │   ├── rocket.webp
 │   │   ├── shoes.webp
+│   │   ├── web.webp
 │   │   └── writing.webp
 │   ├── images
 │   │   ├── img1.webp
@@ -168,7 +167,6 @@
 │   │           ├── netlify.svg
 │   │           ├── nextjs.svg
 │   │           ├── nodejs.svg
-│   │           ├── php.svg
 │   │           ├── python.svg
 │   │           ├── r.svg
 │   │           ├── react.svg
@@ -218,4 +216,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-48 directories, 171 files
+48 directories, 169 files
