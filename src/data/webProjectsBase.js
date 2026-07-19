@@ -91,6 +91,18 @@ export const webProjectsBase = {
 		techStack: ['JavaScript', 'HTML', 'CSS'],
 		target: '_blank',
 	},
+	gitsort: {
+		label: 'GitSort',
+		tagLine: 'GitHub Folder & File Sorter.',
+		desc1: 'GitHub Folder & File Sorter.',
+		desc2: 'Quickly sort GitHub repository files and folders by their last commit date. Features a native UI, local preference memory, and absolute date toggles. Zero setup, zero tokens, 100% local.',
+		href: 'https://github.com/arshsaxena/GitSort',
+		buttonLabel: 'Check Out',
+		icon: '/made-by-arsh/web-projects/icons/gitsort.webp',
+		img: '/made-by-arsh/web-projects/imgs/gitsort.webp',
+		techStack: ['JavaScript', 'HTML', 'CSS'],
+		target: '_blank',
+	},
 	nptelcompanion: {
 		label: 'NPTEL Companion',
 		tagLine: 'Free, exam-ready NPTEL practice.',

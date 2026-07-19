@@ -24,6 +24,7 @@ export default function Footer() {
 		webProjectsBase.stackshot,
 		webProjectsBase.airroomtv,
 		webProjectsBase.vinhance,
+		webProjectsBase.gitsort,
 		webProjectsBase.nptelcompanion,
 		webProjectsBase.aeducational,
 		{

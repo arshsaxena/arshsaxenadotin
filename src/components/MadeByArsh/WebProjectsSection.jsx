@@ -38,41 +38,45 @@ const items = [
 		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
 	{
-		...webProjectsBase.nptelcompanion,
+		...webProjectsBase.gitsort,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
+	},
+	{
+		...webProjectsBase.nptelcompanion,
+		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
 	{
 		...webProjectsBase.aeducational,
-		css: 'border-[1px] border-[var(--border-default)] border-b-0',
+		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
 	},
 	{
 		...webProjectsBase.aconverter,
-		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
+		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
 	{
 		...webProjectsBase.solarsystem,
-		css: 'border-[1px] border-[var(--border-default)] border-b-0',
-	},
-	{
-		...webProjectsBase.colors,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
 	},
 	{
-		...webProjectsBase.qr,
+		...webProjectsBase.colors,
 		css: 'border-[1px] border-[var(--border-default)] border-b-0',
 	},
 	{
-		...webProjectsBase.weather,
+		...webProjectsBase.qr,
 		css: 'border-[1px] border-[var(--border-default)] rounded-b-[25px] md:rounded-b-none md:rounded-bl-[25px] md:border-r-0',
+	},
+	{
+		...webProjectsBase.weather,
+		css: 'border-[1px] border-[var(--border-default)] rounded-b-[25px] md:rounded-b-none md:rounded-br-[25px]',
 	},
 	// {
 	// 	...webProjectsBase.blank,
 	// 	css: 'border-[1px] border-[var(--border-default)] border-b-0 md:border-r-0',
 	// },
-	{
-		...webProjectsBase.blank,
-		css: 'hidden md:block border-[1px] border-[var(--border-default)] md:rounded-br-[25px]',
-	},
+	// {
+	// 	...webProjectsBase.blank,
+	// 	css: 'hidden md:block border-[1px] border-[var(--border-default)] md:rounded-br-[25px]',
+	// },
 ];
 
 const techStyles = {

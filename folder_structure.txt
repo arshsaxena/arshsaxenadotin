@@ -59,20 +59,30 @@
 │   │   │   ├── icons
 │   │   │   │   ├── aconverter-app-icon.webp
 │   │   │   │   ├── aeducational-icon.webp
-│   │   │   │   ├── arshsaxena-app-icon.webp
+│   │   │   │   ├── airroomtv-icon-tv.webp
+│   │   │   │   ├── airroomtv-icon.webp
 │   │   │   │   ├── colors-icon.webp
+│   │   │   │   ├── gitsort.webp
 │   │   │   │   ├── nptelcompanion-icon.webp
+│   │   │   │   ├── peerroom-icon.webp
 │   │   │   │   ├── qr-icon.webp
 │   │   │   │   ├── solarsystem-icon.webp
+│   │   │   │   ├── stackshot-icon.webp
 │   │   │   │   ├── vinhance.webp
 │   │   │   │   └── weather-icon.webp
 │   │   │   ├── imgs
 │   │   │   │   ├── aconverter-desktop.webp
 │   │   │   │   ├── aeducational-desktop.webp
+│   │   │   │   ├── airroomtv-home.webp
+│   │   │   │   ├── airroomtv-media-player.webp
 │   │   │   │   ├── colors-desktop.webp
+│   │   │   │   ├── gitsort.webp
 │   │   │   │   ├── nptelcompanion.webp
+│   │   │   │   ├── peerroom-p2p.webp
+│   │   │   │   ├── peerroom-room.webp
 │   │   │   │   ├── qr-desktop.webp
 │   │   │   │   ├── solarsystem.webp
+│   │   │   │   ├── stackshot.webp
 │   │   │   │   ├── vinhance-attendance.webp
 │   │   │   │   ├── vinhance-calendar.webp
 │   │   │   │   ├── vinhance-home-cgpa.webp
@@ -128,10 +138,6 @@
 │   │   ├── layout.js
 │   │   ├── made-by-arsh
 │   │   │   ├── page.js
-│   │   │   ├── templates
-│   │   │   │   └── [slug]
-│   │   │   │       ├── TemplateContent.js
-│   │   │   │       └── page.js
 │   │   │   └── web-projects
 │   │   │       └── [slug]
 │   │   │           └── page.js
@@ -194,10 +200,7 @@
 │   │   │       ├── Navbar.js
 │   │   │       └── NavbarLinks.js
 │   │   ├── MadeByArsh
-│   │   │   ├── PythonProjectsSection.jsx
-│   │   │   ├── WebMiniProjectsSection.jsx
-│   │   │   ├── WebProjectsSection.jsx
-│   │   │   └── WebTemplatesSection.jsx
+│   │   │   └── WebProjectsSection.jsx
 │   │   ├── Resume
 │   │   │   └── Content.js
 │   │   └── Theme
@@ -205,8 +208,7 @@
 │   │       └── ThemeToggle.js
 │   ├── data
 │   │   ├── socialLinksBase.js
-│   │   ├── webProjectsBase.js
-│   │   └── webTemplatesBase.js
+│   │   └── webProjectsBase.js
 │   ├── hooks
 │   │   └── useOutsideClick.jsx
 │   ├── lib
@@ -216,4 +218,4 @@
 ├── tailwind.config.js
 └── vercel.json
 
-50 directories, 167 files
+48 directories, 171 files

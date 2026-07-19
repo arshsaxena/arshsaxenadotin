@@ -32,6 +32,11 @@ export default function MadeByArshSection() {
 			buttonIcon: 'ArrowUpRight',
 		},
 		{
+			...webProjectsBase.gitsort,
+			buttonLabel: 'Check Out',
+			buttonIcon: 'ArrowUpRight',
+		},
+		{
 			...webProjectsBase.nptelcompanion,
 			buttonLabel: 'Check Out',
 			buttonIcon: 'ArrowUpRight',

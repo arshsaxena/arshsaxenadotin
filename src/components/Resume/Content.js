@@ -305,7 +305,7 @@ function Section({ title, items, type }) {
 							<span
 								className={
 									type === 'projects' ||
-										type === 'certifications'
+									type === 'certifications'
 										? ''
 										: 'font-bold'
 								}
