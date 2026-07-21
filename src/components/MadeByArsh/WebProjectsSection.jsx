@@ -148,6 +148,14 @@ const techStyles = {
 		bg: 'bg-[#3670a0] text-white border-transparent',
 		icon: CssIcon,
 	},
+	Chromium: {
+		bg: 'bg-[#4285f4] text-white border-transparent',
+		icon: 'https://cdn.simpleicons.org/googlechrome/fff',
+	},
+	Firefox: {
+		bg: 'bg-[#ff7139] text-white border-transparent',
+		icon: 'https://cdn.simpleicons.org/firefox/fff',
+	},
 };
 
 export const BentoGrid = ({ children }) => {

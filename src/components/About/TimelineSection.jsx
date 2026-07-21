@@ -44,7 +44,7 @@ const Timeline = () => {
 			links: [
 				{
 					label: 'Open Source',
-					url: 'https://github.com/arshsaxena/GitSort',
+					url: 'https://github.com/GitSort-Dev',
 				},
 			],
 		},

@@ -96,7 +96,7 @@ const resumeData = {
 		},
 		{
 			name: 'GitSort',
-			link: 'https://github.com/arshsaxena/GitSort',
+			link: 'https://github.com/GitSort-Dev',
 			tech: 'JavaScript, HTML/CSS',
 			duration: 'Jul 2026',
 			details: [
