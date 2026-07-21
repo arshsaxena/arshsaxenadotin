@@ -3,6 +3,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { Sun, Moon, Monitor } from 'lucide-react';
 
 export default function ThemeToggle() {
 	const [isMounted, setIsMounted] = useState(false);
@@ -63,7 +64,7 @@ export default function ThemeToggle() {
 	const buttonClass = (theme) => {
 		const isSelected = currentTheme === theme;
 		return `
-            px-2 rounded-full flex items-center gap-2
+            p-1 rounded-full flex items-center justify-center transition-colors
             ${isSelected ? 'bg-[var(--main)] dark:bg-[var(--main)] text-[#f5f5f7]' : 'pointer hover:bg-[var(--accent)] hover:text-[#f5f5f7]'}
         `;
 	};
@@ -71,25 +72,28 @@ export default function ThemeToggle() {
 	if (!isMounted) return null;
 
 	return (
-		<div className="flex flex-col items-start gap-2 text-xs">
-			<div className="flex flex-row space-x-1 rounded-full border border-solid border-[var(--main)] p-[2px]">
+		<div className="flex items-center text-xs">
+			<div className="flex flex-row space-x-[2px] rounded-full border border-[var(--main)] p-[2px]">
 				<button
 					onClick={() => setTheme('light')}
 					className={buttonClass('light')}
+					aria-label="Light theme"
 				>
-					Light
+					<Sun className="h-3.5 w-3.5" />
 				</button>
 				<button
 					onClick={() => setTheme('dark')}
 					className={buttonClass('dark')}
+					aria-label="Dark theme"
 				>
-					Dark
+					<Moon className="h-3.5 w-3.5" />
 				</button>
 				<button
 					onClick={() => setTheme('system')}
 					className={buttonClass('system')}
+					aria-label="System theme"
 				>
-					Auto
+					<Monitor className="h-3.5 w-3.5" />
 				</button>
 			</div>
 		</div>

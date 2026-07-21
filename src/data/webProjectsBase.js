@@ -115,7 +115,7 @@ export const webProjectsBase = {
 		target: '_blank',
 	},
 	aeducational: {
-		label: 'aEducational by Arsh',
+		label: 'aEducational',
 		tagLine: 'Free, quality educational content.',
 		desc1: 'Free, quality educational content.',
 		desc2: 'Get letters, essays, notices, speeches, debates, and paragraphs - all written by me. Perfect for students and learners.',

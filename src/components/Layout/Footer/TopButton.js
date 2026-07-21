@@ -13,9 +13,10 @@ export default function ScrollToTop() {
 		<button
 			onClick={scrollToTop}
 			title="Go to top"
-			className="z-50 ml-2 rounded-full border-[1px] border-[var(--main)] px-[1px] text-[var(--foreground)] hover:bg-[var(--main)] hover:text-[#f5f5f7]"
+			aria-label="Go to top"
+			className="z-50 ml-2 flex h-7 w-7 items-center justify-center rounded-full border border-[var(--main)] text-[var(--foreground)] transition-colors hover:bg-[var(--main)] hover:text-[#f5f5f7]"
 		>
-			<ChevronUp className="h-5 w-5" />
+			<ChevronUp className="h-4 w-4" />
 		</button>
 	);
 }

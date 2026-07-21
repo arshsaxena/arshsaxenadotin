@@ -111,7 +111,7 @@ const Timeline = () => {
 		{
 			title: 'Feb 2026',
 			textContent:
-				'Revamped and shipped <strong>aEducational by Arsh</strong>, a platform for students to get free English writing resources such as letters, essays, notices, speeches, debates, and paragraphs.',
+				'Revamped and shipped <strong>aEducational</strong>, a platform for students to get free English writing resources such as letters, essays, notices, speeches, debates, and paragraphs.',
 			textContentCss: '',
 			imgContent: [
 				'/about/timeline/aeducational-icon-old.webp',

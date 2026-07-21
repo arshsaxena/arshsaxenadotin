@@ -65,7 +65,7 @@ export default function MadeByArshSection() {
 									width={0}
 									height={0}
 									alt={item.label}
-									className={`h-[80px] w-[80px] rounded-[15px] border-[1px] border-[var(--border-default)] align-middle ${item.css}`}
+									className={`h-[92px] w-[92px] rounded-[15px] border-[1px] border-[var(--border-default)] align-middle ${item.css}`}
 								/>
 							)}
 							<div className="w-full">
@@ -78,7 +78,7 @@ export default function MadeByArshSection() {
 									</div>
 								</div>
 								<div
-									className={`mt-3 flex w-full justify-end sm:mt-0 ${item.linkContainerCSS}`}
+									className={`mt-3 flex w-full justify-end ${item.linkContainerCSS}`}
 								>
 									<Link
 										href={item.href}

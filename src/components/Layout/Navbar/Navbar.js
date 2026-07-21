@@ -22,7 +22,7 @@ export default function Navbar() {
 
 	return (
 		<div className="sticky top-0 z-50 m-auto max-w-[980px] md:top-5">
-			<nav className="text-md border-b-[1px] border-b-[var(--border-default)] bg-[var(--surface)] px-5 py-3 backdrop-blur-sm dark:bg-[var(--surface)] md:mx-5 md:mt-5 md:rounded-full md:border-[1px] md:border-[var(--border-default)] md:p-0 md:text-[16px] md:dark:border-[var(--border-default)]">
+			<nav className="text-md border-b-[1px] border-b-[var(--border-default)] bg-[var(--surface)] px-5 py-3 backdrop-blur-md dark:bg-[var(--surface)] md:mx-5 md:mt-5 md:rounded-full md:border-[1px] md:border-[var(--border-default)] md:p-0 md:text-[16px] md:dark:border-[var(--border-default)]">
 				<div className="flex items-center justify-between">
 					<Link href="/" className="text-lg font-semibold">
 						<img

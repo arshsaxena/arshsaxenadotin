@@ -25,8 +25,6 @@ export default function Footer() {
 		webProjectsBase.stackshot,
 		webProjectsBase.vinhance,
 		webProjectsBase.gitsort,
-		webProjectsBase.nptelcompanion,
-		webProjectsBase.aeducational,
 		{
 			href: '/made-by-arsh',
 			label: 'See More',
@@ -44,7 +42,6 @@ export default function Footer() {
 			const year = time.getFullYear();
 			let hour = time.getHours();
 			let min = time.getMinutes();
-			let sec = time.getSeconds();
 			let am_pm = 'AM';
 
 			if (hour > 12) {
@@ -54,9 +51,9 @@ export default function Footer() {
 				hour = 12;
 			}
 
-			const formattedTime = `${month} ${date}, ${year} • ${
-				hour < 10 ? '0' + hour : hour
-			}:${min < 10 ? '0' + min : min}:${sec < 10 ? '0' + sec : sec} ${am_pm}`;
+			const formattedTime = `${month} ${date}, ${year} • ${hour}:${
+				min < 10 ? '0' + min : min
+			} ${am_pm}`;
 
 			setTimeString(formattedTime);
 			setYear(year);
@@ -71,7 +68,7 @@ export default function Footer() {
 		<>
 			<div className="m-auto w-full max-w-[980px]">
 				<div className="mb-0 border-t-[1px] border-[var(--border-default)] bg-[var(--surface)] p-5 text-sm dark:border-[var(--border-default)] dark:bg-[var(--surface)] md:m-5 md:mb-0 md:mt-0 md:rounded-t-[25px] md:border-[1px] md:border-b-0">
-					<div className="grid grid-cols-2 gap-6 md:grid-cols-3">
+					<div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
 						<div>
 							<h3 className="text-md mb-3 font-semibold">
 								Discover
@@ -134,9 +131,9 @@ export default function Footer() {
 						</div>
 					</div>
 					<div className="mt-10 space-y-5">
-						<div className="flex flex-col justify-between space-y-5 border-b-[1px] border-b-[var(--border-default)] pb-3 md:flex-row md:space-y-0 md:pb-5">
+						<div className="flex flex-col justify-between space-y-5 border-b-[1px] border-b-[var(--border-default)] pb-5 sm:flex-row sm:space-y-0 sm:pb-5">
 							<div>{timeString}</div>
-							<div>Copyright © {year} Arsh Saxena.</div>
+							<div>© {year} Arsh Saxena</div>
 						</div>
 					</div>
 					<div className="mt-5 space-y-5">
@@ -151,7 +148,7 @@ export default function Footer() {
 								/>
 								&nbsp; in India.
 							</div>
-							<div className="flex justify-between align-middle">
+							<div className="flex items-center justify-between">
 								<ThemeToggle />
 								<TopButton />
 							</div>
